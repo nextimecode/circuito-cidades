@@ -2,6 +2,7 @@ import React from 'react'
 
 import Head from 'next/head'
 import UltimasNoticias from '../components/organisms/utimasNoticias'
+import SimplePage from '../components/templates/simplePage'
 
 const Home = () => {
   return (
@@ -13,7 +14,9 @@ const Home = () => {
       </Head>
 
       <main>
-        <UltimasNoticias/>
+        <SimplePage>
+          <UltimasNoticias/>
+        </SimplePage>
       </main>
 
       <footer>

@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Image from 'next/image'
 import {
   Box,
   Center,
@@ -34,7 +33,8 @@ const Noticia = ({
         boxShadow={'xl'}
         rounded={'md'}
         p={6}
-        overflow={'hidden'}>
+        overflow={'hidden'}
+      >
 
         <Box
           h={'192px'}
@@ -42,11 +42,8 @@ const Noticia = ({
           mt={-6}
           mx={-6}
           mb={6}
-          pos={'relative'}>
-          <Image
-            src={newsImage}
-            layout={'fill'}
-          />
+          bgImage={`url("${newsImage}")`}
+        >
         </Box>
 
         <Stack>
