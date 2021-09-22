@@ -1,10 +1,9 @@
-
 import React from 'react'
-import Head from 'next/head'
-import Image from 'next/image'
-import NextButton from '../components/atoms/nextButton'
 
-export default function Home() {
+import Head from 'next/head'
+import UltimasNoticias from '../components/organisms/utimasNoticias'
+
+const Home = () => {
   return (
     <div>
       <Head>
@@ -14,15 +13,14 @@ export default function Home() {
       </Head>
 
       <main>
-        <NextButton>{'<Faça um orçamento gratuito/>'}</NextButton>
-        {/* <NextButton bg="primary-light">Primary Light</NextButton> */}
-        <NextButton>White</NextButton>
-        <NextButton bg="primary-dark">Dark</NextButton>
+        <UltimasNoticias/>
       </main>
 
       <footer>
-        <Image src="/images/logos/logo_nextime.svg" alt="NeXTIME Logo" width={146} height={45} />
+
       </footer>
     </div>
   )
 }
+
+export default Home
