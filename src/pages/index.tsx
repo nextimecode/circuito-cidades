@@ -1,7 +1,7 @@
 
 import React from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
+import NextFooter from '../components/moleculas/nextFooter'
 import NextButton from '../components/atoms/nextButton'
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
       </main>
 
       <footer>
-        <Image src="/images/logos/logo_nextime.svg" alt="NeXTIME Logo" width={146} height={45} />
+        <NextFooter />
       </footer>
     </div>
   )
