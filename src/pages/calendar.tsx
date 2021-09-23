@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
-import { Box, Text, Flex, IconButton, Wrap, WrapItem, Image } from '@chakra-ui/react'
+import { Box, Text, Flex, IconButton, Wrap, WrapItem } from '@chakra-ui/react'
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons'
 
 import EventCard from '../components/atoms/eventCard'

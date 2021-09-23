@@ -1,4 +1,4 @@
-import { Box, VStack, Text } from '@chakra-ui/layout'
+import { Box, Text } from '@chakra-ui/layout'
 import React from 'react'
 
 type Props = {
