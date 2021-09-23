@@ -215,7 +215,6 @@ Desenvolvido por [NeXTIME](https://github.com/nextimecode)
 
 [FIGMA](https://www.figma.com/file/MT5rk88G9DJJeNK0sbHHlg/BASE---Site-Circuito-Cidade-(SAMUEL%2FSAMIR)?node-id=888%3A14593)
 
-HORAS
 [HORAS](https://docs.google.com/spreadsheets/d/1E7SPj47viugYh7tEQmQ-GGbZH3lha6g8SFxXt6B8xsw/edit?usp=sharing)
 
 [Para ajudar nas classificações dos componentes](https://uxdesign.cc/grouping-components-in-atomic-design-systems-4d6e2095ea45)
