@@ -1,12 +1,14 @@
 
 import React from 'react'
-import NavigationBars from '../../atoms/nextButton'
+import NavigationBars from '../../organisms/navigationBars'
 import Layout from '../layout/'
 
 const NextTemplateHome = () => {
   return (
     <Layout>
-      <NavigationBars />
+      <NavigationBars>
+        <p>teste</p>
+      </NavigationBars>
     </Layout>
   )
 }
