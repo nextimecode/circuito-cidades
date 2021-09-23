@@ -18,11 +18,11 @@ interface LinkItemProps {
   name: string
 }
 const LinkItems: Array<LinkItemProps> = [
-  { name: 'Home' },
-  { name: 'Trending' },
-  { name: 'Explore' },
-  { name: 'Favourites' },
-  { name: 'Settings' }
+  { name: 'Basquete 3x3' },
+  { name: 'Caminhada e Corrida (App)' },
+  { name: 'Ciclismo MTB' },
+  { name: 'Dama' },
+  { name: 'Desafio NBA' }
 ]
 
 interface NavItemProps extends FlexProps {
@@ -63,8 +63,8 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       h="full"
       {...rest}>
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
-        <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
-          Logo
+        <Text fontSize="2xl" color="primary" fontFamily="monospace" fontWeight="bold">
+          Modalidades
         </Text>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
