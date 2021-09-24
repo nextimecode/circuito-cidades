@@ -3,7 +3,7 @@ import NavMenu from '../navMenu'
 
 const Header = () => {
   return (
-    <header id="home">
+    <header>
       <NavMenu/>
     </header>
   )

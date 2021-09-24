@@ -1,8 +1,12 @@
 import React from 'react'
+import NavMenu from '../components/organisms/navMenu'
 
 const Calendario = () => {
   return (
-    <h1>Calendário</h1>
+    <>
+      <NavMenu />
+      <h1>Calendário</h1>
+    </>
   )
 }
 

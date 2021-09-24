@@ -1,8 +1,12 @@
 import React from 'react'
+import NavMenu from '../components/organisms/navMenu'
 
 const Modalidades = () => {
   return (
-    <h1>Modalidades</h1>
+    <>
+      <NavMenu />
+      <h1>Modalidades</h1>
+    </>
   )
 }
 

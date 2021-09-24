@@ -1,5 +1,5 @@
+import { Box } from '@chakra-ui/layout'
 import React, { ReactNode } from 'react'
-import Head from 'next/head'
 import Header from '../../organisms/header'
 
 type Props = {
@@ -10,24 +10,20 @@ const SimplePage = ({
   children
 }: Props) => {
   return (
-    <>
-      <Head>
-        <title>Circuito Cidades</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-      </Head>
-      <div>
+    <React.Fragment>
 
+      <main>
         <Header/>
-
-        <main>
+        <Box as={'div'} pt={['50px', '92px']}>
           {children}
-        </main>
+        </Box>
+      </main>
 
-        <footer>
-          <></>
-        </footer>
-      </div>
-    </>
+      <footer>
+        FOOTER
+      </footer>
+
+    </React.Fragment>
   )
 }
 
