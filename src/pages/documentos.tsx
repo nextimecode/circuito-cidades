@@ -1,8 +1,12 @@
 import React from 'react'
+import NavMenu from '../components/organisms/navMenu'
 
 const Documentos = () => {
   return (
-    <h1>Documentos</h1>
+    <>
+      <NavMenu />
+      <h1>Documentos</h1>
+    </>
   )
 }
 
