@@ -1,5 +1,5 @@
 {
-  "name": "nextime-nextjs-chakra-ui-start",
+  "name": "circuitos-cidades",
   "version": "0.2.0",
   "private": true,
   "license": "MIT",
@@ -17,6 +17,7 @@
     "postinstall": "husky install"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.0.15",
     "@chakra-ui/react": "^1.6.5",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",

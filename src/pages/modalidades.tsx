@@ -1,12 +1,13 @@
-
 import React from 'react'
 import NavMenu from '../components/organisms/navMenu'
 
-export default function Home() {
+const Modalidades = () => {
   return (
     <>
       <NavMenu />
-      <h1>circuito</h1>
+      <h1>Modalidades</h1>
     </>
   )
 }
+
+export default Modalidades
