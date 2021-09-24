@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import styles from './styles.module.css'
 
 import { Flex, Button, HStack, Box, Image, Text, useDisclosure, useBreakpointValue } from '@chakra-ui/react'
 import { useRouter } from 'next/dist/client/router'
@@ -26,31 +25,91 @@ const NavMenu = () => {
             <HStack spacing="47px" color="white">
               <Box
                 fontWeight={asPath === '/' ? 800 : 600}
-                className={asPath === '/' ? styles.link : ''}
+                position={asPath === '/' ? 'relative' : 'static'}
+                _after={asPath === '/'
+                  ? {
+                    content: "''",
+                    position: 'absolute',
+                    height: '2px',
+                    width: '100%',
+                    bottom: '-2px',
+                    left: '0',
+                    background: 'red.400',
+                    borderRadius: '1px'
+                  }
+                  : { content: "''" }}
               >
                 <Link href="/">O Circuito</Link>
               </Box>
               <Box
                 fontWeight={asPath === '/modalidades' ? 800 : 600}
-                className={asPath === '/modalidades' ? styles.link : ''}
+                position={asPath === '/modalidades' ? 'relative' : 'static'}
+                _after={asPath === '/modalidades'
+                  ? {
+                    content: "''",
+                    position: 'absolute',
+                    height: '2px',
+                    width: '100%',
+                    bottom: '-2px',
+                    left: '0',
+                    background: 'red.400',
+                    borderRadius: '1px'
+                  }
+                  : { content: "''" }}
               >
                 <Link href="/modalidades">Modalidades</Link>
               </Box>
               <Box
                 fontWeight={asPath === '/cidades' ? 800 : 600}
-                className={asPath === '/cidades' ? styles.link : ''}
+                position={asPath === '/cidades' ? 'relative' : 'static'}
+                _after={asPath === '/cidades'
+                  ? {
+                    content: "''",
+                    position: 'absolute',
+                    height: '2px',
+                    width: '100%',
+                    bottom: '-2px',
+                    left: '0',
+                    background: 'red.400',
+                    borderRadius: '1px'
+                  }
+                  : { content: "''" }}
               >
                 <Link href="/cidades">Cidades</Link>
               </Box>
               <Box
                 fontWeight={asPath === '/documentos' ? 800 : 600}
-                className={asPath === '/documentos' ? styles.link : ''}
+                position={asPath === '/documentos' ? 'relative' : 'static'}
+                _after={asPath === '/documentos'
+                  ? {
+                    content: "''",
+                    position: 'absolute',
+                    height: '2px',
+                    width: '100%',
+                    bottom: '-2px',
+                    left: '0',
+                    background: 'red.400',
+                    borderRadius: '1px'
+                  }
+                  : { content: "''" }}
               >
                 <Link href="/documentos">Documentos</Link>
               </Box>
               <Box
                 fontWeight={asPath === '/calendario' ? 800 : 600}
-                className={asPath === '/calendario' ? styles.link : ''}
+                position={asPath === '/calendario' ? 'relative' : 'static'}
+                _after={asPath === '/calendario'
+                  ? {
+                    content: "''",
+                    position: 'absolute',
+                    height: '2px',
+                    width: '100%',
+                    bottom: '-2px',
+                    left: '0',
+                    background: 'red.400',
+                    borderRadius: '1px'
+                  }
+                  : { content: "''" }}
               >
                 <Link href="/calendario">Calendário</Link>
               </Box>
