@@ -54,7 +54,7 @@ const NavMenu = () => {
               >
                 <Link href="/calendario">Calendário</Link>
               </Box>
-              <Button borderRadius={32} w={122} h="8" color="red.600" bg="white">
+              <Button _hover={{ background: 'red.600', color: 'white' }} borderRadius={32} w={122} h="8" color="red.600" bg="white">
                 Inscreva-se
               </Button>
             </HStack>
