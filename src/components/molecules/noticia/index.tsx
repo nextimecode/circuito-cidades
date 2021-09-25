@@ -6,7 +6,7 @@ import {
   Heading,
   Text,
   Stack,
-  HStack,
+  HStack
 } from '@chakra-ui/react'
 import { CalendarIcon } from '@chakra-ui/icons'
 
