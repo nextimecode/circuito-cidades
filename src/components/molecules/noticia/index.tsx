@@ -7,7 +7,6 @@ import {
   Text,
   Stack,
   HStack,
-  useColorModeValue
 } from '@chakra-ui/react'
 import { CalendarIcon } from '@chakra-ui/icons'
 

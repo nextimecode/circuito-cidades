@@ -2,8 +2,6 @@ import React from 'react'
 
 import { Grid } from '@chakra-ui/layout'
 import Noticia from '../../molecules/noticia'
-import Title from '../../atoms/title'
-import Section from '../../templates/section'
 import SeeMore from '../../atoms/seeMore'
 import { NewsProps } from '../../../types/types'
 

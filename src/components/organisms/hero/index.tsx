@@ -15,34 +15,34 @@ const Hero = ({
 
   return (
     <Box
-    as='div'
-    display={['block', 'flex']}
-    flexDir={['inherit', 'row-reverse']}
-    px={[0, 10]}
-    py={[0, 6]}
-    w={'100%'}
+      as='div'
+      display={['block', 'flex']}
+      flexDir={['inherit', 'row-reverse']}
+      px={[0, 10]}
+      py={[0, 6]}
+      w={'100%'}
     >
 
-    <HeroCard evento={currentEvent}/>
+      <HeroCard evento={currentEvent}/>
 
-    <VStack maxW={['100%', '40vw']} px={[4, 0]} pr={[4, 8]} py={[8, 0]}>
+      <VStack maxW={['100%', '40vw']} px={[4, 0]} pr={[4, 8]} py={[8, 0]}>
 
         <Box
-        as='div'
-        fontSize={['36px', '64px']}
+          as='div'
+          fontSize={['36px', '64px']}
         >
-        <h1>{currentEvent.eventName}</h1>
+          <h1>{currentEvent.eventName}</h1>
         </Box>
 
         <Text
-        color={'gray.500'}
-        fontSize='14px'
-        fontWeight={500}
+          color={'gray.500'}
+          fontSize='14px'
+          fontWeight={500}
         >
-        {currentEvent.content}
+          {currentEvent.content}
         </Text>
 
-    </VStack>
+      </VStack>
     </Box>
   )
 }
