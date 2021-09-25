@@ -13,7 +13,7 @@ const Home = () => {
         <meta name="description" content="Site da empresa NeXTIME" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
       <SimplePage>
         <Section>
           <h1>circuito</h1>
