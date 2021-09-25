@@ -10,7 +10,6 @@ const Section = ({ children, bg = 'white' }: Props) => {
   return (
     <VStack
       w="100%"
-      py={6}
       bg={bg}
       align="stretch"
     >

@@ -29,7 +29,6 @@ const Noticia = ({
       <Box
         maxW={'384px'}
         w={'full'}
-        bg={useColorModeValue('white', 'gray.900')}
         boxShadow={'xl'}
         rounded={'md'}
         p={6}

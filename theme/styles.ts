@@ -5,6 +5,10 @@ const styles = {
     body: {
       fontFamily: 'Inter',
       lineHeight: 'base'
+    },
+    h1: {
+      color: 'primary',
+      fontWeight: 700,
     }
   })
 }
