@@ -13,7 +13,7 @@ const HERO = [
       stage: '1ª Etapa',
       place: 'Nova União',
       content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-      imgUrl: '/images/heroImg.jpg',
+      imgUrl: '/images/heroImg.jpg'
     }
   },
   {
@@ -23,7 +23,7 @@ const HERO = [
       stage: '2ª Etapa',
       place: 'BH',
       content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-      imgUrl: '/images/noticia.png',
+      imgUrl: '/images/noticia.png'
     }
   },
   {
@@ -33,9 +33,9 @@ const HERO = [
       stage: '3ª Etapa',
       place: 'Cazaquistão',
       content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-      imgUrl: '/images/heroImg.jpg',
+      imgUrl: '/images/heroImg.jpg'
     }
-  },
+  }
 ]
 
 const NOTICIAS = [
@@ -55,7 +55,7 @@ const NOTICIAS = [
       content: {
         title: 'Título da notícia',
         content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-        imgUrl: '/images/noticia.png',
+        imgUrl: '/images/noticia.png'
       }
     }
   },
@@ -65,7 +65,7 @@ const NOTICIAS = [
       content: {
         title: 'Título da notícia',
         content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-        imgUrl: '/images/noticia.png',
+        imgUrl: '/images/noticia.png'
       }
     }
   },
@@ -75,7 +75,7 @@ const NOTICIAS = [
       content: {
         title: 'Título da notícia',
         content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-        imgUrl: '/images/noticia.png',
+        imgUrl: '/images/noticia.png'
       }
     }
   },
@@ -85,7 +85,7 @@ const NOTICIAS = [
       content: {
         title: 'Título da notícia',
         content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-        imgUrl: '/images/noticia.png',
+        imgUrl: '/images/noticia.png'
       }
     }
   },
@@ -95,7 +95,7 @@ const NOTICIAS = [
       content: {
         title: 'Título da notícia',
         content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-        imgUrl: '/images/noticia.png',
+        imgUrl: '/images/noticia.png'
       }
     }
   }

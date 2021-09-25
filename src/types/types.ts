@@ -3,13 +3,13 @@ export interface NewsProps {
     content: ContentProps
   }
 
-  export interface ContentProps {
+export interface ContentProps {
     title: string
     content: string
     imgUrl: string
   }
 
-  export interface EventProps {
+export interface EventProps {
     eventName: string
     season?: string
     stage?: string

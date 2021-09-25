@@ -8,7 +8,7 @@ const styles = {
     },
     h1: {
       color: 'primary',
-      fontWeight: 700,
+      fontWeight: 700
     }
   })
 }
