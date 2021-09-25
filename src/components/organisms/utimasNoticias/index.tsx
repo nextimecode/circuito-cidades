@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Grid } from '@chakra-ui/layout'
 import Noticia from '../../molecules/noticia'
+import Title from '../../atoms/title'
 import Section from '../../templates/section'
 import SeeMore from '../../atoms/seeMore'
 import { NewsProps } from '../../../types/types'
@@ -14,7 +15,7 @@ const UltimasNoticias = ({
   noticias
 }: Props) => {
   return (
-    <Section bg={'gray-50'}>
+    <React.Fragment>
       <Grid
         templateColumns={['repeat(1, 1fr)', 'repeat(3, 1fr)']}
         templateRows={['repeat(1, 1fr)']}
@@ -32,7 +33,8 @@ const UltimasNoticias = ({
       </Grid>
 
       <SeeMore label='Ver todas as notícias'/>
-    </Section>
+
+    </React.Fragment>
   )
 }
 

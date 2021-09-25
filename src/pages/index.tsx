@@ -4,6 +4,7 @@ import Head from 'next/head'
 import SimplePage from '../components/templates/simplePage'
 import UltimasNoticias from '../components/organisms/utimasNoticias'
 import Hero from '../components/organisms/hero'
+import Section from '../components/templates/section'
 
 const HERO = [
   {
@@ -112,9 +113,13 @@ const Home = () => {
 
       <SimplePage>
 
-        <Hero hero={HERO}/>
+        <Section>
+          <Hero hero={HERO}/>
+        </Section>
 
-        <UltimasNoticias noticias={NOTICIAS}/>
+        <Section bg={'gray-50'} title="Últimas Notícias">
+          <UltimasNoticias noticias={NOTICIAS}/>
+        </Section>
 
       </SimplePage>
     </div>

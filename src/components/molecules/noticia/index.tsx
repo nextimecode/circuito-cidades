@@ -25,7 +25,7 @@ const Noticia = ({
   newsImage
 }: Props) => {
   return (
-    <Center py={6} mx={[0, 6]}>
+    <Center py={3} mx={[0, 6]}>
       <Box
         maxW={'384px'}
         w={'full'}
