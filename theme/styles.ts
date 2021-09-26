@@ -1,7 +1,5 @@
-import { Dict } from '@chakra-ui/utils'
-
 const styles = {
-  global: (props: Dict<any>) => ({
+  global: () => ({
     body: {
       fontFamily: 'Inter',
       lineHeight: 'base'
