@@ -1,13 +1,12 @@
-import { mode } from '@chakra-ui/theme-tools'
-import { Dict } from '@chakra-ui/utils'
-
 const styles = {
-  global: (props: Dict<any>) => ({
+  global: () => ({
     body: {
       fontFamily: 'Inter',
-      color: mode('#17171B', 'whiteAlpha.900')(props),
-      bg: mode('white', '#17171B')(props),
       lineHeight: 'base'
+    },
+    h1: {
+      color: 'primary',
+      fontWeight: 700
     }
   })
 }
