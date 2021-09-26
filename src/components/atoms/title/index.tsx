@@ -14,6 +14,7 @@ const Title = ({
       fontSize={'2xl'}
       fontFamily={'body'}
       alignSelf={'center'}
+      pt={5}
     >
       {label}
     </Heading>

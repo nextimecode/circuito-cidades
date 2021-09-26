@@ -6,8 +6,7 @@ import {
   Heading,
   Text,
   Stack,
-  HStack,
-  useColorModeValue
+  HStack
 } from '@chakra-ui/react'
 import { CalendarIcon } from '@chakra-ui/icons'
 
@@ -25,11 +24,10 @@ const Noticia = ({
   newsImage
 }: Props) => {
   return (
-    <Center py={6} mx={[0, 6]}>
+    <Center py={3} mx={[0, 6]}>
       <Box
         maxW={'384px'}
         w={'full'}
-        bg={useColorModeValue('white', 'gray.900')}
         boxShadow={'xl'}
         rounded={'md'}
         p={6}
