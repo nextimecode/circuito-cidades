@@ -1,18 +1,17 @@
-
 import React from 'react'
 import Layout from '../layout/'
-import UltimasNoticias from '../../organisms/utimasNoticias'
 import Hero from '../../organisms/hero'
 import Section from '../../templates/section'
+import LastNews from '../../organisms/lastNews'
 
 type NextTemplateHomeProps = {
   itemsHero: Record<string, any>[]
-  noticias: Record<string, any>[]
+  newsSet: Record<string, any>[]
 }
 
 const NextTemplateHome = ({
   itemsHero = [],
-  noticias = []
+  newsSet = []
 }: NextTemplateHomeProps) => {
   return (
     <Layout>
@@ -20,7 +19,7 @@ const NextTemplateHome = ({
         <Hero hero={itemsHero}/>
       </Section>
       <Section bg={'gray-50'} title="Últimas Notícias">
-        <UltimasNoticias noticias={noticias}/>
+        <LastNews newsSet={newsSet}/>
       </Section>
       {/* <NavigationBars>
         <p>teste</p>

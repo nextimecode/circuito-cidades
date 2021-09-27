@@ -3,18 +3,24 @@ import React from 'react'
 
 type Props = {
     label: string
+    color?: string
+    py?: number[]
+    alignSelf?:string
 }
 
 const Title = ({
-  label
+  label,
+  color = 'primary',
+  py = [2, 5],
+  alignSelf = 'center'
 }: Props) => {
   return (
     <Heading
-      color={'primary'}
       fontSize={'2xl'}
-      fontFamily={'body'}
-      alignSelf={'center'}
-      pt={5}
+      fontFamily={'Inter'}
+      alignSelf={alignSelf}
+      color={color}
+      py={py}
     >
       {label}
     </Heading>

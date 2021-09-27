@@ -1,10 +1,12 @@
 export interface NewsProps {
+    id: string
     date: string
     content: ContentProps
   }
 
 export interface ContentProps {
     title: string
+    subtitle: string
     content: string
     imgUrl: string
   }

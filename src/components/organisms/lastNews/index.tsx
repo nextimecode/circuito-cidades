@@ -6,11 +6,11 @@ import SeeMore from '../../atoms/seeMore'
 import { NewsProps } from '../../../types/types'
 
 type Props = {
-  noticias: Record<string, NewsProps>[]
+  newsSet: Record<string, NewsProps>[]
 }
 
-const UltimasNoticias = ({
-  noticias
+const LastNews = ({
+  newsSet
 }: Props) => {
   return (
     <React.Fragment>
@@ -19,13 +19,10 @@ const UltimasNoticias = ({
         templateRows={['repeat(1, 1fr)']}
         px={[4]}
       >
-        {noticias.map((n, k) => (
+        {newsSet.map((news, index) => (
           <Noticia
-            key={k}
-            newsDate={n.noticia.date}
-            newsTitle={n.noticia.content.title}
-            newsContent={n.noticia.content.content}
-            newsImage={n.noticia.content.imgUrl}
+            key={index}
+            news={news.news}
           />
         ))}
       </Grid>
@@ -36,4 +33,4 @@ const UltimasNoticias = ({
   )
 }
 
-export default UltimasNoticias
+export default LastNews

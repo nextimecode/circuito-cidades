@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Link from 'next/link'
 import {
   Box,
   Center,
@@ -9,22 +10,20 @@ import {
   HStack
 } from '@chakra-ui/react'
 import { CalendarIcon } from '@chakra-ui/icons'
+import { NewsProps } from '../../../types/types'
 
 type Props = {
-  newsDate: string
-  newsTitle: string
-  newsContent: string
-  newsImage: string
+  news: NewsProps
 }
 
+const ROUTE_POST_ID = 'posts/[postId]'
+
 const Noticia = ({
-  newsDate,
-  newsTitle,
-  newsContent,
-  newsImage
+  news
 }: Props) => {
   return (
     <Center py={3} mx={[0, 6]}>
+
       <Box
         maxW={'384px'}
         w={'full'}
@@ -33,14 +32,16 @@ const Noticia = ({
         p={6}
         overflow={'hidden'}
       >
-
         <Box
           h={'192px'}
           bg={'gray.100'}
           mt={-6}
           mx={-6}
           mb={6}
-          bgImage={`url("${newsImage}")`}
+          bgImage={`url("${news.content.imgUrl}")`}
+          bgPosition='center'
+          bgRepeat='no-repeat'
+          bgSize='cover'
         >
         </Box>
 
@@ -52,18 +53,26 @@ const Noticia = ({
               fontWeight={500}
               fontSize={'sm'}
             >
-              {newsDate}
+              {news.date}
             </Text>
           </HStack>
-          <Heading
-            color={'primary'}
-            fontSize={'xl'}
-            fontFamily={'body'}
-          >
-            {newsTitle}
-          </Heading>
 
-          <Text color={'gray.500'}>{newsContent}</Text>
+          <Link
+            href={{
+              pathname: ROUTE_POST_ID,
+              query: { postId: news.id }
+            }}
+          ><a>
+              <Heading
+                color={'primary'}
+                fontSize={'xl'}
+                fontFamily={'body'}
+              >
+                {news.content.title}
+              </Heading>
+            </a></Link>
+
+          <Text color={'gray.500'}>{news.content.subtitle}</Text>
         </Stack>
       </Box>
     </Center>

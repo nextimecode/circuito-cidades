@@ -11,7 +11,7 @@ type Props = {
 const Hero = ({
   hero
 }: Props) => {
-  const currentEvent = hero[0].evento
+  const currentEvent = hero[0].event
 
   return (
     <Box
@@ -23,7 +23,7 @@ const Hero = ({
       w={'100%'}
     >
 
-      <HeroCard evento={currentEvent}/>
+      <HeroCard event={currentEvent}/>
 
       <VStack maxW={['100%', '40vw']} px={[4, 0]} pr={[4, 8]} py={[8, 0]}>
 

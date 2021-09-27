@@ -4,11 +4,11 @@ import { Box, VStack } from '@chakra-ui/layout'
 import { EventProps } from '../../../types/types'
 
 type Props = {
-    evento: EventProps
+    event: EventProps
 }
 
 const HeroCard = ({
-  evento
+  event
 }: Props) => {
   return (
     <Box
@@ -16,7 +16,7 @@ const HeroCard = ({
       h={['80vw', '30vw']}
       boxShadow={'xl'}
       rounded={['none', 'md']}
-      bgImage={`url("${evento.imgUrl}")`}
+      bgImage={`url("${event.imgUrl}")`}
       bgSize='cover'
       bgPosition='center'
       bgRepeat='no-repeat'
@@ -37,7 +37,7 @@ const HeroCard = ({
           fontSize='14px'
           color='primary'
         >
-          {evento.stage}
+          {event.stage}
         </Box>
 
         <Box
@@ -48,7 +48,7 @@ const HeroCard = ({
           fontSize='20px'
           color='white'
         >
-          {evento.place}
+          {event.place}
         </Box>
 
       </VStack>
