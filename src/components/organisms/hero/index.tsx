@@ -2,10 +2,10 @@ import React from 'react'
 
 import { Box, Text, VStack } from '@chakra-ui/layout'
 import HeroCard from '../../molecules/heroCard'
-import { EventProps } from '../../../types/types'
+import { EventoProps } from '../../../types/types'
 
 type Props = {
-    hero: Record<string, EventProps>[]
+    hero: Record<string, EventoProps>[]
 }
 
 const Hero = ({
