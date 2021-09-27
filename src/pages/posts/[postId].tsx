@@ -9,7 +9,7 @@ const NewsPost = () => {
   const router = useRouter()
   const { postId } = router.query
 
-  let noticiaPost = NOTICIAS.find((noticia) => noticia.noticia.id === postId)?.noticia
+  const noticiaPost = NOTICIAS.find((noticia) => noticia.noticia.id === postId)?.noticia
 
   return (
     <TemplatePost noticia={noticiaPost} />
