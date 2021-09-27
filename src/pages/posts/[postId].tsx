@@ -26,10 +26,10 @@ const NewsPost = ({
       </Head>
 
       <SimplePage>
-    
+
         {/* <Title label={}/>
         <Post /> */}
-    
+
       </SimplePage>
 
     </React.Fragment>
