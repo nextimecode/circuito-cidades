@@ -9,9 +9,7 @@ const NewsPost = () => {
   const router = useRouter()
   const { postId } = router.query
 
-  const noticiaPost = NOTICIAS.map((noticia) => (
-    (noticia.noticia.id === postId) ? noticia.noticia : undefined
-  ))
+  let noticiaPost = NOTICIAS.find((noticia) => noticia.noticia.id === postId)?.noticia
 
   return (
     <TemplatePost noticia={noticiaPost} />
