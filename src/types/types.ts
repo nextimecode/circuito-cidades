@@ -1,16 +1,17 @@
-export interface NewsProps {
+export interface NoticiaProps {
     id: string
     date: string
-    content: ContentProps
+    content: ConteudoProps
   }
 
-export interface ContentProps {
+export interface ConteudoProps {
     title: string
+    subtitle: string
     content: string
     imgUrl: string
   }
 
-export interface EventProps {
+export interface EventoProps {
     eventName: string
     season?: string
     stage?: string

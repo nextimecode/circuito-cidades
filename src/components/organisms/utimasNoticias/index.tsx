@@ -3,10 +3,10 @@ import React from 'react'
 import { Grid } from '@chakra-ui/layout'
 import Noticia from '../../molecules/noticia'
 import SeeMore from '../../atoms/seeMore'
-import { NewsProps } from '../../../types/types'
+import { NoticiaProps } from '../../../types/types'
 
 type Props = {
-  noticias: Record<string, NewsProps>[]
+  noticias: Record<string, NoticiaProps>[]
 }
 
 const UltimasNoticias = ({
@@ -22,10 +22,7 @@ const UltimasNoticias = ({
         {noticias.map((noticia, index) => (
           <Noticia
             key={index}
-            newsDate={noticia.noticia.date}
-            newsTitle={noticia.noticia.content.title}
-            newsContent={noticia.noticia.content.content}
-            newsImage={noticia.noticia.content.imgUrl}
+            noticia={noticia.noticia}
           />
         ))}
       </Grid>

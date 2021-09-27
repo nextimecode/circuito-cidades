@@ -1,38 +1,21 @@
 import React from 'react'
 
 import { useRouter } from 'next/router'
-import SimplePage from '../../components/templates/simplePage'
-import { Head } from 'next/document'
-import Title from '../../components/atoms/title'
-import { NewsProps } from '../../types/types'
 
-type Props = {
-  noticia: NewsProps
-}
+import { NOTICIAS } from '../../pages/api/noticias'
+import TemplatePost from '../../components/templates/templatePost'
+import { NoticiaProps } from '../../types/types'
 
-const NewsPost = ({
-  noticia
-}: Props) => {
+const NewsPost = () => {
   const router = useRouter()
-  const { pid } = router.query
+  const { postId } = router.query
+
+  let noticiaPost = NOTICIAS.map((noticia) => (
+    (noticia.noticia.id === postId) ? noticia.noticia : undefined
+  ))
 
   return (
-    <React.Fragment>
-
-      <Head>
-        <title>Circuito Cidades</title>
-        <meta name="description" content="Site da empresa NeXTIME" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <SimplePage>
-
-        {/* <Title label={}/>
-        <Post /> */}
-
-      </SimplePage>
-
-    </React.Fragment>
+    <TemplatePost noticia={noticiaPost} />
   )
 }
 
