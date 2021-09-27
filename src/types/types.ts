@@ -1,4 +1,5 @@
 export interface NewsProps {
+    id: string
     date: string
     content: ContentProps
   }

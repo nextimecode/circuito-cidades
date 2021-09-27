@@ -42,6 +42,7 @@ const HERO = [
 const NOTICIAS = [
   {
     noticia: {
+      id: 'noticia1',
       date: '31 de Maio',
       content: {
         title: 'Título da notícia',
@@ -52,6 +53,7 @@ const NOTICIAS = [
   },
   {
     noticia: {
+      id: 'noticia2',
       date: '1 de janeiro',
       content: {
         title: 'Título da notícia',
@@ -62,6 +64,7 @@ const NOTICIAS = [
   },
   {
     noticia: {
+      id: 'noticia3',
       date: '31 de fevereiro',
       content: {
         title: 'Título da notícia',
@@ -72,6 +75,7 @@ const NOTICIAS = [
   },
   {
     noticia: {
+      id: 'noticia4',
       date: '31 de julho',
       content: {
         title: 'Título da notícia',
@@ -82,6 +86,7 @@ const NOTICIAS = [
   },
   {
     noticia: {
+      id: 'noticia5',
       date: '31 de novembro',
       content: {
         title: 'Título da notícia',
@@ -92,6 +97,7 @@ const NOTICIAS = [
   },
   {
     noticia: {
+      id: 'noticia6',
       date: '31 de dezembro',
       content: {
         title: 'Título da notícia',

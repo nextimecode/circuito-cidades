@@ -19,13 +19,13 @@ const UltimasNoticias = ({
         templateRows={['repeat(1, 1fr)']}
         px={[4]}
       >
-        {noticias.map((n, k) => (
+        {noticias.map((noticia, index) => (
           <Noticia
-            key={k}
-            newsDate={n.noticia.date}
-            newsTitle={n.noticia.content.title}
-            newsContent={n.noticia.content.content}
-            newsImage={n.noticia.content.imgUrl}
+            key={index}
+            newsDate={noticia.noticia.date}
+            newsTitle={noticia.noticia.content.title}
+            newsContent={noticia.noticia.content.content}
+            newsImage={noticia.noticia.content.imgUrl}
           />
         ))}
       </Grid>
