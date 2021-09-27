@@ -1,6 +1,6 @@
-export const ITEMS_HERO = [
+export const heroItems = [
   {
-    evento: {
+    event: {
       eventName: 'Desafio das Individuais',
       date: '31 de março',
       stage: '1ª Etapa',
@@ -10,7 +10,7 @@ export const ITEMS_HERO = [
     }
   },
   {
-    evento: {
+    event: {
       eventName: 'Evento 2',
       date: '31 de fevereiro',
       stage: '2ª Etapa',
@@ -20,7 +20,7 @@ export const ITEMS_HERO = [
     }
   },
   {
-    evento: {
+    event: {
       eventName: 'Evento 3',
       date: '31 de março',
       stage: '3ª Etapa',

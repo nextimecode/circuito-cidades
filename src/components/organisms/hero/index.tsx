@@ -2,16 +2,16 @@ import React from 'react'
 
 import { Box, Text, VStack } from '@chakra-ui/layout'
 import HeroCard from '../../molecules/heroCard'
-import { EventoProps } from '../../../types/types'
+import { EventProps } from '../../../types/types'
 
 type Props = {
-    hero: Record<string, EventoProps>[]
+    hero: Record<string, EventProps>[]
 }
 
 const Hero = ({
   hero
 }: Props) => {
-  const currentEvent = hero[0].evento
+  const currentEvent = hero[0].event
 
   return (
     <Box
@@ -23,7 +23,7 @@ const Hero = ({
       w={'100%'}
     >
 
-      <HeroCard evento={currentEvent}/>
+      <HeroCard event={currentEvent}/>
 
       <VStack maxW={['100%', '40vw']} px={[4, 0]} pr={[4, 8]} py={[8, 0]}>
 

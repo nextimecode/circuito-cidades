@@ -1,32 +1,32 @@
 import React from 'react'
 
 import { Box } from '@chakra-ui/layout'
-import { NoticiaProps } from '../../../types/types'
+import { NewsProps } from '../../../types/types'
 import Title from '../../atoms/title'
 import { Image } from '@chakra-ui/react'
 import PostSubtitle from '../../atoms/postSubtitle'
 import PostText from '../../atoms/postText'
 
 type Props = {
-    noticia: NoticiaProps
+  news: NewsProps
 }
 
 const Post = ({
-  noticia
+  news
 }: Props) => {
   return (
     <Box as='div' px={[4, 0]} maxW={['100%', '800px']} margin={'auto'}>
 
       <Title
-        label={noticia.content.title}
+        label={news.content.title}
         alignSelf='start'
       />
 
-      <PostSubtitle text={noticia.content.subtitle} />
+      <PostSubtitle text={news.content.subtitle} />
 
-      <Image src={noticia.content.imgUrl} w={'100%'} rounded='none' />
+      <Image src={news.content.imgUrl} w={'100%'} rounded='none' />
 
-      <PostText fullText={noticia.content.content} />
+      <PostText fullText={news.content.content} />
 
     </Box>
   )

@@ -10,16 +10,16 @@ import {
   HStack
 } from '@chakra-ui/react'
 import { CalendarIcon } from '@chakra-ui/icons'
-import { NoticiaProps } from '../../../types/types'
+import { NewsProps } from '../../../types/types'
 
 type Props = {
-  noticia: NoticiaProps
+  news: NewsProps
 }
 
 const ROUTE_POST_ID = 'posts/[postId]'
 
 const Noticia = ({
-  noticia
+  news
 }: Props) => {
   return (
     <Center py={3} mx={[0, 6]}>
@@ -38,7 +38,7 @@ const Noticia = ({
           mt={-6}
           mx={-6}
           mb={6}
-          bgImage={`url("${noticia.content.imgUrl}")`}
+          bgImage={`url("${news.content.imgUrl}")`}
           bgPosition='center'
           bgRepeat='no-repeat'
           bgSize='cover'
@@ -53,14 +53,14 @@ const Noticia = ({
               fontWeight={500}
               fontSize={'sm'}
             >
-              {noticia.date}
+              {news.date}
             </Text>
           </HStack>
 
           <Link
             href={{
               pathname: ROUTE_POST_ID,
-              query: { postId: noticia.id }
+              query: { postId: news.id }
             }}
           ><a>
               <Heading
@@ -68,11 +68,11 @@ const Noticia = ({
                 fontSize={'xl'}
                 fontFamily={'body'}
               >
-                {noticia.content.title}
+                {news.content.title}
               </Heading>
             </a></Link>
 
-          <Text color={'gray.500'}>{noticia.content.subtitle}</Text>
+          <Text color={'gray.500'}>{news.content.subtitle}</Text>
         </Stack>
       </Box>
     </Center>

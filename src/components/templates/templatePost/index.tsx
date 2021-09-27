@@ -1,24 +1,24 @@
 import React from 'react'
 import Layout from '../layout/'
 import Section from '../../templates/section'
-import { NoticiaProps } from '../../../types/types'
+import { NewsProps } from '../../../types/types'
 import Post from '../../organisms/post'
 
 type TemplatePostProps = {
-  noticia: NoticiaProps | undefined
+  news: NewsProps | undefined
 }
 
 const TemplatePost = ({
-  noticia
+  news
 }: TemplatePostProps) => {
   return (
     <Layout>
-      {(noticia === undefined) &&
+      {(news === undefined) &&
           <p>Notícia não encontrada.</p>
       }
-      {(noticia !== undefined) &&
+      {(news !== undefined) &&
           <Section>
-            <Post noticia={noticia}/>
+            <Post news={news}/>
           </Section>
       }
     </Layout>

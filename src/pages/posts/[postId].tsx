@@ -2,17 +2,17 @@ import React from 'react'
 
 import { useRouter } from 'next/router'
 
-import { NOTICIAS } from '../../pages/api/noticias'
+import { newsItems } from '../api/newsItems'
 import TemplatePost from '../../components/templates/templatePost'
 
 const NewsPost = () => {
   const router = useRouter()
   const { postId } = router.query
 
-  const noticiaPost = NOTICIAS.find((noticia) => noticia.noticia.id === postId)?.noticia
+  const newsItem = newsItems.find((news) => news.news.id === postId)?.news
 
   return (
-    <TemplatePost noticia={noticiaPost} />
+    <TemplatePost news={newsItem} />
   )
 }
 

@@ -6,7 +6,6 @@ type Props = {
     color?: string
     py?: number[]
     alignSelf?:string
-
 }
 
 const Title = ({

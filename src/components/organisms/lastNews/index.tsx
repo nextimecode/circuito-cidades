@@ -3,14 +3,14 @@ import React from 'react'
 import { Grid } from '@chakra-ui/layout'
 import Noticia from '../../molecules/noticia'
 import SeeMore from '../../atoms/seeMore'
-import { NoticiaProps } from '../../../types/types'
+import { NewsProps } from '../../../types/types'
 
 type Props = {
-  noticias: Record<string, NoticiaProps>[]
+  newsSet: Record<string, NewsProps>[]
 }
 
-const UltimasNoticias = ({
-  noticias
+const LastNews = ({
+  newsSet
 }: Props) => {
   return (
     <React.Fragment>
@@ -19,10 +19,10 @@ const UltimasNoticias = ({
         templateRows={['repeat(1, 1fr)']}
         px={[4]}
       >
-        {noticias.map((noticia, index) => (
+        {newsSet.map((news, index) => (
           <Noticia
             key={index}
-            noticia={noticia.noticia}
+            news={news.news}
           />
         ))}
       </Grid>
@@ -33,4 +33,4 @@ const UltimasNoticias = ({
   )
 }
 
-export default UltimasNoticias
+export default LastNews

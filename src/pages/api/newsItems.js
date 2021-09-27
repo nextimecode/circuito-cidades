@@ -1,6 +1,6 @@
-export const NOTICIAS = [
+export const newsItems = [
   {
-    noticia: {
+    news: {
       id: 'noticia1',
       date: '31 de Maio',
       content: {
@@ -13,7 +13,7 @@ export const NOTICIAS = [
     }
   },
   {
-    noticia: {
+    news: {
       id: 'noticia2',
       date: '1 de janeiro',
       content: {
@@ -26,7 +26,7 @@ export const NOTICIAS = [
     }
   },
   {
-    noticia: {
+    news: {
       id: 'noticia3',
       date: '31 de fevereiro',
       content: {
@@ -38,7 +38,7 @@ export const NOTICIAS = [
     }
   },
   {
-    noticia: {
+    news: {
       id: 'noticia4',
       date: '31 de julho',
       content: {
@@ -50,7 +50,7 @@ export const NOTICIAS = [
     }
   },
   {
-    noticia: {
+    news: {
       id: 'noticia5',
       date: '31 de novembro',
       content: {
@@ -62,7 +62,7 @@ export const NOTICIAS = [
     }
   },
   {
-    noticia: {
+    news: {
       id: 'noticia6',
       date: '31 de dezembro',
       content: {
