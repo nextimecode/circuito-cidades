@@ -1,12 +1,7 @@
 import React from 'react'
+import TemplateHome from '../components/templates/templateHome'
 
-import Head from 'next/head'
-import SimplePage from '../components/templates/simplePage'
-import UltimasNoticias from '../components/organisms/utimasNoticias'
-import Hero from '../components/organisms/hero'
-import Section from '../components/templates/section'
-
-const HERO = [
+const itemsHero = [
   {
     evento: {
       eventName: 'Desafio das Individuais',
@@ -39,7 +34,7 @@ const HERO = [
   }
 ]
 
-const NOTICIAS = [
+const noticias = [
   {
     noticia: {
       id: 'noticia1',
@@ -110,25 +105,9 @@ const NOTICIAS = [
 
 const Home = () => {
   return (
-    <div>
-      <Head>
-        <title>Circuito Cidades</title>
-        <meta name="description" content="Site da empresa NeXTIME" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <SimplePage>
-
-        <Section>
-          <Hero hero={HERO}/>
-        </Section>
-
-        <Section bg={'gray-50'} title="Últimas Notícias">
-          <UltimasNoticias noticias={NOTICIAS}/>
-        </Section>
-
-      </SimplePage>
-    </div>
+    <>
+      <TemplateHome itemsHero={itemsHero} noticias={noticias} />
+    </>
   )
 }
 
