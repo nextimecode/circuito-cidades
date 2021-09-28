@@ -27,7 +27,7 @@ const LastNews = ({
         ))}
       </Grid>
 
-      <SeeMore label='Ver todas as notícias'/>
+      {/* <SeeMore label='Ver todas as notícias'/> */}
 
     </React.Fragment>
   )

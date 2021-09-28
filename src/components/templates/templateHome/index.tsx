@@ -5,18 +5,18 @@ import Section from '../../templates/section'
 import LastNews from '../../organisms/lastNews'
 
 type NextTemplateHomeProps = {
-  itemsHero: Record<string, any>[]
+  heroItems: Record<string, any>[]
   newsSet: Record<string, any>[]
 }
 
-const NextTemplateHome = ({
-  itemsHero = [],
+const TemplateHome = ({
+  heroItems = [],
   newsSet = []
 }: NextTemplateHomeProps) => {
   return (
     <Layout>
       <Section>
-        <Hero hero={itemsHero}/>
+        <Hero hero={heroItems}/>
       </Section>
       <Section bg={'gray-50'} title="Últimas Notícias">
         <LastNews newsSet={newsSet}/>
@@ -28,4 +28,4 @@ const NextTemplateHome = ({
   )
 }
 
-export default NextTemplateHome
+export default TemplateHome

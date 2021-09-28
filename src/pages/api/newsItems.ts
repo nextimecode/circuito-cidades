@@ -36,41 +36,5 @@ export const newsItems = [
         imgUrl: '/images/heroImg.jpg'
       }
     }
-  },
-  {
-    news: {
-      id: 'noticia4',
-      date: '31 de julho',
-      content: {
-        title: 'Notícia 4',
-        subtitle: 'Subtítulo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin nisi, elit tempor vestibulum, leo, ac ac, sem felis.',
-        content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-        imgUrl: '/images/soccer.jpg'
-      }
-    }
-  },
-  {
-    news: {
-      id: 'noticia5',
-      date: '31 de novembro',
-      content: {
-        title: 'Notícia 5',
-        subtitle: 'Subtítulo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin nisi, elit tempor vestibulum, leo, ac ac, sem felis.',
-        content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-        imgUrl: '/images/heroImg.jpg'
-      }
-    }
-  },
-  {
-    news: {
-      id: 'noticia6',
-      date: '31 de dezembro',
-      content: {
-        title: 'Notícia 6',
-        subtitle: 'Subtítulo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin nisi, elit tempor vestibulum, leo, ac ac, sem felis.',
-        content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-        imgUrl: '/images/soccer.jpg'
-      }
-    }
   }
 ]

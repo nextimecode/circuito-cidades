@@ -14,12 +14,12 @@ const TemplatePost = ({
   return (
     <Layout>
       {(news === undefined) &&
-          <p>Notícia não encontrada.</p>
+        <p>Notícia não encontrada.</p>
       }
       {(news !== undefined) &&
-          <Section>
-            <Post news={news}/>
-          </Section>
+        <Section>
+          <Post news={news}/>
+        </Section>
       }
     </Layout>
   )
