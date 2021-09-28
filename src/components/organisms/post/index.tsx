@@ -16,7 +16,6 @@ const Post = ({
 }: Props) => {
   return (
     <Box as='div' px={[4, 0]} maxW={['100%', '800px']} margin={'auto'}>
-
       <Title
         label={news.content.title}
         alignSelf='start'
@@ -27,7 +26,6 @@ const Post = ({
       <Image src={news.content.imgUrl} w={'100%'} rounded='none' />
 
       <PostText fullText={news.content.content} />
-
     </Box>
   )
 }

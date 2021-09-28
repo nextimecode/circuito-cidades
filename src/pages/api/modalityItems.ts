@@ -1,32 +1,86 @@
 export const modalityItems = [
   {
-    event: {
-      eventName: 'Desafio das Individuais',
-      date: '31 de março',
-      stage: '1ª Etapa',
-      place: 'Nova União',
-      content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-      imgUrl: '/images/heroImg.jpg'
-    }
+    title: 'CAMINHADA (APP)',
+    content: 'A Caminhada será realizada exclusivamente nas etapas locais, de forma individual pelo aplicativo (App) STRAVA. Com trecho ou distância pré-definida os participantes deverão registrar o percurso realizado no aplicativo e foto comprovando que o desafio foi cumprido. Todos os atletas que realizarem o trajeto ou distância receberão medalha de participação.',
+    imgUrl: '/images/modalities/heroImg.jpg',
+    categories: '1ª Etapa'
   },
   {
-    event: {
-      eventName: 'Evento 2',
-      date: '31 de fevereiro',
-      stage: '2ª Etapa',
-      place: 'BH',
-      content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-      imgUrl: '/images/noticia.png'
-    }
+    title: 'CICLISMO MTB (APP)',
+    content: 'A Caminhada será realizada exclusivamente nas etapas locais, de forma individual pelo aplicativo (App) STRAVA. Com trecho ou distância pré-definida os participantes deverão registrar o percurso realizado no aplicativo e foto comprovando que o desafio foi cumprido. Todos os atletas que realizarem o trajeto ou distância receberão medalha de participação.',
+    imgUrl: '/images/modalities/heroImg.jpg',
+    categories: '1ª Etapa'
   },
   {
-    event: {
-      eventName: 'Evento 3',
-      date: '31 de março',
-      stage: '3ª Etapa',
-      place: 'Cazaquistão',
-      content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-      imgUrl: '/images/heroImg.jpg'
-    }
+    title: 'CORRIDA (APP)',
+    content: 'A Caminhada será realizada exclusivamente nas etapas locais, de forma individual pelo aplicativo (App) STRAVA. Com trecho ou distância pré-definida os participantes deverão registrar o percurso realizado no aplicativo e foto comprovando que o desafio foi cumprido. Todos os atletas que realizarem o trajeto ou distância receberão medalha de participação.',
+    imgUrl: '/images/modalities/heroImg.jpg',
+    categories: '1ª Etapa'
+  },
+  {
+    title: 'CORRIDA (APP)',
+    content: 'A Caminhada será realizada exclusivamente nas etapas locais, de forma individual pelo aplicativo (App) STRAVA. Com trecho ou distância pré-definida os participantes deverão registrar o percurso realizado no aplicativo e foto comprovando que o desafio foi cumprido. Todos os atletas que realizarem o trajeto ou distância receberão medalha de participação.',
+    imgUrl: '/images/modalities/heroImg.jpg',
+    categories: '1ª Etapa'
+  },
+  {
+    title: 'CORRIDA (APP)',
+    content: 'A Caminhada será realizada exclusivamente nas etapas locais, de forma individual pelo aplicativo (App) STRAVA. Com trecho ou distância pré-definida os participantes deverão registrar o percurso realizado no aplicativo e foto comprovando que o desafio foi cumprido. Todos os atletas que realizarem o trajeto ou distância receberão medalha de participação.',
+    imgUrl: '/images/modalities/heroImg.jpg',
+    categories: '1ª Etapa'
+  },
+  {
+    title: 'CORRIDA (APP)',
+    content: 'A Caminhada será realizada exclusivamente nas etapas locais, de forma individual pelo aplicativo (App) STRAVA. Com trecho ou distância pré-definida os participantes deverão registrar o percurso realizado no aplicativo e foto comprovando que o desafio foi cumprido. Todos os atletas que realizarem o trajeto ou distância receberão medalha de participação.',
+    imgUrl: '/images/modalities/heroImg.jpg',
+    categories: '1ª Etapa'
+  },
+  {
+    title: 'CORRIDA (APP)',
+    content: 'A Caminhada será realizada exclusivamente nas etapas locais, de forma individual pelo aplicativo (App) STRAVA. Com trecho ou distância pré-definida os participantes deverão registrar o percurso realizado no aplicativo e foto comprovando que o desafio foi cumprido. Todos os atletas que realizarem o trajeto ou distância receberão medalha de participação.',
+    imgUrl: '/images/modalities/heroImg.jpg',
+    categories: '1ª Etapa'
+  },
+  {
+    title: 'CORRIDA (APP)',
+    content: 'A Caminhada será realizada exclusivamente nas etapas locais, de forma individual pelo aplicativo (App) STRAVA. Com trecho ou distância pré-definida os participantes deverão registrar o percurso realizado no aplicativo e foto comprovando que o desafio foi cumprido. Todos os atletas que realizarem o trajeto ou distância receberão medalha de participação.',
+    imgUrl: '/images/modalities/heroImg.jpg',
+    categories: '1ª Etapa'
+  },
+  {
+    title: 'CORRIDA (APP)',
+    content: 'A Caminhada será realizada exclusivamente nas etapas locais, de forma individual pelo aplicativo (App) STRAVA. Com trecho ou distância pré-definida os participantes deverão registrar o percurso realizado no aplicativo e foto comprovando que o desafio foi cumprido. Todos os atletas que realizarem o trajeto ou distância receberão medalha de participação.',
+    imgUrl: '/images/modalities/heroImg.jpg',
+    categories: '1ª Etapa'
+  },
+  {
+    title: 'CORRIDA (APP)',
+    content: 'A Caminhada será realizada exclusivamente nas etapas locais, de forma individual pelo aplicativo (App) STRAVA. Com trecho ou distância pré-definida os participantes deverão registrar o percurso realizado no aplicativo e foto comprovando que o desafio foi cumprido. Todos os atletas que realizarem o trajeto ou distância receberão medalha de participação.',
+    imgUrl: '/images/modalities/heroImg.jpg',
+    categories: '1ª Etapa'
+  },
+  {
+    title: 'CORRIDA (APP)',
+    content: 'A Caminhada será realizada exclusivamente nas etapas locais, de forma individual pelo aplicativo (App) STRAVA. Com trecho ou distância pré-definida os participantes deverão registrar o percurso realizado no aplicativo e foto comprovando que o desafio foi cumprido. Todos os atletas que realizarem o trajeto ou distância receberão medalha de participação.',
+    imgUrl: '/images/modalities/heroImg.jpg',
+    categories: '1ª Etapa'
+  },
+  {
+    title: 'CORRIDA (APP)',
+    content: 'A Caminhada será realizada exclusivamente nas etapas locais, de forma individual pelo aplicativo (App) STRAVA. Com trecho ou distância pré-definida os participantes deverão registrar o percurso realizado no aplicativo e foto comprovando que o desafio foi cumprido. Todos os atletas que realizarem o trajeto ou distância receberão medalha de participação.',
+    imgUrl: '/images/modalities/heroImg.jpg',
+    categories: '1ª Etapa'
+  },
+  {
+    title: 'CORRIDA (APP)',
+    content: 'A Caminhada será realizada exclusivamente nas etapas locais, de forma individual pelo aplicativo (App) STRAVA. Com trecho ou distância pré-definida os participantes deverão registrar o percurso realizado no aplicativo e foto comprovando que o desafio foi cumprido. Todos os atletas que realizarem o trajeto ou distância receberão medalha de participação.',
+    imgUrl: '/images/modalities/heroImg.jpg',
+    categories: '1ª Etapa'
+  },
+  {
+    title: 'CORRIDA (APP)',
+    content: 'A Caminhada será realizada exclusivamente nas etapas locais, de forma individual pelo aplicativo (App) STRAVA. Com trecho ou distância pré-definida os participantes deverão registrar o percurso realizado no aplicativo e foto comprovando que o desafio foi cumprido. Todos os atletas que realizarem o trajeto ou distância receberão medalha de participação.',
+    imgUrl: '/images/modalities/heroImg.jpg',
+    categories: '1ª Etapa'
   }
 ]

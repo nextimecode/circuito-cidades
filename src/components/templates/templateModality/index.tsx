@@ -1,6 +1,7 @@
+import { Container } from '@chakra-ui/react'
 import React from 'react'
+import AccordionOrganisms from '../../organisms/accordion'
 import Layout from '../layout'
-import Section from '../section'
 
 type TemplateModalityProps = {
   items: Record<string, any>[]
@@ -11,9 +12,9 @@ const TemplateModality = ({
 }: TemplateModalityProps) => {
   return (
     <Layout>
-      <Section>
-        {items[0].event.eventName}
-      </Section>
+      <Container maxW="container.xl">
+        <AccordionOrganisms items={items}/>
+      </Container>
     </Layout>
   )
 }
