@@ -1,13 +1,14 @@
 import React from 'react'
-import NavMenu from '../components/organisms/navMenu'
+import AccordionTemplate from '../components/templates/accordionTemplate'
 
-const Modalidades = () => {
+import { modalityItems } from './api/modalityItems'
+
+const Modality = () => {
   return (
     <>
-      <NavMenu />
-      <h1>Modalidades</h1>
+      <AccordionTemplate title="Modalidades" items={modalityItems} />
     </>
   )
 }
 
-export default Modalidades
+export default Modality

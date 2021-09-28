@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Grid } from '@chakra-ui/layout'
 import Noticia from '../../molecules/noticia'
-import SeeMore from '../../atoms/seeMore'
+// import SeeMore from '../../atoms/seeMore'
 import { NewsProps } from '../../../types/types'
 
 type Props = {
@@ -27,7 +27,7 @@ const LastNews = ({
         ))}
       </Grid>
 
-      <SeeMore label='Ver todas as notícias'/>
+      {/* <SeeMore label='Ver todas as notícias'/> */}
 
     </React.Fragment>
   )

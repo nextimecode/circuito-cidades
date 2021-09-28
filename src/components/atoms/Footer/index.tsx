@@ -1,42 +1,44 @@
-import { Box, Text, Image, Flex } from '@chakra-ui/react'
+import { Box, Text, Image, Flex, Center } from '@chakra-ui/react'
 import React, { PropsWithChildren } from 'react'
+import Link from 'next/link'
+import packageInfo from '../../../../package.json'
 
 type Props = {
   imageSrc?: string;
 }
 
+const version = packageInfo.version
+
 const Footer = ({
   imageSrc = '../images/footer/CardRealização - Desktop.png',
   children
-}: PropsWithChildren<Props>) =>
-
-  (
-    <Flex
-      w={['360px', '100%']}
-      h={['199px', '154px']}
-      bg={'white'}
-    >
-      <Flex
-        w='56px'
-        h='21px'
-        t='67px'
-      >
-        <Text
-          fontSize="14px" pt={['48px', '66px']} pl={['147px', '494px']}
-          color={'#4A5568'}
-          align={'center'}>
-          {children}
-        </Text>
-      </Flex>
-
-      <Box
-        ml={['0px', '500px']}
-        pt={['93px', '48px']}
-      >
-        <Image src={imageSrc} />
-      </Box>
-
-    </Flex>
+}: PropsWithChildren<Props>) => {
+  return (
+    <>
+      <Center pb={4}>
+        <Flex>
+          <Box p={3}>
+            <Text
+              fontSize="14px"
+              color={'#4A5568'}>
+              {children}
+            </Text>
+          </Box>
+          <Box>
+            <Image src={imageSrc} />
+          </Box>
+        </Flex>
+      </Center>
+      <Center py={2} bg='white'>
+        <Link href="https://nextime.com.br/">
+          <a>
+            <span>Site desenvolvido por NeXTIME</span>
+            <span>&copy; 2021. v.{version}</span>
+          </a>
+        </Link>
+      </Center>
+    </>
   )
+}
 
 export default Footer
