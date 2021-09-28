@@ -1,12 +1,12 @@
 import React from 'react'
-import TemplateModality from '../components/templates/templateModality'
+import AccordionTemplate from '../components/templates/accordionTemplate'
 
 import { modalityItems } from './api/modalityItems'
 
 const Modality = () => {
   return (
     <>
-      <TemplateModality items={modalityItems} />
+      <AccordionTemplate title="Modalidades" items={modalityItems} />
     </>
   )
 }
