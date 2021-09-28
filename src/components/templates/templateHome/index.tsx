@@ -21,9 +21,6 @@ const TemplateHome = ({
       <Section bg={'gray-50'} title="Últimas Notícias">
         <LastNews newsSet={newsSet}/>
       </Section>
-      {/* <NavigationBars>
-        <p>teste</p>
-      </NavigationBars> */}
     </Layout>
   )
 }

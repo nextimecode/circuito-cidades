@@ -29,7 +29,7 @@ const Footer = ({
           </Box>
         </Flex>
       </Center>
-      <Center py={2}>
+      <Center py={2} bg='white'>
         <Link href="https://nextime.com.br/">
           <a>
             <span>Site desenvolvido por NeXTIME</span>
