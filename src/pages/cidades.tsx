@@ -1,11 +1,12 @@
 import React from 'react'
-import NavMenu from '../components/organisms/navMenu'
+import AccordionTemplate from '../components/templates/accordionTemplate'
+
+import { cities } from './api/cities'
 
 const Cidades = () => {
   return (
     <>
-      <NavMenu />
-      <h1>Cidades</h1>
+      <AccordionTemplate title="Cidades" items={cities} />
     </>
   )
 }

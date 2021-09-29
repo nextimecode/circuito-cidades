@@ -31,13 +31,14 @@ const AccordionOrganisms = ({
           </Text>
           <AccordionPanel pb={4}>
             {item.content}
-            <Box pt={4}>
+            {item.imgUrl && <Box pt={4}>
               <Image
                 boxSize="md"
                 src={item.imgUrl}
                 alt={item.title}
               />
             </Box>
+            }
             <Text
               pt={4}
               pb={2}
