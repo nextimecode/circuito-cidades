@@ -17,6 +17,7 @@ const NavMenu = () => {
       bg="red.600"
       borderBottom={`${smallDevice ? '2px' : '4px'} solid #D8C68D`}
       position={'fixed'}
+      zIndex={2}
     >
       <Flex w="100%" justify="center" alignItems="center">
         {!smallDevice && (
