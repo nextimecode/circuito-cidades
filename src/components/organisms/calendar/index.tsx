@@ -4,7 +4,7 @@ import 'react-multi-date-picker/styles/colors/red.css'
 import portugueseLowercase from '../../../utils/calendar_language'
 import { dates } from '../../../pages/api/dates'
 
-export default function Example() {
+export default function EventCalendar() {
   return (
     <Calendar
       locale={portugueseLowercase}
