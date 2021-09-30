@@ -23,7 +23,7 @@ const TemplateHome = ({
       <Section bg={'gray-50'} title="Últimas Notícias">
         <LastNews newsSet={newsSet}/>
       </Section>
-      <Box bgImage="url('/images/calendar/image1.svg')" bgRepeat="no-repeat" bgPosition="right" bgSize='400px' bg>
+      <Box bgImage="url('/images/calendar/image1.svg')" bgRepeat="no-repeat" bgPosition="right" bgSize='400px'>
         <Section bg='transparent' title="Calendário de Eventos">
           <Flex zIndex={1}>
             <EventCalendar/>
