@@ -4,7 +4,7 @@ import Hero from '../../organisms/hero'
 import Section from '../../templates/section'
 import LastNews from '../../organisms/lastNews'
 import EventCalendar from '../../organisms/calendar'
-import { Flex } from '@chakra-ui/layout'
+import { Flex, Box } from '@chakra-ui/layout'
 
 type NextTemplateHomeProps = {
   heroItems: Record<string, any>[]
@@ -23,11 +23,13 @@ const TemplateHome = ({
       <Section bg={'gray-50'} title="Últimas Notícias">
         <LastNews newsSet={newsSet}/>
       </Section>
-      <Section title="Calendário de Eventos">
-        <Flex zIndex={1}>
-          <EventCalendar/>
-        </Flex>
-      </Section>
+      <Box bgImage="url('/images/calendar/image1.svg')" bgRepeat="no-repeat" bgPosition="right" bgSize='400px' bg>
+        <Section bg='transparent' title="Calendário de Eventos">
+          <Flex zIndex={1}>
+            <EventCalendar/>
+          </Flex>
+        </Section>
+      </Box>
     </Layout>
   )
 }
