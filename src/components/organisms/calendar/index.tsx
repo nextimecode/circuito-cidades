@@ -7,7 +7,7 @@ import Stages from '../../molecules/stages'
 import { Box, Flex } from '@chakra-ui/layout'
 import { useBreakpointValue } from '@chakra-ui/media-query'
 
-export default function EventCalendar() {
+const EventCalendar = () => {
   const smallDevice = useBreakpointValue({ base: true, md: false })
   return (
     <Flex justify='space-evenly' w='100%'>
@@ -25,3 +25,5 @@ export default function EventCalendar() {
     </Flex>
   )
 }
+
+export default EventCalendar

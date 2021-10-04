@@ -3,7 +3,7 @@ import React from 'react'
 import { stage } from '../../../pages/api/stage'
 import { useBreakpointValue } from '@chakra-ui/media-query'
 
-export default function Stages() {
+const Stages = () => {
   const first = stage.slice(0, 5)
   const second = stage.slice(5, stage.length)
   const smallDevice = useBreakpointValue({ base: true, md: false })
@@ -28,3 +28,5 @@ export default function Stages() {
     </Flex>
   )
 }
+
+export default Stages
