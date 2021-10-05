@@ -3,8 +3,15 @@ import Link from 'next/link'
 
 import { Flex, Button, HStack, Box, Image, Text, useDisclosure, useBreakpointValue } from '@chakra-ui/react'
 import { useRouter } from 'next/dist/client/router'
+import { NavLinkProps } from '../../../types/types'
 
-const NavMenu = () => {
+type Props = {
+  listNavLinks: NavLinkProps[]
+}
+
+const NavMenu = ({
+  listNavLinks
+}: Props) => {
   const { asPath } = useRouter()
   const smallDevice = useBreakpointValue({ base: true, md: false })
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -23,7 +30,30 @@ const NavMenu = () => {
           <Flex justify="space-between" w={1366} pl="83px" pr="67px">
             <Image src="/images/logos/logo.svg"/>
             <HStack spacing="47px" color="white">
-              <Box
+              {/* {listNavLinks.map((menuItem, index) => {
+                const isActive = (menuItem.href === asPath)
+                return (
+                  <Box
+                    fontWeight={isActive ? 800 : 600}
+                    position={isActive ? 'relative' : 'static'}
+                    _after={isActive
+                      ? {
+                        content: "''",
+                        position: 'absolute',
+                        height: '2px',
+                        width: '100%',
+                        bottom: '-2px',
+                        left: '0',
+                        background: 'red.400',
+                        borderRadius: '1px'
+                      }
+                      : { content: "''" }}
+                  >
+                    <Link href={menuItem.href}>{menuItem.label}</Link>
+                  </Box>
+                )
+              })} */}
+              {/* <Box
                 fontWeight={asPath === '/' ? 800 : 600}
                 position={asPath === '/' ? 'relative' : 'static'}
                 _after={asPath === '/'
@@ -115,7 +145,7 @@ const NavMenu = () => {
               </Box>
               <Button _hover={{ background: 'red.600', color: 'white' }} borderRadius={32} w={122} h="8" color="red.600" bg="white">
                 Inscreva-se
-              </Button>
+              </Button> */}
             </HStack>
           </Flex>
         )}

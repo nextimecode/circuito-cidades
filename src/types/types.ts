@@ -25,6 +25,7 @@ export interface NavLinkProps {
     href: string
     label: string
     star?: boolean
+    buttonTyped?: boolean
     items?: NavItemsProps[]
   }
 

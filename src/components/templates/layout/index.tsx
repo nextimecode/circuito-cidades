@@ -3,6 +3,7 @@ import React, { PropsWithChildren } from 'react'
 import { Box } from '@chakra-ui/layout'
 import Footer from '../../molecules/Footer'
 import Header from '../../organisms/header'
+import { listNavLinks } from '../../../pages/api/listNavLinks'
 
 type Props = {
   title?: string
@@ -22,7 +23,9 @@ const Layout = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header
+        listNavLinks={listNavLinks}
+      />
 
       <main>
         <Box as={'div'} pt={['50px', '92px']}>

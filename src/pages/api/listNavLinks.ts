@@ -1,44 +1,32 @@
-export const listLoggedNavLinks = [
+export const listNavLinks = [
   {
-    navLink: {
-      href: '/',
-      label: 'O Circuito'
-    }
+    href: '/',
+    label: 'O Circuito'
   },
   {
-    navLink: {
-      href: '/modalidades',
-      label: 'Modalidades'
-    }
+    href: '/modalidades',
+    label: 'Modalidades'
   },
   {
-    navLink: {
-      href: '/Cidades',
-      label: 'cidades'
-    }
+    href: '/Cidades',
+    label: 'cidades'
   },
   {
-    navLink: {
-      href: '/final',
-      label: 'Etapa Final'
-    }
+    href: '/final',
+    label: 'Etapa Final',
+    star: true
   },
   {
-    navLink: {
-      href: '/documentos',
-      label: 'Documentos'
-    }
+    href: '/documentos',
+    label: 'Documentos'
   },
   {
-    navLink: {
-      href: '/calendario',
-      label: 'Calendário'
-    }
+    href: '/calendario',
+    label: 'Calendário'
   },
   {
-    navLink: {
-      href: '/inscricoes',
-      label: 'Inscreva-se'
-    }
+    href: '/inscricoes',
+    label: 'Inscreva-se',
+    buttonTyped: true
   }
 ]
