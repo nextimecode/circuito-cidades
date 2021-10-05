@@ -21,15 +21,14 @@ export interface EventProps {
     content?: string
   }
 
-  export interface NavLinkProps {
+export interface NavLinkProps {
     href: string
     label: string
     star?: boolean
     items?: NavItemsProps[]
   }
 
-  export interface NavItemsProps {
+export interface NavItemsProps {
     href: string
     label: string
   }
-  
