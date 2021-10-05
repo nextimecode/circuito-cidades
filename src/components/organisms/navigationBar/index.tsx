@@ -63,7 +63,12 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       h="full"
       {...rest}>
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
-        <Text fontSize="2xl" color="primary" fontFamily="monospace" fontWeight="bold">
+        <Text
+          fontSize="2xl"
+          color="primary"
+          fontFamily="monospace"
+          fontWeight="bold"
+        >
           Modalidades
         </Text>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
@@ -98,7 +103,6 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
         onClick={onOpen}
         aria-label="open menu"
       />
-
       <Text fontSize="2xl" ml="8" fontFamily="monospace" fontWeight="bold">
         Logo
       </Text>

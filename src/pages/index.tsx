@@ -7,7 +7,7 @@ import { heroItems } from './api/heroItems'
 const Home = () => {
   return (
     <>
-      <TemplateHome itemsHero={heroItems} newsSet={newsItems} />
+      <TemplateHome heroItems={heroItems} newsSet={newsItems} />
     </>
   )
 }

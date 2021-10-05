@@ -1,0 +1,23 @@
+export const dates = [
+  new Date(2021, 10, 9),
+  new Date(2021, 10, 10),
+  new Date(2021, 10, 16),
+  new Date(2021, 10, 17),
+  new Date(2021, 10, 23),
+  new Date(2021, 10, 24),
+  new Date(2021, 10, 30),
+  new Date(2021, 10, 31),
+  new Date(2021, 11, 6),
+  new Date(2021, 11, 7),
+  new Date(2021, 11, 13),
+  new Date(2021, 11, 14),
+  new Date(2021, 11, 15),
+  new Date(2021, 11, 20),
+  new Date(2021, 11, 21),
+  new Date(2021, 11, 27),
+  new Date(2021, 11, 28),
+  new Date(2021, 12, 4),
+  new Date(2021, 12, 5),
+  new Date(2021, 12, 18),
+  new Date(2021, 12, 19)
+]
