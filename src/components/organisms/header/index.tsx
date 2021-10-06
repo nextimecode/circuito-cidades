@@ -11,7 +11,7 @@ type Props = {
 const Header = ({
   listNavLinks,
   smallDevice = true,
-  menuHeight = '50px',
+  menuHeight = '50px'
 }: Props) => {
   return (
     <NavMenu

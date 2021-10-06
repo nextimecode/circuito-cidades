@@ -15,7 +15,7 @@ type Props = {
 const NavMenu = ({
   listNavLinks,
   smallDevice,
-  menuHeight,
+  menuHeight
 }: Props) => {
   const { asPath } = useRouter()
   const { isOpen, onOpen, onClose } = useDisclosure()

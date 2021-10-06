@@ -11,13 +11,11 @@ type Props = {
   description?: string
 }
 
-
 const Layout = ({
   children,
   title = 'Circuito Cidades',
   description = 'Circuito Cidades.'
 }: PropsWithChildren<Props>) => {
-
   const smallDevice = useBreakpointValue({ base: true, md: false })
   const menuHeight = smallDevice ? '50px' : '92px'
 
@@ -38,13 +36,11 @@ const Layout = ({
           <Box
             as={'div'}
             pt={['50px', '92px']}
-            minH={[`calc(100vh - 93px)`, `calc(100vh - 56px)`]}
+            minH={['calc(100vh - 93px)', 'calc(100vh - 56px)']}
           >
             {children}
           </Box>
           <Footer urlLogo={'/images/logos/logo.png'}/>
-
-          
 
         </Box>
       </main>

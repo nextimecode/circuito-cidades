@@ -27,7 +27,6 @@ const Realizacao = () => {
         <NextFotterBox imageSrc="../images/footer/Vector.png">A definir (Grande final)</NextFotterBox>
       </Flex>
 
-
       {/* <FooterAtoms imageSrc="../images/footer/image6.png">APOIO</FooterAtoms> */}
     </Box>
   )
