@@ -5,7 +5,6 @@ import { listNavLinks } from './api/listNavLinks'
 const Calendario = () => {
   return (
     <>
-      <NavMenu listNavLinks={listNavLinks} />
       <h1>Calendário</h1>
     </>
   )

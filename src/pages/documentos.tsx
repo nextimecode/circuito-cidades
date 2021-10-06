@@ -5,7 +5,6 @@ import { listNavLinks } from './api/listNavLinks'
 const Documentos = () => {
   return (
     <>
-      <NavMenu listNavLinks={listNavLinks} />
       <h1>Documentos</h1>
     </>
   )
