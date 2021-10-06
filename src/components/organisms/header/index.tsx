@@ -1,10 +1,19 @@
 import React from 'react'
+import { NavLinkProps } from '../../../types/types'
 import NavMenu from '../navMenu'
 
-const Header = () => {
+type Props = {
+  listNavLinks: NavLinkProps[]
+}
+
+const Header = ({
+  listNavLinks
+}: Props) => {
   return (
     <header>
-      <NavMenu/>
+      <NavMenu
+        listNavLinks={listNavLinks}
+      />
     </header>
   )
 }

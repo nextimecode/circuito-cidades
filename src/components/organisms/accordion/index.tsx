@@ -9,43 +9,45 @@ import {
   Image,
   Text
 } from '@chakra-ui/react'
+import DefaultPost from '../defaultPost'
+import { AccordionPostProps } from '../../../types/types'
 
 type AccordionOrganismsProps = {
-  items?: Record<string, any>[]
+  items?: AccordionPostProps[]
 }
 
 const AccordionOrganisms = ({
   items = []
 }: AccordionOrganismsProps) => {
   return (
-    <Accordion>
+    <Accordion allowMultiple>
       {items.map((item, index) => (
-        <AccordionItem key={index}>
-          <Text fontWeight="bold">
-            <AccordionButton>
-              <Box flex="1" textAlign="left" color="primary">
-                {item.title}
-              </Box>
-              <AccordionIcon color="primary" />
-            </AccordionButton>
-          </Text>
-          <AccordionPanel pb={4}>
-            {item.content}
-            {item.imgUrl && <Box pt={4}>
-              <Image
-                boxSize="md"
-                src={item.imgUrl}
-                alt={item.title}
-              />
-            </Box>
-            }
-            <Text
-              pt={4}
-              pb={2}
-              fontSize="xs"
-            >
-              {item.categories}
+        <AccordionItem
+          key={index}
+          border='none'
+          borderColor='none'
+        >
+          <Box
+            as='div'
+            borderBottom='solid 1px'
+            borderColor='#E2E8F0'
+            mx={4}
+            bg='none'
+          >
+            <Text fontWeight="bold">
+              <AccordionButton>
+                <Box flex="1" textAlign="left" color="primary">
+                  {item.title}
+                </Box>
+                <AccordionIcon color="primary" />
+              </AccordionButton>
             </Text>
+
+          </Box>
+          <AccordionPanel pb={4} px={0}>
+
+            <DefaultPost item={item}/>
+
           </AccordionPanel>
         </AccordionItem>
       ))}

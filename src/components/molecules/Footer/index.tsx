@@ -1,43 +1,80 @@
-import { Box, Container, Flex, Text } from '@chakra-ui/react'
-import React, { PropsWithChildren } from 'react'
-import FooterAtoms from '../../atoms/Footer'
-import NextFotterBox from '../../atoms/NextFotterBox'
+import React from 'react'
+
+import { Box, Flex, HStack, Link } from '@chakra-ui/react'
+import NextimeSvg from '../../atoms/nextimeSvg'
 
 type Props = {
-  children?: string
+  urlLogo: string
 }
+
+const NeXTIMEColor = '#202F4F'
+
 const Footer = ({
-  children = ''
-}: PropsWithChildren<Props>) => {
+  urlLogo
+}: Props) => {
   return (
-    <Box pt={5} bg='#F7FAFC'>
-      <Container maxW="container.xl">
-        <Box pt={5}>
-          <Box>
-            <Text fontSize={['24px', '36px']} color='primary'>
-              Realização
-            </Text>
-          </Box>
+    <Flex
+      bgColor='primary'
+      color='white'
+      fontSize='sm'
+      w='100%'
+      display={['block', 'flex']}
+      alignItems='center'
 
-          <Flex
-            direction={['column', 'column', 'row', 'row']}
-            rounded='lg'
-            p={5}
+    >
+      <Box
+        as='div'
+        w={['100%', '50%']}
+        textAlign='center'
+        py={[3, 4]}
+      >
+          Copyright © {new Date().getFullYear()} | Circuito Cidades
+      </Box>
+
+      <Box
+        as='div'
+        placeContent='center'
+        w={['100%', '50%']}
+        py={[3, 4]}
+      >
+        <HStack
+          display='flex'
+          placeContent={['center', 'auto']}
+        >
+          <Box as='span'>Desenvolvido por </Box>
+          <Link
+            href="https://nextime.com.br"
+            // style={{fill: 'white'}}
+            _hover={{
+              fill: '#202F4F',
+              bgColor: 'black'
+            }}
           >
-            <NextFotterBox imageSrc="../images/footer/image1.png">Nova União - MG</NextFotterBox>
-            <NextFotterBox imageSrc="../images/footer/image2.png">João Monlevade - MG</NextFotterBox>
-            <NextFotterBox imageSrc="../images/footer/image3.png">Rio Piracicaba - MG</NextFotterBox>
-            <NextFotterBox imageSrc="../images/footer/image4.png"> S.D. Prata e Santa Maria - MG</NextFotterBox>
-            <NextFotterBox imageSrc="../images/footer/image5.png">São Gonçalo do Rio Abaixo - MG</NextFotterBox>
-            <NextFotterBox imageSrc="../images/footer/Vector.png">A definir (Grande final)</NextFotterBox>
-          </Flex>
+            <NextimeSvg size={1.5}
+              // color={'white'}
+            />
+          </Link>
+        </HStack>
 
-          <FooterAtoms imageSrc="../images/footer/image6.png">APOIO</FooterAtoms>
-
-          {children}
+        <Box as='div' display='none'>
+          Desenvolvedores:
+          <Link href="https://github.com/hpmoreira05">
+              Henrique Pozzolini
+          </Link>
+          <Link href="https://github.com/lucasFilppe">
+              Lucas Filipe
+          </Link>
+          <Link href="https://github.com/marcuslamounier">
+              Marcus Lamounier
+          </Link>
+          <Link href="https://github.com/phdduarte">
+              Pedro Duarte
+          </Link>
         </Box>
-      </Container>
-    </Box>
+      </Box>
+
+    </Flex>
   )
 }
+
 export default Footer

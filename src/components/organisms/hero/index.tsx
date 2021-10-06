@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, Text, VStack } from '@chakra-ui/layout'
+import { Box, Text, VStack } from '@chakra-ui/react'
 import HeroCard from '../../molecules/heroCard'
 import { EventProps } from '../../../types/types'
 
