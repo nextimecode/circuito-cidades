@@ -5,6 +5,7 @@ import Section from '../../templates/section'
 import LastNews from '../../organisms/lastNews'
 import EventCalendar from '../../organisms/calendar'
 import { Flex, Box } from '@chakra-ui/layout'
+import Realizacao from '../../molecules/realizacao'
 
 type NextTemplateHomeProps = {
   heroItems: Record<string, any>[]
@@ -30,6 +31,9 @@ const TemplateHome = ({
           </Flex>
         </Section>
       </Box>
+      <Section>
+        <Realizacao />
+      </Section>
     </Layout>
   )
 }

@@ -44,15 +44,17 @@ const Footer = ({
           <Box as='span'>Desenvolvido por </Box>
           <Link
             href="https://nextime.com.br"
-            // style={{fill: 'white'}}
+            // style={{fill: '#202F4F'}}
+            style={{
+              // fill: '#202F4F',
+              transition: '0.3s'
+            }}
             _hover={{
-              fill: '#202F4F',
-              bgColor: 'black'
+              fill: 'black',
+              transition: '0.3s'
             }}
           >
-            <NextimeSvg size={1.5}
-              // color={'white'}
-            />
+            <NextimeSvg size={1.5}/>
           </Link>
         </HStack>
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, Text, VStack } from '@chakra-ui/react'
+import { Box, Text, VStack, HStack } from '@chakra-ui/react'
 import HeroCard from '../../molecules/heroCard'
 import { EventProps } from '../../../types/types'
 
@@ -14,36 +14,46 @@ const Hero = ({
   const currentEvent = hero[0].event
 
   return (
-    <Box
+    <HStack
       as='div'
-      display={['block', 'flex']}
       flexDir={['inherit', 'row-reverse']}
+      display={['block', 'flex']}
       px={[0, 10]}
-      py={[0, 6]}
+      py={[0, 5]}
       w={'100%'}
     >
-
       <HeroCard event={currentEvent}/>
 
-      <VStack maxW={['100%', '40vw']} px={[4, 0]} pr={[4, 8]} py={[8, 0]}>
-
-        <Box
-          as='div'
-          fontSize={['36px', '64px']}
-        >
-          <h1>{currentEvent.eventName}</h1>
-        </Box>
+      <VStack
+        as='div'
+        w={['100%', '50%']}
+        pl={[4, 0]}
+        pr={[4, 10]}
+        py={4}
+      >
 
         <Text
-          color={'gray.500'}
-          fontSize='14px'
-          fontWeight={500}
+          fontSize={['3xl', '5xl']}
+          textAlign='justify'
+          alignSelf='start'
+          color='primary'
+          fontWeight={700}
+        >
+          {currentEvent.eventName}
+        </Text>
+
+        <Text
+          pt={4}
+          pb={2}
+          fontSize={['sm', 'md']}
+          textAlign='justify'
         >
           {currentEvent.content}
         </Text>
 
       </VStack>
-    </Box>
+
+    </HStack>
   )
 }
 

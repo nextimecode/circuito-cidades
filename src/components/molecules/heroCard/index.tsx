@@ -12,8 +12,8 @@ const HeroCard = ({
 }: Props) => {
   return (
     <Box
-      w={['100%', '50vw']}
-      h={['80vw', '30vw']}
+      w={['100%', '50%']}
+      minH={['80vw', '30vw']}
       boxShadow={'xl'}
       rounded={['none', 'md']}
       bgImage={`url("${event.imgUrl}")`}

@@ -17,7 +17,7 @@ const NextimeSvg = ({
     <svg
       width={width}
       height={height}
-      fill={'#202F4F'}
+      // fill={'white'}
       viewBox="0 0 105.83333 26.458334"
       version="1.1"
       id="svg8"

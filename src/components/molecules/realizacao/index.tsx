@@ -7,7 +7,7 @@ import NextFotterBox from '../../atoms/NextFotterBox'
 
 const Realizacao = () => {
   return (
-    <Box pt={5}>
+    <Box as='div' px={[4, 10]}>
       <Box>
         <Text fontSize={['24px', '36px']} color='primary'>
               Realização
@@ -27,7 +27,8 @@ const Realizacao = () => {
         <NextFotterBox imageSrc="../images/footer/Vector.png">A definir (Grande final)</NextFotterBox>
       </Flex>
 
-      <FooterAtoms imageSrc="../images/footer/image6.png">APOIO</FooterAtoms>
+
+      {/* <FooterAtoms imageSrc="../images/footer/image6.png">APOIO</FooterAtoms> */}
     </Box>
   )
 }

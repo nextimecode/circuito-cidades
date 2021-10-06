@@ -8,20 +8,23 @@ import LinkMenu from '../../molecules/linkMenu'
 
 type Props = {
   listNavLinks: NavLinkProps[]
+  smallDevice: boolean
+  menuHeight: string
 }
 
 const NavMenu = ({
-  listNavLinks
+  listNavLinks,
+  smallDevice,
+  menuHeight,
 }: Props) => {
   const { asPath } = useRouter()
-  const smallDevice = useBreakpointValue({ base: true, md: false })
   const { isOpen, onOpen, onClose } = useDisclosure()
   const menuIcons = ['/icons/hamburgerMenu.svg', '/icons/closeIcon.svg']
 
   return (
     <Box
       w="100vw"
-      h={smallDevice ? '50px' : '92px'}
+      h={menuHeight}
       bgColor='primary'
       borderBottom={`${smallDevice ? '2px' : '4px'} solid #D8C68D`}
       position={'fixed'}

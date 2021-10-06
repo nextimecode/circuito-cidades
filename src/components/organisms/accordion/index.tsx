@@ -20,7 +20,7 @@ const AccordionOrganisms = ({
   items = []
 }: AccordionOrganismsProps) => {
   return (
-    <Accordion allowMultiple>
+    <Accordion allowMultiple pb={6}>
       {items.map((item, index) => (
         <AccordionItem
           key={index}
