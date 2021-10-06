@@ -33,7 +33,7 @@ const Layout = ({
         </Box>
       </main>
 
-      <Footer />
+      <Footer urlLogo={'/images/logos/logo.png'}/>
     </>
   )
 }

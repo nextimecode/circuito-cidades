@@ -5,16 +5,18 @@ export const listNavLinks = [
   },
   {
     href: '/modalidades',
-    label: 'Modalidades'
+    label: 'Modalidades',
+    arrowIcon: true
   },
   {
-    href: '/Cidades',
-    label: 'cidades'
+    href: '/cidades',
+    label: 'Cidades',
+    arrowIcon: true
   },
   {
     href: '/final',
     label: 'Etapa Final',
-    star: true
+    starIcon: true
   },
   {
     href: '/documentos',

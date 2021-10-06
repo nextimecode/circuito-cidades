@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { Flex, Button, HStack, Box, Image, Text, useDisclosure, useBreakpointValue } from '@chakra-ui/react'
+import { Flex, Button, HStack, VStack, Box, Image, Text, useDisclosure, useBreakpointValue } from '@chakra-ui/react'
 import { useRouter } from 'next/dist/client/router'
 import { NavLinkProps } from '../../../types/types'
+import LinkMenu from '../../molecules/linkMenu'
 
 type Props = {
   listNavLinks: NavLinkProps[]
@@ -21,134 +22,26 @@ const NavMenu = ({
     <Box
       w="100vw"
       h={smallDevice ? '50px' : '92px'}
-      bg="red.600"
+      bgColor='primary'
       borderBottom={`${smallDevice ? '2px' : '4px'} solid #D8C68D`}
       position={'fixed'}
       zIndex={2}
     >
       <Flex w="100%" justify="center" alignItems="center">
         {!smallDevice && (
-          <Flex justify="space-between" w={1366} pl="83px" pr="67px">
+          <HStack spacing={15} justifyContent='space-between'>
             <Image src="/images/logos/logo.svg"/>
-            <HStack spacing="47px" color="white">
-              {/* {listNavLinks.map((menuItem, index) => {
-                const isActive = (menuItem.href === asPath)
-                return (
-                  <Box
-                    fontWeight={isActive ? 800 : 600}
-                    position={isActive ? 'relative' : 'static'}
-                    _after={isActive
-                      ? {
-                        content: "''",
-                        position: 'absolute',
-                        height: '2px',
-                        width: '100%',
-                        bottom: '-2px',
-                        left: '0',
-                        background: 'red.400',
-                        borderRadius: '1px'
-                      }
-                      : { content: "''" }}
-                  >
-                    <Link href={menuItem.href}>{menuItem.label}</Link>
-                  </Box>
-                )
-              })} */}
-              {/* <Box
-                fontWeight={asPath === '/' ? 800 : 600}
-                position={asPath === '/' ? 'relative' : 'static'}
-                _after={asPath === '/'
-                  ? {
-                    content: "''",
-                    position: 'absolute',
-                    height: '2px',
-                    width: '100%',
-                    bottom: '-2px',
-                    left: '0',
-                    background: 'red.400',
-                    borderRadius: '1px'
-                  }
-                  : { content: "''" }}
-              >
-                <Link href="/">O Circuito</Link>
-              </Box>
-              <Box
-                fontWeight={asPath === '/modalidades' ? 800 : 600}
-                position={asPath === '/modalidades' ? 'relative' : 'static'}
-                _after={asPath === '/modalidades'
-                  ? {
-                    content: "''",
-                    position: 'absolute',
-                    height: '2px',
-                    width: '100%',
-                    bottom: '-2px',
-                    left: '0',
-                    background: 'red.400',
-                    borderRadius: '1px'
-                  }
-                  : { content: "''" }}
-              >
-                <Link href="/modalidades">Modalidades</Link>
-              </Box>
-              <Box
-                fontWeight={asPath === '/cidades' ? 800 : 600}
-                position={asPath === '/cidades' ? 'relative' : 'static'}
-                _after={asPath === '/cidades'
-                  ? {
-                    content: "''",
-                    position: 'absolute',
-                    height: '2px',
-                    width: '100%',
-                    bottom: '-2px',
-                    left: '0',
-                    background: 'red.400',
-                    borderRadius: '1px'
-                  }
-                  : { content: "''" }}
-              >
-                <Link href="/cidades">Cidades</Link>
-              </Box>
-              <Box
-                fontWeight={asPath === '/documentos' ? 800 : 600}
-                position={asPath === '/documentos' ? 'relative' : 'static'}
-                _after={asPath === '/documentos'
-                  ? {
-                    content: "''",
-                    position: 'absolute',
-                    height: '2px',
-                    width: '100%',
-                    bottom: '-2px',
-                    left: '0',
-                    background: 'red.400',
-                    borderRadius: '1px'
-                  }
-                  : { content: "''" }}
-              >
-                <Link href="/documentos">Documentos</Link>
-              </Box>
-              <Box
-                fontWeight={asPath === '/calendario' ? 800 : 600}
-                position={asPath === '/calendario' ? 'relative' : 'static'}
-                _after={asPath === '/calendario'
-                  ? {
-                    content: "''",
-                    position: 'absolute',
-                    height: '2px',
-                    width: '100%',
-                    bottom: '-2px',
-                    left: '0',
-                    background: 'red.400',
-                    borderRadius: '1px'
-                  }
-                  : { content: "''" }}
-              >
-                <Link href="/calendario">Calendário</Link>
-              </Box>
-              <Button _hover={{ background: 'red.600', color: 'white' }} borderRadius={32} w={122} h="8" color="red.600" bg="white">
-                Inscreva-se
-              </Button> */}
+            <HStack w='100%' spacing={22}>
+              {listNavLinks.map((navLink, index) => (
+                <LinkMenu
+                  key={index}
+                  navLink={navLink}
+                  path={asPath}
+                  smallDevice={false}
+                />
+              ))}
             </HStack>
-          </Flex>
+          </HStack>
         )}
         {smallDevice && (
           <Flex color="white" alignItems="center" justify="space-between" w="90%">
@@ -168,38 +61,29 @@ const NavMenu = ({
       </Flex>
 
       {smallDevice && (
-        <div>
+        <Box as ='div'>
           {isOpen && (
-            <Flex spacing="47px" color="white" bg="red.600" w="100%" direction="column" borderBottom="8px solid #D8C68D" position="absolute">
-              <Box borderBottom="1px solid #E53E3E" w="312px" m="auto" py="16px">
-                <Link href="/">O Circuito</Link>
-              </Box>
-              <Flex borderBottom="1px solid #E53E3E" w="312px" m="auto" py="16px" justify="space-between">
-                <Link href="/modalidades">Modalidades</Link>
-                <Image src="/icons/forwardIcon.svg"/>
-              </Flex>
-              <Flex borderBottom="1px solid #E53E3E" w="312px" m="auto" py="16px" justify="space-between">
-                <Link href="/cidades">Cidades</Link>
-                <Image src="/icons/forwardIcon.svg"/>
-              </Flex>
-              <Flex alignItems="center" borderBottom="1px solid #E53E3E" w="312px" m="auto" py="16px">
-                <Image src="/icons/starIcon.svg" pr="16px"/>
-                <Link href="#">Etapa final</Link>
-              </Flex>
-              <Box borderBottom="1px solid #E53E3E" w="312px" m="auto" py="16px">
-                <Link href="/documentos">Documentos</Link>
-              </Box>
-              <Box w="312px" m="auto" py="16px">
-                <Link href="/calendario">Calendário</Link>
-              </Box>
-              <Flex justify="center" pt="60px" pb="50px">
-                <Button borderRadius={32} w={312} h="48px" color="red.600" bg="white">
-                  Inscreva-se
-                </Button>
-              </Flex>
+            <Flex
+              py={4}
+              bg="primary"
+              w="100%"
+              direction="column"
+              borderBottom="8px solid #D8C68D"
+              position="absolute"
+            >
+              {listNavLinks.map((navLink, index) => (
+                <Box
+                  key={index}
+                  w="100%"
+                  m='auto'
+                  px={6}
+                >
+                  <LinkMenu navLink={navLink} path={asPath} />
+                </Box>
+              ))}
             </Flex>
           )}
-        </div>
+        </Box>
       )}
     </Box>
   )
