@@ -40,7 +40,7 @@ const Layout = ({
           >
             {children}
           </Box>
-          
+
           <Footer/>
 
         </Box>
