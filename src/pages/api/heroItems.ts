@@ -5,7 +5,10 @@ export const heroItems = [
       date: '31 de março',
       stage: '1ª Etapa',
       place: 'Nova União',
-      content: 'O circuito cidades é um evento esportivo de caráter regional, exclusivo de modalidades individuais ou em duplas, que surgiu como alternativa para realização de atividades em meio a pandemia, fomentando a prática desportiva nas cidades e garantindo a segurança dos participantes, incluindo crianças, adolescentes, adultos e idosos. O evento será realizado em uma ou duas datas locais para cada cidade, sendo essas classificatórias para etapa final, a ser realizada em dezembro de 2021. Dentre as atividades ofertadas, estão disponíveis para adesão das cidades as seguintes modalidades: Caminhada (app); Ciclismo MTB (app); Corrida (app); Dama; Desafio NBA (lances de 3m); E-Sports (FIFA); Futebol Freestyle (embaixadinhas); Futebol de Mesa; Futevôlei; Peteca; Sinuca; Slack Line; Taekwondo (apresentação); Tênis de Campo; Tênis de Mesa; Vôlei Dupla; Xadrez. ',
+      content: `O Circuito Cidades é um evento esportivo de cooperação intermunicipal em caráter regional, exclusivo de modalidades individuais ou em duplas, que surgiu como alternativa para realização de atividades em meio a pandemia, fomentando a prática desportiva nas cidades e garantindo a segurança dos participantes, incluindo crianças, adolescentes, adultos e idosos.
+
+      O evento será realizado em uma ou duas datas locais para cada cidade, sendo essas, fases classificatórias para a Etapa Final (a ser realizada no mês de dezembro de 2021).
+      `,
       imgUrl: '/images/heroImg.jpg'
     }
   },

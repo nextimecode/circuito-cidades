@@ -1,15 +1,11 @@
 import React from 'react'
 
-import { Box } from '@chakra-ui/layout'
-
 type Props = {
     size?: number
-    color?: string
 }
 
 const NextimeSvg = ({
-  size = 1.5,
-  color = 'white'
+  size = 1.5
 }: Props) => {
   const height = `${size}rem`
   const width = `${4 * size}rem`
@@ -17,7 +13,6 @@ const NextimeSvg = ({
     <svg
       width={width}
       height={height}
-      // fill={'white'}
       viewBox="0 0 105.83333 26.458334"
       version="1.1"
       id="svg8"

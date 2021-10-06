@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React, { PropsWithChildren } from 'react'
 import { Box } from '@chakra-ui/layout'
-import Footer from '../../molecules/Footer'
+import Footer from '../../organisms/footer'
 import Header from '../../organisms/header'
 import { listNavLinks } from '../../../pages/api/listNavLinks'
 import { useBreakpointValue } from '@chakra-ui/media-query'

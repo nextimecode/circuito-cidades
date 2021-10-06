@@ -1,4 +1,5 @@
 import React from 'react'
+import packageInfo from '../../../../package.json'
 
 import { Box, Flex, HStack, Link } from '@chakra-ui/react'
 import NextimeSvg from '../../atoms/nextimeSvg'
@@ -8,6 +9,7 @@ type Props = {
 }
 
 const NeXTIMEColor = '#202F4F'
+const version = packageInfo.version
 
 const Footer = ({
   urlLogo
@@ -28,7 +30,7 @@ const Footer = ({
         textAlign='center'
         py={[3, 4]}
       >
-          Copyright © {new Date().getFullYear()} | Circuito Cidades
+          Copyright © {new Date().getFullYear()} | Circuito Cidades | v.{version}
       </Box>
 
       <Box
@@ -44,15 +46,12 @@ const Footer = ({
           <Box as='span'>Desenvolvido por </Box>
           <Link
             href="https://nextime.com.br"
-            // style={{fill: '#202F4F'}}
-            style={{
-              // fill: '#202F4F',
-              transition: '0.3s'
-            }}
             _hover={{
-              fill: 'black',
-              transition: '0.3s'
+              transition: '0.3s',
+              fill: NeXTIMEColor
             }}
+            transition='0.3s'
+            fill='white'
           >
             <NextimeSvg size={1.5}/>
           </Link>

@@ -64,7 +64,7 @@ const NavMenu = ({
       </Flex>
 
       {smallDevice && (
-        <Box as ='div'>
+        <Box as='div'>
           {isOpen && (
             <Flex
               py={4}
