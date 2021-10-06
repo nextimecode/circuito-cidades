@@ -40,7 +40,8 @@ const Layout = ({
           >
             {children}
           </Box>
-          <Footer urlLogo={'/images/logos/logo.png'}/>
+          
+          <Footer/>
 
         </Box>
       </main>
