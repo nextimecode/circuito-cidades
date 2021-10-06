@@ -7,7 +7,7 @@ import Layout from '../layout'
 type AccordionTemplateProps = {
   title: string
   items: AccordionPostProps[]
-  isCity: boolean
+  isCity?: boolean
 }
 
 const AccordionTemplate = ({
