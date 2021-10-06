@@ -4,16 +4,10 @@ import packageInfo from '../../../../package.json'
 import { Box, Flex, HStack, Link } from '@chakra-ui/react'
 import NextimeSvg from '../../atoms/nextimeSvg'
 
-type Props = {
-  urlLogo: string
-}
-
 const NeXTIMEColor = '#202F4F'
 const version = packageInfo.version
 
-const Footer = ({
-  urlLogo
-}: Props) => {
+const Footer = () => {
   return (
     <Flex
       bgColor='primary'

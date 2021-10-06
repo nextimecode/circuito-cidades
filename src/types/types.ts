@@ -33,6 +33,7 @@ export interface NavLinkProps {
 export interface NavItemsProps {
   href: string
   label: string
+  target?: string
 }
 
 export interface AccordionPostProps {
@@ -40,4 +41,22 @@ export interface AccordionPostProps {
   content: string
   imgUrl?: string
   categories: string
+  rulesUrl?: string
+  info?: EnrollmentInfoProps
+  stages?: StagesProps[]
+}
+
+export interface StagesProps {
+  stage: string
+  date?: string
+  modalities: string
+  finished?: boolean
+  dueDate?: string
+  reportUrl: string
+}
+
+export interface EnrollmentInfoProps {
+  place?: string
+  location?: string
+  contact?: string
 }

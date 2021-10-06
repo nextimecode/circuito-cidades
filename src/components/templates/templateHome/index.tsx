@@ -21,9 +21,11 @@ const TemplateHome = ({
       <Section>
         <Hero hero={heroItems}/>
       </Section>
-      <Section bg={'gray-50'} title="Últimas Notícias">
+
+      {/* <Section bg={'gray-50'} title="Últimas Notícias">
         <LastNews newsSet={newsSet}/>
-      </Section>
+      </Section> */}
+
       <Box bgImage="url('/images/calendar/image1.svg')" bgRepeat="no-repeat" bgPosition="right" bgSize='400px'>
         <Section bg='transparent' title="Calendário de Eventos">
           <Flex zIndex={1}>

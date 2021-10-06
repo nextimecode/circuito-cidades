@@ -1,21 +1,30 @@
 import React from 'react'
 
-import { Box, Text, HStack, Image } from '@chakra-ui/react'
+import { Box, HStack, Image } from '@chakra-ui/react'
 import { AccordionPostProps } from '../../../types/types'
+import Title from '../../atoms/title'
 
 type Props = {
+    children: unknown
     item: AccordionPostProps
+    showTitle?: boolean
+    px?: number[]
+    py?: number[]
 }
 
 const DefaultPost = ({
-  item
+  children,
+  item,
+  showTitle = false,
+  px = [0, 21],
+  py = [0, 6]
 }: Props) => {
   return (
     <HStack
       as='div'
       display={['block', 'flex']}
-      px={[0, 21]}
-      py={[0, 6]}
+      px={px}
+      py={py}
       w={'100%'}
     >
       <Box
@@ -23,23 +32,16 @@ const DefaultPost = ({
         pl={[4, 0]}
         pr={[4, 8]}
         py={4}
+        w={['100%', '50%']}
       >
+        {showTitle &&
+          <Title
+            label={item.title}
+            alignSelf={['flex-start']}
+          />
+        }
 
-        <Text
-          fontSize={['sm', 'md']}
-          textAlign='justify'
-
-        >
-          {item.content}
-        </Text>
-
-        <Text
-          pt={4}
-          pb={2}
-          fontSize="xs"
-        >
-          {item.categories}
-        </Text>
+        {children}
 
       </Box>
 
@@ -51,6 +53,7 @@ const DefaultPost = ({
       />
 
     </HStack>
+
   )
 }
 

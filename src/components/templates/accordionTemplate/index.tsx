@@ -7,11 +7,13 @@ import Layout from '../layout'
 type AccordionTemplateProps = {
   title: string
   items: AccordionPostProps[]
+  isCity: boolean
 }
 
 const AccordionTemplate = ({
   title = '',
-  items = []
+  items = [],
+  isCity = false
 }: AccordionTemplateProps) => {
   return (
     <Layout>
@@ -25,7 +27,10 @@ const AccordionTemplate = ({
         >
           {title}
         </Heading>
-        <AccordionOrganisms items={items}/>
+        <AccordionOrganisms
+          items={items}
+          isCity={isCity}
+        />
       </Container>
     </Layout>
   )

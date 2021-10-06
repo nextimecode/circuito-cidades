@@ -2,7 +2,6 @@ import React from 'react'
 
 import { Box, Text, Flex } from '@chakra-ui/react'
 
-import FooterAtoms from '../../atoms/Footer'
 import NextFotterBox from '../../atoms/NextFotterBox'
 
 const Realizacao = () => {

@@ -1,7 +1,6 @@
 import React from 'react'
-import Link from 'next/link'
 
-import { Flex, Button, HStack, VStack, Box, Image, Text, useDisclosure, useBreakpointValue } from '@chakra-ui/react'
+import { Flex, Button, HStack, Box, Image, Text, useDisclosure } from '@chakra-ui/react'
 import { useRouter } from 'next/dist/client/router'
 import { NavLinkProps } from '../../../types/types'
 import LinkMenu from '../../molecules/linkMenu'

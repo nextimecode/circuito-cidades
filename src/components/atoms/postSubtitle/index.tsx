@@ -11,7 +11,7 @@ const PostSubtitle = ({
 }: Props) => {
   return (
     <Text
-      color={'#718096'}
+      color={'black'}
       fontFamily='Inter'
       fontWeight={500}
       fontSize={['16px', '20px']}

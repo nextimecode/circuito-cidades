@@ -6,14 +6,14 @@ type Props = {
   children: ReactNode
   title?: string
   bg?: string
-  px?: number
+  px?: number[]
 }
 
 const Section = ({
   children,
   title,
   bg = 'white',
-  px = 0
+  px = [0]
 }: Props) => {
   return (
     <VStack

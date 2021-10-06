@@ -1,8 +1,9 @@
 import React from 'react'
 
-import { Box, Text, VStack, HStack } from '@chakra-ui/react'
+import { Text, VStack, HStack } from '@chakra-ui/react'
 import HeroCard from '../../molecules/heroCard'
 import { EventProps } from '../../../types/types'
+import PostText from '../../atoms/postText'
 
 type Props = {
     hero: Record<string, EventProps>[]
@@ -12,6 +13,7 @@ const Hero = ({
   hero
 }: Props) => {
   const currentEvent = hero[0].event
+  const fullText = currentEvent.content || ''
 
   return (
     <HStack
@@ -28,8 +30,9 @@ const Hero = ({
         as='div'
         w={['100%', '50%']}
         pl={[4, 0]}
-        pr={[4, 10]}
+        pr={[4, 12]}
         py={4}
+        mx={'0 !important'}
       >
 
         <Text
@@ -42,14 +45,9 @@ const Hero = ({
           {currentEvent.eventName}
         </Text>
 
-        <Text
-          pt={4}
-          pb={2}
-          fontSize={['sm', 'md']}
-          textAlign='justify'
-        >
-          {currentEvent.content}
-        </Text>
+        <PostText
+          fullText={fullText}
+        />
 
       </VStack>
 

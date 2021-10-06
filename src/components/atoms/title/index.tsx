@@ -5,14 +5,14 @@ type Props = {
     label: string
     color?: string
     py?: number[]
-    alignSelf?:string
+    alignSelf?: string[]
 }
 
 const Title = ({
   label,
   color = 'primary',
   py = [2, 5],
-  alignSelf = 'center'
+  alignSelf = ['center']
 }: Props) => {
   return (
     <Heading
