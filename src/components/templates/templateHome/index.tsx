@@ -8,18 +8,26 @@ import { Flex, Box } from '@chakra-ui/layout'
 import Realizacao from '../../molecules/realizacao'
 
 type NextTemplateHomeProps = {
-  heroItems: Record<string, any>[]
+  heroItems: {
+    heroTitle: string
+    heroDescription: string
+    heroImages : string[]
+  }
   newsSet: Record<string, any>[]
 }
 
 const TemplateHome = ({
-  heroItems = [],
+  heroItems,
   newsSet = []
 }: NextTemplateHomeProps) => {
   return (
     <Layout>
       <Section>
-        <Hero hero={heroItems}/>
+        <Hero
+          heroTitle={heroItems.heroTitle}
+          heroDescription={heroItems.heroDescription}
+          heroImages={heroItems.heroImages}
+        />
       </Section>
 
       {/* <Section bg={'gray-50'} title="Últimas Notícias">

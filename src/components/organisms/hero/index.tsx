@@ -1,20 +1,22 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
-import { Text, VStack, HStack } from '@chakra-ui/react'
-import HeroCard from '../../molecules/heroCard'
+import { Text, VStack, HStack, Image, Box } from '@chakra-ui/react'
 import { EventProps } from '../../../types/types'
 import PostText from '../../atoms/postText'
+import { Rerousel } from 'rerousel'
+import HeroCarousel from '../heroCarousel'
 
 type Props = {
-    hero: Record<string, EventProps>[]
+  heroTitle: string
+  heroDescription: string
+  heroImages : string[]
 }
 
 const Hero = ({
-  hero
+  heroTitle,
+  heroDescription,
+  heroImages
 }: Props) => {
-  const currentEvent = hero[0].event
-  const fullText = currentEvent.content || ''
-
   return (
     <HStack
       as='div'
@@ -24,7 +26,13 @@ const Hero = ({
       py={[0, 5]}
       w={'100%'}
     >
-      <HeroCard event={currentEvent}/>
+      <Box
+        as='div'
+        w={['100%', '50%']}
+        boxShadow={'0px 4px 6px -2px rgba(45, 55, 72, 0.05), 0px 10px 15px -3px rgba(45, 55, 72, 0.1)'}
+      >
+        <HeroCarousel images={heroImages} />
+      </Box>
 
       <VStack
         as='div'
@@ -42,11 +50,11 @@ const Hero = ({
           color='primary'
           fontWeight={700}
         >
-          {currentEvent.eventName}
+          {heroTitle}
         </Text>
 
         <PostText
-          fullText={fullText}
+          fullText={heroDescription}
         />
 
       </VStack>

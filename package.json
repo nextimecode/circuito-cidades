@@ -22,12 +22,14 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "framer-motion": "^4",
+    "keen-slider": "^5.5.1",
     "next": "^11.0.1",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-multi-carousel": "^2.6.5",
-    "react-multi-date-picker": "^3.1.7"
+    "react-multi-date-picker": "^3.1.7",
+    "rerousel": "^0.1.9"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
