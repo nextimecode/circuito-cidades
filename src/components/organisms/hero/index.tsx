@@ -1,9 +1,7 @@
-import React, { useRef } from 'react'
+import React from 'react'
 
-import { Text, VStack, HStack, Image, Box } from '@chakra-ui/react'
-import { EventProps } from '../../../types/types'
+import { Text, VStack, HStack, Box } from '@chakra-ui/react'
 import PostText from '../../atoms/postText'
-import { Rerousel } from 'rerousel'
 import HeroCarousel from '../heroCarousel'
 
 type Props = {
