@@ -3,7 +3,6 @@ import { Text, VStack, Link } from '@chakra-ui/react'
 import Title from '../components/atoms/title'
 import Layout from '../components/templates/layout'
 import Section from '../components/templates/section'
-import Realizacao from '../components/molecules/realizacao'
 
 const Documentos = () => {
   return (
@@ -32,9 +31,6 @@ const Documentos = () => {
             <Link href=''>Regulamentos Específicos - Modalidades</Link>
           </VStack>
         </VStack>
-      </Section>
-      <Section>
-        <Realizacao />
       </Section>
     </Layout>
   )

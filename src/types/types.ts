@@ -36,10 +36,11 @@ export interface NavItemsProps {
   target?: string
 }
 
-export interface AccordionPostProps {
+export interface CityProps {
   title: string
   content: string
   imgUrl?: string
+  symbol: string
   categories: string
   rulesUrl?: string
   info?: EnrollmentInfoProps
@@ -59,4 +60,36 @@ export interface EnrollmentInfoProps {
   place?: string
   location?: string
   contact?: string
+}
+
+export interface MonthForCalendarProps {
+  label: string
+  stages: StagesForCalendarProps[]
+}
+
+export interface StagesForCalendarProps {
+  date: string
+  city: string
+  modalityList: ModalityListProps
+}
+
+export interface ModalityListProps {
+  caminhada?: boolean
+  ciclismoMtb?: boolean
+  corrida?: boolean
+  damas?: boolean
+  desafioNba?: boolean
+  eSports?: boolean
+  futebolFreestyle?: boolean
+  futebolMesa?: boolean
+  futevolei?: boolean
+  pesca?: boolean
+  peteca?: boolean
+  sinuca?: boolean
+  slackLine?: boolean
+  taekwondo?: boolean
+  tenisCampo?: boolean
+  tenisMesa?: boolean
+  voleiDupla?: boolean
+  xadrez?: boolean
 }

@@ -11,12 +11,12 @@ import {
   Link
 } from '@chakra-ui/react'
 import DefaultPost from '../defaultPost'
-import { AccordionPostProps } from '../../../types/types'
+import { CityProps } from '../../../types/types'
 import CityInfo from '../cityInfo'
 import ModalityInfo from '../modalityInfo'
 
 type AccordionOrganismsProps = {
-  items?: AccordionPostProps[]
+  items?: CityProps[]
   isCity?: boolean
 }
 
@@ -81,11 +81,11 @@ const AccordionOrganisms = ({
                   fontWeight={600}
                   color='blue'
                 >
-                  <Link href={item.rulesUrl}>
+                  <Link href={item.rulesUrl} target='_blank'>
                     Regulamento Geral ({item.title})
                   </Link>
                   {item.stages?.map((stage, stageIndex) => (
-                    <Link href={stage.reportUrl} key={stageIndex}>
+                    <Link href={stage.reportUrl} key={stageIndex} target='_blank'>
                       Boletim {stage.finished ? 'Oficial' : 'Zero'} [{stage.stage}]
                     </Link>
                   ))}

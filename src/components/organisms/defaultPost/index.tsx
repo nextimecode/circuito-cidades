@@ -1,12 +1,12 @@
 import React from 'react'
 
 import { Box, HStack, Image } from '@chakra-ui/react'
-import { AccordionPostProps } from '../../../types/types'
+import { CityProps } from '../../../types/types'
 import Title from '../../atoms/title'
 
 type Props = {
     children: unknown
-    item: AccordionPostProps
+    item: CityProps
     showTitle?: boolean
     px?: number[]
     py?: number[]

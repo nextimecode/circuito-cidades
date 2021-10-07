@@ -1,13 +1,13 @@
 import React from 'react'
 import { Text, Box, VStack } from '@chakra-ui/react'
-import { AccordionPostProps } from '../types/types'
+import { CityProps } from '../types/types'
 import Title from '../components/atoms/title'
 import Layout from '../components/templates/layout'
 import Section from '../components/templates/section'
 import Realizacao from '../components/molecules/realizacao'
 import { cities } from './api/cities'
 
-const listCities: AccordionPostProps[] = cities
+const listCities: CityProps[] = cities
 
 const Inscricoes = () => {
   return (

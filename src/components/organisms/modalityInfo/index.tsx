@@ -1,10 +1,10 @@
 import React from 'react'
 import { Text, VStack, Link } from '@chakra-ui/react'
-import { AccordionPostProps } from '../../../types/types'
+import { CityProps } from '../../../types/types'
 import PostText from '../../atoms/postText'
 
 type AccordionOrganismsProps = {
-    modality: AccordionPostProps
+    modality: CityProps
 }
 
 const ModalityInfo = ({
@@ -31,6 +31,7 @@ const ModalityInfo = ({
         color='blue'
         fontStyle='italic'
         alignSelf='flex-start'
+        target='_blank'
       >
             Regulamento da Modalidade {modality.title}
       </Link>

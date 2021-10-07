@@ -41,20 +41,24 @@ const Final = () => {
             fontWeight={600}
             color='blue'
           >
-            <Link href={lastStage.rulesUrl}>
+            <Link href={lastStage.rulesUrl} target='_blank'>
               Regulamento Geral (Etapa Final)
             </Link>
-            <Link href='/'>
+            <Link href='https://drive.google.com/file/d/1W6Cr828bco2YY3VKLTczDq68aUYJJH2K/view?usp=sharing' target='_blank'>
               Regulamentos Específicos - Modalidades (Etapa Final)
             </Link>
-            <Link href='/'>
+            <Link href='https://drive.google.com/file/d/101rxsCB8hqLTgK4sJMFi7y9pARFjI6Ym/view?usp=sharing' target='_blank'>
               Listagem de Inscrições
             </Link>
-            {lastStage.stages?.map((stage, stageIndex) => (
-              <Link href={stage.reportUrl} key={stageIndex}>
-                Boletim {stage.finished ? 'Oficial' : 'Zero'} [{stage.stage}]
-              </Link>
-            ))}
+            <Link href='https://drive.google.com/file/d/18K_5Yoohhph6Z22ik2VHblPWTVvcHFxg/view?usp=sharing' target='_blank'>
+              Boletim Zero
+            </Link>
+            <Link href='https://drive.google.com/file/d/18O0ciCj3Z9PMICkui4OMWIwfyAa8jUVJ/view?usp=sharing' target='_blank'>
+              Boletim Oficial 1 [Sábado]
+            </Link>
+            <Link href='https://drive.google.com/file/d/1qTzJNOu3fUa9s4nZejC5URM_Q3Ml1ZKz/view?usp=sharing' target='_blank'>
+              Boletim Oficial 1 [Domingo]
+            </Link>
           </VStack>
         </Box>
       </Section>

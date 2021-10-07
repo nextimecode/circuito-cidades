@@ -1,10 +1,10 @@
 import React from 'react'
 import { Text, Box } from '@chakra-ui/react'
-import { AccordionPostProps } from '../../../types/types'
+import { CityProps } from '../../../types/types'
 import PostText from '../../atoms/postText'
 
 type AccordionOrganismsProps = {
-    city: AccordionPostProps
+    city: CityProps
 }
 
 const CityInfo = ({
