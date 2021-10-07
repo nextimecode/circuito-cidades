@@ -19,7 +19,7 @@ const Realizacao = () => {
       >
         {cities.map((city, index) => (
           <NextFotterBox
-          key={index}
+            key={index}
             imgUrl={city.symbol}
             cityName={city.title}
             ufName="MG"

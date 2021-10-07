@@ -43,7 +43,7 @@ const Calendario = () => {
                 <VStack px={[0, 25]} spacing={4}>
                   {month.stages.map((stage, stageIndex) => (
                     <VStack
-                    key={stageIndex}
+                      key={stageIndex}
                       as='div'
                       w='100%'
                       borderRadius={['none', 'md']}
