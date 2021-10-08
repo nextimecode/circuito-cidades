@@ -2,34 +2,34 @@ import { NavLinkProps } from '../../types/types'
 
 export const listNavLinks: NavLinkProps[] = [
   {
-    href: '#',
+    href: '/',
     label: 'O Circuito'
   },
   {
-    href: '#',
+    href: '/modalidades',
     label: 'Modalidades',
     arrowIcon: true
   },
   {
-    href: '#',
+    href: '/cidades',
     label: 'Cidades',
     arrowIcon: true
   },
   {
-    href: '#',
+    href: '/final',
     label: 'Etapa Final',
     starIcon: true
   },
   {
-    href: '#',
+    href: '/documentos',
     label: 'Documentos'
   },
   {
-    href: '#',
+    href: '/calendario',
     label: 'Calendário'
   },
   {
-    href: '#',
+    href: '/inscricoes',
     label: 'Inscreva-se',
     buttonTyped: true
   }
