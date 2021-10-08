@@ -1,56 +1,75 @@
 import React from 'react'
 
-import { Box, Text, HStack, Image } from '@chakra-ui/react'
-import { AccordionPostProps } from '../../../types/types'
+import { Box, HStack, Image } from '@chakra-ui/react'
+import { CityProps } from '../../../types/types'
+import Title from '../../atoms/title'
 
 type Props = {
-    item: AccordionPostProps
+    children: unknown
+    item: CityProps
+    showTitle?: boolean
+    px?: number[]
+    py?: number[]
+    display?: string[]
+    reverseImage?: boolean
 }
 
 const DefaultPost = ({
-  item
+  children,
+  item,
+  showTitle = false,
+  px = [0, 21],
+  py = [0, 6],
+  display = ['block', 'flex'],
+  reverseImage = false
 }: Props) => {
   return (
     <HStack
       as='div'
-      display={['block', 'flex']}
-      px={[0, 21]}
-      py={[0, 6]}
+      display={display}
+      px={px}
+      py={py}
       w={'100%'}
     >
+      {reverseImage &&
+        <Image
+          src={item.imgUrl}
+          borderRadius={['none', 'md']}
+          w={['100%', '50%']}
+          mx={['0 !important', 'auto']}
+        />
+      }
+
       <Box
         as='div'
-        pl={[4, 0]}
+        pl={[4, 4]}
         pr={[4, 8]}
         py={4}
+        w={['100%', '50%']}
+        mx='0 !important'
       >
+        {showTitle &&
+          <Title
+            label={item.title}
+            alignSelf={['flex-start']}
+          />
+        }
 
-        <Text
-          fontSize={['sm', 'md']}
-          textAlign='justify'
-
-        >
-          {item.content}
-        </Text>
-
-        <Text
-          pt={4}
-          pb={2}
-          fontSize="xs"
-        >
-          {item.categories}
-        </Text>
+        {children}
 
       </Box>
 
-      <Image
-        src={item.imgUrl}
-        borderRadius={['none', 'md']}
-        w={['100%', '50%']}
-        mx={['0 !important', 'auto']}
-      />
+      {!reverseImage &&
+        <Image
+          src={item.imgUrl}
+          borderRadius={['none', 'md']}
+          w={['100%', '50%']}
+          mx={['0 !important', 'auto']}
+        />
+      }
 
     </HStack>
+
   )
 }
 

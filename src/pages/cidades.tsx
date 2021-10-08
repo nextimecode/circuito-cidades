@@ -6,7 +6,11 @@ import { cities } from './api/cities'
 const Cidades = () => {
   return (
     <>
-      <AccordionTemplate title="Cidades" items={cities} />
+      <AccordionTemplate
+        title="Cidades"
+        items={cities}
+        isCity
+      />
     </>
   )
 }

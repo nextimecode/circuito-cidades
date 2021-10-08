@@ -6,21 +6,26 @@ import {
   AccordionItem,
   AccordionPanel,
   Box,
-  Image,
-  Text
+  Text,
+  VStack,
+  Link
 } from '@chakra-ui/react'
 import DefaultPost from '../defaultPost'
-import { AccordionPostProps } from '../../../types/types'
+import { CityProps } from '../../../types/types'
+import CityInfo from '../cityInfo'
+import ModalityInfo from '../modalityInfo'
 
 type AccordionOrganismsProps = {
-  items?: AccordionPostProps[]
+  items?: CityProps[]
+  isCity?: boolean
 }
 
 const AccordionOrganisms = ({
-  items = []
+  items = [],
+  isCity = false
 }: AccordionOrganismsProps) => {
   return (
-    <Accordion allowMultiple>
+    <Accordion pb={6} allowMultiple>
       {items.map((item, index) => (
         <AccordionItem
           key={index}
@@ -46,7 +51,47 @@ const AccordionOrganisms = ({
           </Box>
           <AccordionPanel pb={4} px={0}>
 
-            <DefaultPost item={item}/>
+            <DefaultPost item={item} py={[1, 2]}>
+              {isCity &&
+                <CityInfo city={item} />
+              }
+              {!isCity &&
+                <ModalityInfo modality={item} />
+              }
+            </DefaultPost>
+            {isCity &&
+              <React.Fragment>
+                <Box as='div' px={[4, 10]} py={[2]}>
+                  <Text fontSize='sm'>
+                    <Box as='span' fontWeight={700} py={2}>
+                      INFORMAÇÕES: <br/>
+                    </Box>
+                    {item.info?.place}<br/>
+                    {item.info?.location}<br/>
+                    {item.info?.contact}
+                  </Text>
+                </Box>
+                <VStack
+                  as='div'
+                  px={[4, 10]}
+                  py={[2]}
+                  spacing={1}
+                  alignItems='flex-start'
+                  fontStyle='italic'
+                  fontWeight={600}
+                  color='blue'
+                >
+                  <Link href={item.rulesUrl} target='_blank'>
+                    Regulamento Geral ({item.title})
+                  </Link>
+                  {item.stages?.map((stage, stageIndex) => (
+                    <Link href={stage.reportUrl} key={stageIndex} target='_blank'>
+                      Boletim {stage.finished ? 'Oficial' : 'Zero'} [{stage.stage}]
+                    </Link>
+                  ))}
+                </VStack>
+              </React.Fragment>
+            }
 
           </AccordionPanel>
         </AccordionItem>

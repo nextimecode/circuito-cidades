@@ -4,10 +4,16 @@ import { Text } from '@chakra-ui/react'
 
 type Props = {
     fullText: string
+    color?: string
+    fontSize?: string[]
+    spacing?: number[]
 }
 
 const PostText = ({
-  fullText
+  fullText,
+  color = 'black',
+  fontSize = ['md', 'lg'],
+  spacing = [4]
 }: Props) => {
   const paragraphs = fullText.split('\n')
 
@@ -16,11 +22,10 @@ const PostText = ({
       {paragraphs.map((paragraph, index) => (
         <Text
           key={index}
-          color={'#718096'}
           fontFamily='Inter'
-          fontWeight={400}
-          fontSize={['16px', '18px']}
-          py={4}
+          color={color}
+          fontSize={fontSize}
+          py={spacing}
           align='justify'
         >
           {paragraph}

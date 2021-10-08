@@ -16,11 +16,12 @@ type Props = {
   news: NewsProps
 }
 
-const ROUTE_POST_ID = 'posts/[postId]'
+const ROUTE_POST_ID = 'posts/'
 
 const Noticia = ({
   news
 }: Props) => {
+  const postId = `${ROUTE_POST_ID}${news.id}`
   return (
     <Center py={3} mx={[0, 6]}>
 
@@ -57,12 +58,8 @@ const Noticia = ({
             </Text>
           </HStack>
 
-          <Link
-            href={{
-              pathname: ROUTE_POST_ID,
-              query: { postId: news.id }
-            }}
-          ><a>
+          <Link href={{ pathname: postId }}>
+            <a>
               <Heading
                 color={'primary'}
                 fontSize={'xl'}
@@ -70,7 +67,8 @@ const Noticia = ({
               >
                 {news.content.title}
               </Heading>
-            </a></Link>
+            </a>
+          </Link>
 
           <Text color={'gray.500'}>{news.content.subtitle}</Text>
         </Stack>

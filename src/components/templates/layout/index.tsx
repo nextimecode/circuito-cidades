@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import React, { PropsWithChildren } from 'react'
 import { Box } from '@chakra-ui/layout'
-import Footer from '../../molecules/Footer'
+import Footer from '../../organisms/footer'
 import Header from '../../organisms/header'
 import { listNavLinks } from '../../../pages/api/listNavLinks'
+import { useBreakpointValue } from '@chakra-ui/media-query'
 
 type Props = {
   title?: string
@@ -15,6 +16,9 @@ const Layout = ({
   title = 'Circuito Cidades',
   description = 'Circuito Cidades.'
 }: PropsWithChildren<Props>) => {
+  const smallDevice = useBreakpointValue({ base: true, md: false })
+  const menuHeight = smallDevice ? '50px' : '92px'
+
   return (
     <>
       <Head>
@@ -22,18 +26,25 @@ const Layout = ({
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Header
-        listNavLinks={listNavLinks}
-      />
-
       <main>
-        <Box as={'div'} pt={['50px', '92px']}>
-          {children}
+        <Header
+          listNavLinks={listNavLinks}
+          smallDevice={smallDevice}
+          menuHeight={menuHeight}
+        />
+        <Box as='div'>
+          <Box
+            as={'div'}
+            pt={['50px', '92px']}
+            minH={['calc(100vh - 93px)', 'calc(100vh - 56px)']}
+          >
+            {children}
+          </Box>
+
+          <Footer/>
+
         </Box>
       </main>
-
-      <Footer urlLogo={'/images/logos/logo.png'}/>
     </>
   )
 }

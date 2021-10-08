@@ -1,4 +1,6 @@
-export const listNavLinks = [
+import { NavLinkProps } from '../../types/types'
+
+export const listNavLinks: NavLinkProps[] = [
   {
     href: '#',
     label: 'O Circuito'

@@ -1,17 +1,19 @@
 import { Container, Heading } from '@chakra-ui/react'
 import React from 'react'
-import { AccordionPostProps } from '../../../types/types'
+import { CityProps } from '../../../types/types'
 import AccordionOrganisms from '../../organisms/accordion'
 import Layout from '../layout'
 
 type AccordionTemplateProps = {
   title: string
-  items: AccordionPostProps[]
+  items: CityProps[]
+  isCity?: boolean
 }
 
 const AccordionTemplate = ({
   title = '',
-  items = []
+  items = [],
+  isCity = false
 }: AccordionTemplateProps) => {
   return (
     <Layout>
@@ -25,7 +27,10 @@ const AccordionTemplate = ({
         >
           {title}
         </Heading>
-        <AccordionOrganisms items={items}/>
+        <AccordionOrganisms
+          items={items}
+          isCity={isCity}
+        />
       </Container>
     </Layout>
   )

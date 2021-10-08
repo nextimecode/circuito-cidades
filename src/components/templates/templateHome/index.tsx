@@ -4,37 +4,46 @@ import Hero from '../../organisms/hero'
 import Section from '../../templates/section'
 import LastNews from '../../organisms/lastNews'
 import EventCalendar from '../../organisms/calendar'
-import { Flex, Box, Text } from '@chakra-ui/layout'
+import { Flex, Box } from '@chakra-ui/layout'
+import Realizacao from '../../molecules/realizacao'
 
 type NextTemplateHomeProps = {
-  heroItems: Record<string, any>[]
+  heroItems: {
+    heroTitle: string
+    heroDescription: string
+    heroImages : string[]
+  }
   newsSet: Record<string, any>[]
 }
 
 const TemplateHome = ({
-  heroItems = [],
+  heroItems,
   newsSet = []
 }: NextTemplateHomeProps) => {
   return (
     <Layout>
-      <Box as='div' display='flex' w='100%' placeContent='center' p={10}>
-        <Text fontSize='xl' textAlign='center'>
-          SITE EM CONSTRUÇÃO
-        </Text>
-      </Box>
-      {/* <Section>
-        <Hero hero={heroItems}/>
+      <Section>
+        <Hero
+          heroTitle={heroItems.heroTitle}
+          heroDescription={heroItems.heroDescription}
+          heroImages={heroItems.heroImages}
+        />
       </Section>
-      <Section bg={'gray-50'} title="Últimas Notícias">
+
+      {/* <Section bg={'gray-50'} title="Últimas Notícias">
         <LastNews newsSet={newsSet}/>
-      </Section>
+      </Section> */}
+
       <Box bgImage="url('/images/calendar/image1.svg')" bgRepeat="no-repeat" bgPosition="right" bgSize='400px'>
         <Section bg='transparent' title="Calendário de Eventos">
           <Flex zIndex={1}>
             <EventCalendar/>
           </Flex>
         </Section>
-      </Box> */}
+      </Box>
+      <Section>
+        <Realizacao />
+      </Section>
     </Layout>
   )
 }
