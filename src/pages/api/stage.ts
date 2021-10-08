@@ -19,7 +19,7 @@ export const stage = [
   },
   {
     date: '13 a 15 de Novembro',
-    city: ['Barão de Cocais', 'Nova União']
+    city: ['Nova União', 'Barão de Cocais']
   },
   {
     date: '20 e 21 de Novembro',
@@ -27,15 +27,15 @@ export const stage = [
   },
   {
     date: '27 e 28 de Novembro',
-    city: ['Etapa Mariana', 'Nova Era']
+    city: ['Mariana', 'Nova Era']
   },
   {
     date: '12 de Dezembro',
-    city: ['Sorteio da Etapa Final']
+    city: ['FINAL - Sorteio e Tabelamento']
   },
   {
     date: '18 e 19 de Dezembro',
-    city: ['ETAPA FINAL']
+    city: ['FINAL']
   }
 ]
 
@@ -66,19 +66,9 @@ export const exposedCalendar: MonthForCalendarProps[] = [
         date: '23 e 24 de Outubro',
         city: 'João Monlevade',
         modalityList: {
-          desafioNba: true,
           peteca: true,
           sinuca: true,
           voleiDupla: true
-        }
-      },
-      {
-        date: '23 e 24 de Outubro',
-        city: 'Nova União',
-        modalityList: {
-          damas: true,
-          eSports: true,
-          xadrez: true
         }
       },
       {
@@ -91,6 +81,15 @@ export const exposedCalendar: MonthForCalendarProps[] = [
       },
       {
         date: '30 e 31 de Outubro',
+        city: 'Nova União',
+        modalityList: {
+          damas: true,
+          eSports: true,
+          xadrez: true
+        }
+      },
+      {
+        date: '30 e 31 de Outubro',
         city: 'Ouro Preto',
         modalityList: {
           caminhada: true,
@@ -98,7 +97,7 @@ export const exposedCalendar: MonthForCalendarProps[] = [
           corrida: true,
           damas: true,
           eSports: true,
-          peteca: true
+          xadrez: true
         }
       }
     ]
@@ -149,6 +148,20 @@ export const exposedCalendar: MonthForCalendarProps[] = [
       },
       {
         date: '20 e 21 de Novembro',
+        city: 'João Monlevade',
+        modalityList: {
+          caminhada: true,
+          ciclismoMtb: true,
+          corrida: true,
+          damas: true,
+          desafioNba: true,
+          eSports: true,
+          tenisMesa: true,
+          xadrez: true
+        }
+      },
+      {
+        date: '20 e 21 de Novembro',
         city: 'São Gonçalo do Rio Abaixo',
         modalityList: {
           damas: true,
@@ -182,6 +195,7 @@ export const exposedCalendar: MonthForCalendarProps[] = [
           corrida: true,
           peteca: true,
           sinuca: true,
+          tenisCampo: true,
           voleiDupla: true
         }
       }
