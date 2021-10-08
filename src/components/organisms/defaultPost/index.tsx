@@ -10,6 +10,8 @@ type Props = {
     showTitle?: boolean
     px?: number[]
     py?: number[]
+    display?: string[]
+    reverseImage?: boolean
 }
 
 const DefaultPost = ({
@@ -17,22 +19,34 @@ const DefaultPost = ({
   item,
   showTitle = false,
   px = [0, 21],
-  py = [0, 6]
+  py = [0, 6],
+  display = ['block', 'flex'],
+  reverseImage = false
 }: Props) => {
   return (
     <HStack
       as='div'
-      display={['block', 'flex']}
+      display={display}
       px={px}
       py={py}
       w={'100%'}
     >
+      {reverseImage &&
+        <Image
+          src={item.imgUrl}
+          borderRadius={['none', 'md']}
+          w={['100%', '50%']}
+          mx={['0 !important', 'auto']}
+        />
+      }
+
       <Box
         as='div'
-        pl={[4, 0]}
+        pl={[4, 4]}
         pr={[4, 8]}
         py={4}
         w={['100%', '50%']}
+        mx='0 !important'
       >
         {showTitle &&
           <Title
@@ -45,12 +59,14 @@ const DefaultPost = ({
 
       </Box>
 
-      <Image
-        src={item.imgUrl}
-        borderRadius={['none', 'md']}
-        w={['100%', '50%']}
-        mx={['0 !important', 'auto']}
-      />
+      {!reverseImage &&
+        <Image
+          src={item.imgUrl}
+          borderRadius={['none', 'md']}
+          w={['100%', '50%']}
+          mx={['0 !important', 'auto']}
+        />
+      }
 
     </HStack>
 

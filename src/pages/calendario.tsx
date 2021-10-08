@@ -15,7 +15,7 @@ const Calendario = () => {
           label='Calendário'
           alignSelf={['flex-start'] }
         />
-        <Accordion pb={6}>
+        <Accordion pb={6} allowMultiple>
           {exposedCalendar.map((month, index) => (
             <AccordionItem
               key={index}

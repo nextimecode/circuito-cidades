@@ -263,7 +263,7 @@ export const cities: CityProps[] = [
 export const finalStage: CityProps = {
   title: 'Local A DEFINIR',
   content: 'string',
-  imgUrl: 'images/medalha.jpg',
+  imgUrl: 'images/medalha.jpeg',
   symbol: '',
   categories: 'string',
   rulesUrl: 'https://drive.google.com/file/d/1qUjrJ1PNSlVwFmyHLJoDfblw5Gofbotw/view?usp=sharing',

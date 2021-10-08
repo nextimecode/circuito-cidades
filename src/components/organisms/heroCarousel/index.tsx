@@ -19,7 +19,7 @@ const HeroCarousel = ({
     >
       <Rerousel
         itemRef={customerLogo}
-        interval={3000}
+        interval={4000}
       >
         {images.map((img, index) => (
           <Image

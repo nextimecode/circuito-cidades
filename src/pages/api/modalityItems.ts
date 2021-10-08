@@ -15,7 +15,7 @@ export const modalityItems: CityProps[] = [
     imgUrl: '/images/modalities/ciclismo.jpeg',
     symbol: '',
     categories: 'Sub-17 (Masculino e Feminino) | Adulto (Masculino e Feminino)',
-    rulesUrl: 'https://drive.google.com/file/d/1aIkao9c0jeK9bbx7YsimQMiboieuySPd/view?usp=sharing'
+    rulesUrl: 'https://drive.google.com/file/d/1BRYUTbAfwKjBRqTJw0uTfgBaLZvr1Xb8/view?usp=sharing'
   },
   {
     title: 'CORRIDA (App)',

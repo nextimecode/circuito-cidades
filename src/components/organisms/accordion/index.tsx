@@ -25,7 +25,7 @@ const AccordionOrganisms = ({
   isCity = false
 }: AccordionOrganismsProps) => {
   return (
-    <Accordion pb={6}>
+    <Accordion pb={6} allowMultiple>
       {items.map((item, index) => (
         <AccordionItem
           key={index}
@@ -61,7 +61,7 @@ const AccordionOrganisms = ({
             </DefaultPost>
             {isCity &&
               <React.Fragment>
-                <Box as='div' px={[4, 5]} py={[2]}>
+                <Box as='div' px={[4, 10]} py={[2]}>
                   <Text fontSize='sm'>
                     <Box as='span' fontWeight={700} py={2}>
                       INFORMAÇÕES: <br/>
@@ -73,7 +73,7 @@ const AccordionOrganisms = ({
                 </Box>
                 <VStack
                   as='div'
-                  px={[4, 5]}
+                  px={[4, 10]}
                   py={[2]}
                   spacing={1}
                   alignItems='flex-start'

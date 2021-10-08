@@ -3,39 +3,39 @@ import { MonthForCalendarProps } from '../../types/types'
 export const stage = [
   {
     date: '16 e 17 de Outubro',
-    city: 'Etapa Ouro Preto e São Domingos do Prata'
+    city: ['Ouro Preto', 'São Domingos do Prata']
   },
   {
     date: '23 e 24 de Outubro',
-    city: 'Etapa João Monlevade e Nova União'
+    city: ['João Monlevade']
   },
   {
     date: '30 e 31 de Outubro',
-    city: 'Etapa Barão de Cocais e Ouro Preto'
+    city: ['Barão de Cocais', 'Nova União', 'Ouro Preto']
   },
   {
     date: '06 e 07 de Novembro',
-    city: 'Etapa São Domingos do Prata e Nova Era'
+    city: ['Nova Era', 'São Domingos do Prata']
   },
   {
     date: '13 a 15 de Novembro',
-    city: 'Etapa Nova União e Barão de Cocais'
+    city: ['Barão de Cocais', 'Nova União']
   },
   {
     date: '20 e 21 de Novembro',
-    city: 'Etapa São Gonçalo do Rio Abaixo'
+    city: ['João Monlevade', 'São Gonçalo do Rio Abaixo']
   },
   {
     date: '27 e 28 de Novembro',
-    city: 'Etapa Mariana e Nova Era'
+    city: ['Etapa Mariana', 'Nova Era']
   },
   {
     date: '12 de Dezembro',
-    city: 'Sorteio e Tabelamento da Etapa Final'
+    city: ['Sorteio da Etapa Final']
   },
   {
     date: '18 e 19 de Dezembro',
-    city: 'ETAPA FINAL'
+    city: ['ETAPA FINAL']
   }
 ]
 
@@ -96,8 +96,8 @@ export const exposedCalendar: MonthForCalendarProps[] = [
           caminhada: true,
           ciclismoMtb: true,
           corrida: true,
-          futebolFreestyle: true,
-          futevolei: true,
+          damas: true,
+          eSports: true,
           peteca: true
         }
       }

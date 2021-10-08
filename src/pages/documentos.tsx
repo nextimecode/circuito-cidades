@@ -26,9 +26,9 @@ const Documentos = () => {
             fontWeight={600}
             color='blue'
           >
-            <Link href=''>Protocolo Sanitário</Link>
-            <Link href=''>Regulamento Geral</Link>
-            <Link href=''>Regulamentos Específicos - Modalidades</Link>
+            <Link href='https://drive.google.com/file/d/1xRCsKVhD5dHDE3IbKxaw3l-Kt4Z9L0p8/view?usp=sharing'>Protocolo Sanitário</Link>
+            <Link href='https://drive.google.com/file/d/11T4dbKCCKJD1o2mJ5gEmxNFYfEVf19-S/view?usp=sharing'>Regulamento Geral</Link>
+            <Link href='https://drive.google.com/file/d/1xRCsKVhD5dHDE3IbKxaw3l-Kt4Z9L0p8/view?usp=sharing'>Regulamentos Específicos - Modalidades</Link>
           </VStack>
         </VStack>
       </Section>
