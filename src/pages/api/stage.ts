@@ -11,7 +11,7 @@ export const stage = [
   },
   {
     date: '30 e 31 de Outubro',
-    city: ['Barão de Cocais', 'Nova União', 'Ouro Preto']
+    city: ['Barão de Cocais', 'Ouro Preto']
   },
   {
     date: '06 e 07 de Novembro',
@@ -31,11 +31,11 @@ export const stage = [
   },
   {
     date: '12 de Dezembro',
-    city: ['FINAL - Sorteio e Tabelamento']
+    city: ['SORTEIO E TABELAMENTO (Etapa Final)']
   },
   {
     date: '18 e 19 de Dezembro',
-    city: ['FINAL']
+    city: ['ETAPA FINAL']
   }
 ]
 

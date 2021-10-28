@@ -24,7 +24,6 @@ export const cities: CityProps[] = [
         stage: '2ª Fase',
         date: '30 e 31 de outubro',
         modalities: 'Desafio NBA e Peteca.',
-        finished: true,
         dueDate: '28 de outubro',
         reportUrl: 'https://drive.google.com/file/d/12qst5PQgd-gNuVvpZup-Fxz5OJ78jxQt/view?usp=sharing'
       },
@@ -32,7 +31,6 @@ export const cities: CityProps[] = [
         stage: '3ª Fase',
         date: '14 de novembro',
         modalities: 'Damas e Xadrez.',
-        finished: true,
         dueDate: '12 de novembro',
         reportUrl: 'https://drive.google.com/file/d/1mijzCX9vhWwqgGcl__qIUwr09383EdAz/view?usp=sharing'
       }
@@ -63,7 +61,6 @@ export const cities: CityProps[] = [
         date: '23 e 24 de outubro',
         modalities: `Peteca, Sinuca e Vôlei Dupla;
         Abertura Oficial da Caminhada (App), Corrida (App) e Ciclismo (App).`,
-        finished: true,
         dueDate: '21 de outubro',
         reportUrl: 'https://drive.google.com/file/d/1ALXE2NHfZzOPddk8p1Eem7GCIl5P-KAw/view?usp=sharing'
       },
@@ -72,7 +69,6 @@ export const cities: CityProps[] = [
         date: '20 e 21 de novembro',
         modalities: `Damas, Desafio NBA, E-Sports (FIFA), Tênis de Mesa e Xadrez;
         Premiação da Caminhada (App), Corrida (App) e Ciclismo (App).`,
-        finished: true,
         dueDate: '18 de novembro',
         reportUrl: 'https://drive.google.com/file/d/1m1maY93oWHvpnhHQ_Wx3TnoaLnNoU8GA/view?usp=sharing'
       }
@@ -101,7 +97,6 @@ export const cities: CityProps[] = [
         stage: '2ª Fase',
         date: '27 e 28 de novembro',
         modalities: 'Damas, E-Sports (FIFA), Futebol Freestyle (Embaixadinhas), Peteca, Tênis de Mesa, Vôlei Dupla e Xadrez.',
-        finished: true,
         dueDate: '25 de novembro',
         reportUrl: 'https://drive.google.com/file/d/1QmMGV-RVYdtsHErhYImGxUuV3KV68wc4/view?usp=sharing'
       }
@@ -124,7 +119,6 @@ export const cities: CityProps[] = [
         stage: '1ª Fase',
         date: '10 a 31 de outubro',
         modalities: 'Pesca Esportiva.',
-        finished: true,
         dueDate: '29 de outubro',
         reportUrl: 'https://drive.google.com/file/d/10IMzWymd3FrntrN6LPrr0pt58AYfYLva/view?usp=sharing'
       },
@@ -133,7 +127,6 @@ export const cities: CityProps[] = [
         date: '06 e 07 de novembro',
         modalities: `Damas, E-Sports (FIFA) e Xadrez;
         Abertura Oficial da Caminhada (App), Corrida (App) e Ciclismo (App).`,
-        finished: true,
         dueDate: '04 de novembro',
         reportUrl: 'https://drive.google.com/file/d/1T3W8Dph-NjSVtK6LQezHUqvgCwGN6NBX/view?usp=sharing'
       },
@@ -142,7 +135,6 @@ export const cities: CityProps[] = [
         date: '27 e 28 de novembro',
         modalities: `Natação, Peteca, Sinuca, Tênis de Campo e Vôlei Dupla.
         Premiação da Caminhada (App), Corrida (App) e Ciclismo (App).`,
-        finished: true,
         dueDate: '25 de novembro',
         reportUrl: 'https://drive.google.com/file/d/13n9HOoSsT1B6N0min4ECuiNQIfsaeeSn/view?usp=sharing'
       }
@@ -167,7 +159,6 @@ export const cities: CityProps[] = [
         modalities: `E-Sports (FIFA), Tênis de Mesa e Xadrez;
         Caminhada, Corrida Rústica, Futebol Freestyle (Embaixadinhas) e Vôlei Dupla;
         Passeio Ciclístico e Peteca.`,
-        finished: true,
         dueDate: '28 de outubro',
         reportUrl: 'https://drive.google.com/file/d/1dnXuWNuvySjvYbU482u0ZWI2_WF6gE00/view?usp=sharing'
       }
@@ -192,7 +183,6 @@ export const cities: CityProps[] = [
         date: '16 e 17 de outubro',
         modalities: `Desafio NBA, Futebol Freestyle (Embaixadinhas), Tênis de Mesa e Peteca;
         Abertura Oficial da Caminhada (App), Corrida (App) e Ciclismo (App).`,
-        finished: true,
         reportUrl: 'https://drive.google.com/file/d/1IPP6WQ8O5oiOT7cfGaqHtiqLPN9krRdy/view?usp=sharing'
       },
       {
@@ -200,7 +190,6 @@ export const cities: CityProps[] = [
         date: '30 e 31 de outubro',
         modalities: `Damas, E-Sports (FIFA) e Xadrez;
         Premiação da Caminhada (App), Corrida (App) e Ciclismo (App).`,
-        finished: true,
         dueDate: '29 de outubro',
         reportUrl: 'https://drive.google.com/file/d/1QIplcv3-pubJYMobYuD3Au71JJ2GwOtU/view?usp=sharing'
       }
@@ -225,7 +214,6 @@ export const cities: CityProps[] = [
         date: '16 e 17 de outubro',
         modalities: `Damas, E-Sports (FIFA) e Xadrez;
         Abertura Oficial da Caminhada (App), Corrida (App) e Ciclismo (App).`,
-        finished: true,
         reportUrl: 'https://drive.google.com/file/d/1vfWxyvTG-u-C_CWHbQTJUVzJdeoQXb5P/view?usp=sharing'
       },
       {
@@ -233,7 +221,6 @@ export const cities: CityProps[] = [
         date: '06 e 07 de novembro',
         modalities: `Futebol Freestyle (Embaixadinhas), Futevôlei e Peteca;
         Premiação da Caminhada (App), Corrida (App) e Ciclismo (App).`,
-        finished: true,
         dueDate: '29 de outubro',
         reportUrl: 'https://drive.google.com/file/d/1lMw8tKZDdxAfH8bVHjR3voBNQ-Lb0Cf7/view?usp=sharing'
       }
@@ -262,7 +249,6 @@ export const cities: CityProps[] = [
         stage: '2ª Fase',
         date: '20 e 21 de novembro',
         modalities: 'Damas, Futebol Freestyle, E-Sports (FIFA), Peteca, Sinuca, Vôlei Dupla e Xadrez.',
-        finished: true,
         dueDate: '29 de outubro',
         reportUrl: 'https://drive.google.com/file/d/1XkaOpxF0MqCXGbBgzRYfE9NmzCToOOXd/view?usp=sharing'
       }

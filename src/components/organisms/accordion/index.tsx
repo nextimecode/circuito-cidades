@@ -86,7 +86,7 @@ const AccordionOrganisms = ({
                   </Link>
                   {item.stages?.map((stage, stageIndex) => (
                     <Link href={stage.reportUrl} key={stageIndex} target='_blank'>
-                      Boletim {stage.finished ? 'Oficial' : 'Zero'} [{stage.stage}]
+                      Boletim Oficial [{stage.stage}]
                     </Link>
                   ))}
                 </VStack>
