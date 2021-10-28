@@ -5,13 +5,11 @@ import { Box, Text, Image } from '@chakra-ui/react'
 type Props = {
   imgUrl: string;
   cityName: string
-  ufName: string
 }
 
 const NextFooterBox = ({
   imgUrl,
-  cityName,
-  ufName
+  cityName
 }: Props) =>
 
   (
@@ -38,7 +36,7 @@ const NextFooterBox = ({
         py={1}
         px={[4, 0]}
       >
-        {cityName} - {ufName}
+        {cityName}
       </Text>
 
     </Box>

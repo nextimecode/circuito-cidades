@@ -44,6 +44,7 @@ export interface CityProps {
   categories: string
   rulesUrl?: string
   info?: EnrollmentInfoProps
+  gallery?: string
   stages?: StagesProps[]
 }
 

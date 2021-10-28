@@ -90,6 +90,13 @@ const AccordionOrganisms = ({
                     </Link>
                   ))}
                 </VStack>
+                {item.gallery &&
+                  <Text fontSize="xl" color='primary' align="center" fontWeight="bold">
+                    <Link href={item.gallery} target='_blank'>
+                      Clique para ver as fotos
+                    </Link>
+                  </Text>
+                }
               </React.Fragment>
             }
 

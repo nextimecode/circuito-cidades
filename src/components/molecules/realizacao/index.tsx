@@ -22,7 +22,6 @@ const Realizacao = () => {
             key={index}
             imgUrl={city.symbol}
             cityName={city.title}
-            ufName="MG"
           />
         ))}
       </Grid>
