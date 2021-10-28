@@ -131,7 +131,7 @@ export const modalityItems: CityProps[] = [
   },
   {
     title: 'XADREZ',
-    content: 'A modalidade Damas será realizada nas Etapas Locais e Final, no modo presencial, em disputa individual com 30 minutos de reflexão no sistema de emparceiramento suíço (preferencialmente). Os três melhores das fases locais receberão medalhas de 1º, 2º e 3º lugares. Somente os campeões de cada categoria se classificam para a Etapa Final.',
+    content: 'A modalidade Xadrez será realizada nas Etapas Locais e Final, no modo presencial, em disputa individual com 15 minutos de reflexão no sistema de emparceiramento suíço (preferencialmente). Os três melhores das fases locais receberão medalhas de 1º, 2º e 3º lugares. Somente os campeões de cada categoria se classificam para a Etapa Final.',
     imgUrl: '/images/modalities/xadrez.jpeg',
     symbol: '',
     categories: 'Sub-17 (Misto) | Adulto (Misto)',
