@@ -3,12 +3,12 @@ import React from 'react'
 import { HStack, Image, Text, Box } from '@chakra-ui/react'
 
 type Props = {
-    sport: {
-        title: string
-        subtitle?: string
-        imgSrc: string
-    }
-    isInEvent?: boolean
+  sport: {
+      title: string
+      subtitle?: string
+      imgSrc: string
+  }
+  isInEvent?: boolean
 }
 
 const ModalityIconCalendar = ({
@@ -28,7 +28,7 @@ const ModalityIconCalendar = ({
       />
       <Text fontSize='sm'>{sport.title} </Text>
       {subtitle.length > 1 &&
-                <Box as='span' fontSize='xs'>({subtitle})</Box>
+        <Box as='span' fontSize='xs'>({subtitle})</Box>
       }
     </HStack>
   )

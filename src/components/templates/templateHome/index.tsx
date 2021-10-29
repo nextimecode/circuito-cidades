@@ -2,7 +2,6 @@ import React from 'react'
 import Layout from '../layout/'
 import Hero from '../../organisms/hero'
 import Section from '../../templates/section'
-import LastNews from '../../organisms/lastNews'
 import EventCalendar from '../../organisms/calendar'
 import { Flex, Box } from '@chakra-ui/layout'
 import Realizacao from '../../molecules/realizacao'
@@ -17,8 +16,7 @@ type NextTemplateHomeProps = {
 }
 
 const TemplateHome = ({
-  heroItems,
-  newsSet = []
+  heroItems
 }: NextTemplateHomeProps) => {
   return (
     <Layout>
