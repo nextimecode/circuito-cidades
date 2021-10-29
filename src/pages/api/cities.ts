@@ -34,6 +34,22 @@ export const cities: CityProps[] = [
         dueDate: '12 de novembro',
         reportUrl: 'https://drive.google.com/file/d/1mijzCX9vhWwqgGcl__qIUwr09383EdAz/view?usp=sharing'
       }
+    ],
+    registrations: [
+      {
+        label: '1ª DATA:',
+        finished: true
+      },
+      {
+        label: '2ª DATA:',
+        finished: false,
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSf-cHkz3dYpCtiTKJ9lLBboC4TkhPonZHbQ6jXgg0U3U2aylA/viewform'
+      },
+      {
+        label: '3ª DATA:',
+        finished: false,
+        url: 'https://forms.gle/S2xKxtGYTwXYsrnG7'
+      }
     ]
   },
   {
@@ -72,6 +88,21 @@ export const cities: CityProps[] = [
         dueDate: '18 de novembro',
         reportUrl: 'https://drive.google.com/file/d/1m1maY93oWHvpnhHQ_Wx3TnoaLnNoU8GA/view?usp=sharing'
       }
+    ],
+    registrations: [
+      {
+        label: '1ª DATA:',
+        finished: true
+      },
+      {
+        label: '2ª DATA:',
+        finished: true
+      },
+      {
+        label: '3ª DATA:',
+        finished: false,
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSfUsnkWNi75DTibNXY0Z41bQiefea1fSMq35JzErQ5U-gejpQ/viewform'
+      }
     ]
   },
   {
@@ -99,6 +130,17 @@ export const cities: CityProps[] = [
         modalities: 'Damas, E-Sports (FIFA), Futebol Freestyle (Embaixadinhas), Peteca, Tênis de Mesa, Vôlei Dupla e Xadrez.',
         dueDate: '25 de novembro',
         reportUrl: 'https://drive.google.com/file/d/1QmMGV-RVYdtsHErhYImGxUuV3KV68wc4/view?usp=sharing'
+      }
+    ],
+    registrations: [
+      {
+        label: '1ª DATA:',
+        finished: true
+      },
+      {
+        label: '2ª DATA:',
+        finished: false,
+        url: 'https://forms.gle/UE2Cx27Dx5u4Be9p6'
       }
     ]
   },
@@ -138,6 +180,22 @@ export const cities: CityProps[] = [
         dueDate: '25 de novembro',
         reportUrl: 'https://drive.google.com/file/d/13n9HOoSsT1B6N0min4ECuiNQIfsaeeSn/view?usp=sharing'
       }
+    ],
+    registrations: [
+      {
+        label: '1ª DATA:',
+        finished: true
+      },
+      {
+        label: '2ª DATA:',
+        finished: false,
+        url: 'https://forms.gle/KWSMafP8wR5LwwCC7'
+      },
+      {
+        label: '2ª DATA:',
+        finished: false,
+        url: 'https://forms.gle/8LJAu7MBt9ZJDj6BA'
+      }
     ]
   },
   {
@@ -161,6 +219,13 @@ export const cities: CityProps[] = [
         Passeio Ciclístico e Peteca.`,
         dueDate: '28 de outubro',
         reportUrl: 'https://drive.google.com/file/d/1dnXuWNuvySjvYbU482u0ZWI2_WF6gE00/view?usp=sharing'
+      }
+    ],
+    registrations: [
+      {
+        label: '1ª DATA:',
+        finished: false,
+        url: 'https://forms.gle/Gpwi5qTQUa53Ygre9'
       }
     ]
   },
@@ -193,6 +258,17 @@ export const cities: CityProps[] = [
         dueDate: '29 de outubro',
         reportUrl: 'https://drive.google.com/file/d/1QIplcv3-pubJYMobYuD3Au71JJ2GwOtU/view?usp=sharing'
       }
+    ],
+    registrations: [
+      {
+        label: '1ª DATA:',
+        finished: true
+      },
+      {
+        label: '2ª DATA:',
+        finished: false,
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSd_x3IWvUpn0j9zLGiHAD1yp-UMNHTrljsnJQvUBayZyRKqkA/viewform'
+      }
     ]
   },
   {
@@ -224,6 +300,17 @@ export const cities: CityProps[] = [
         dueDate: '29 de outubro',
         reportUrl: 'https://drive.google.com/file/d/1lMw8tKZDdxAfH8bVHjR3voBNQ-Lb0Cf7/view?usp=sharing'
       }
+    ],
+    registrations: [
+      {
+        label: '1ª DATA:',
+        finished: true
+      },
+      {
+        label: '2ª DATA:',
+        finished: false,
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSe57LwT69fZgAHVtkGZ5T8g4H7F6vO39Vo4FXmqthWFoM408w/viewform'
+      }
     ]
   },
   {
@@ -251,6 +338,17 @@ export const cities: CityProps[] = [
         modalities: 'Damas, Futebol Freestyle, E-Sports (FIFA), Peteca, Sinuca, Vôlei Dupla e Xadrez.',
         dueDate: '29 de outubro',
         reportUrl: 'https://drive.google.com/file/d/1XkaOpxF0MqCXGbBgzRYfE9NmzCToOOXd/view?usp=sharing'
+      }
+    ],
+    registrations: [
+      {
+        label: '1ª DATA:',
+        finished: true
+      },
+      {
+        label: '2ª DATA:',
+        finished: false,
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLScO2fHz8WgJhqQVc60-k17zJuQXflzwfHI05m6DBMA59t6O5A/viewform'
       }
     ]
   }

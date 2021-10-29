@@ -46,6 +46,12 @@ export interface CityProps {
   info?: EnrollmentInfoProps
   gallery?: string
   stages?: StagesProps[]
+  registrations?: RegistrationProps[]
+}
+export interface RegistrationProps {
+  label: string
+  finished?: boolean
+  url?: string
 }
 
 export interface StagesProps {
