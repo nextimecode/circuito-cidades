@@ -213,7 +213,7 @@ export const cities: CityProps[] = [
     stages: [
       {
         stage: '1ª Fase',
-        date: '30 e 31 de outubro',
+        date: '13 a 15 de novembro',
         modalities: `E-Sports (FIFA), Tênis de Mesa e Xadrez;
         Caminhada, Corrida Rústica, Futebol Freestyle (Embaixadinhas) e Vôlei Dupla;
         Passeio Ciclístico e Peteca.`,
