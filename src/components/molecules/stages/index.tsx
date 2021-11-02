@@ -37,7 +37,7 @@ const Stages = () => {
                       key={indexCity}
                       placeSelf='self-start'
                     >
-                      Etapa {city}
+                      {city}
                     </Text>
                   ))}
                 </VStack>
@@ -46,22 +46,6 @@ const Stages = () => {
           </VStack>
         </Flex>
       ))}
-      {/* <Flex direction='column' p={smallDevice ? '0px 32px 0px 32px' : '0'}>
-        {first.map((stage, index) =>
-          (<Box key={index}>
-            <Box fw={500} fontSize='14px' color='gray.500'>{stage.date}</Box>
-            <Box fw={500} fontSize='20px' color='red.600' pb='16px'>{stage.city}</Box>
-          </Box>)
-        )}
-      </Flex>
-      <Flex direction='column' p={smallDevice ? '0px 32px 0px 32px' : '0px 0px 0px 50px'}>
-        {second.map((stage, index) =>
-          (<Box key={index}>
-            <Box fw={500} fontSize='14px' color='gray.500'>{stage.date}</Box>
-            <Box fw={500} fontSize='20px' color='red.600' pb='16px'>{stage.city}</Box>
-          </Box>)
-        )}
-      </Flex> */}
     </Flex>
   )
 }
