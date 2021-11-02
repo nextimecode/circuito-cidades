@@ -47,8 +47,6 @@ export const exposedCalendar: MonthForCalendarProps[] = [
         date: '16 e 17 de Outubro',
         city: 'Ouro Preto',
         modalityList: {
-          desafioNba: true,
-          futebolFreestyle: true,
           tenisMesa: true,
           peteca: true
         }
@@ -81,15 +79,6 @@ export const exposedCalendar: MonthForCalendarProps[] = [
       },
       {
         date: '30 e 31 de Outubro',
-        city: 'Nova União',
-        modalityList: {
-          damas: true,
-          eSports: true,
-          xadrez: true
-        }
-      },
-      {
-        date: '30 e 31 de Outubro',
         city: 'Ouro Preto',
         modalityList: {
           caminhada: true,
@@ -97,7 +86,9 @@ export const exposedCalendar: MonthForCalendarProps[] = [
           corrida: true,
           damas: true,
           eSports: true,
-          xadrez: true
+          desafioNba: true,
+          xadrez: true,
+          futebolFreestyle: true
         }
       }
     ]
@@ -135,6 +126,7 @@ export const exposedCalendar: MonthForCalendarProps[] = [
           corrida: true,
           futebolFreestyle: true,
           peteca: true,
+          tenisMesa: true,
           voleiDupla: true
         }
       },
@@ -200,6 +192,34 @@ export const exposedCalendar: MonthForCalendarProps[] = [
         }
       }
 
+    ]
+  },
+  {
+    label: 'Dezembro',
+    stages: [
+      {
+        date: '18 e 19 de dezembro',
+        city: 'Final',
+        modalityList: {
+          caminhada: true,
+          ciclismoMtb: true,
+          corrida: true,
+          damas: true,
+          desafioNba: true,
+          eSports: true,
+          futebolFreestyle: true,
+          futebolMesa: true,
+          futevolei: true,
+          peteca: true,
+          sinuca: true,
+          slackLine: true,
+          taekwondo: true,
+          tenisCampo: true,
+          tenisMesa: true,
+          voleiDupla: true,
+          xadrez: true
+        }
+      }
     ]
   }
 ]

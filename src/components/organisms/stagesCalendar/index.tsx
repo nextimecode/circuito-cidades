@@ -6,7 +6,7 @@ import { ModalityListProps } from '../../../types/types'
 import ModalityIconCalendar from '../../molecules/modalityIconCalendar'
 
 type Props = {
-    listModalities: ModalityListProps
+  listModalities: ModalityListProps
 }
 
 const imgPath = '/images/modalities/symbols/'
@@ -52,10 +52,6 @@ const modalities = {
   futevolei: {
     title: 'Futevôlei',
     imgSrc: `${imgPath}Futevoley.svg`
-  },
-  pesca: {
-    title: 'Pesca Esportiva',
-    imgSrc: `${imgPath}Pesca.svg`
   },
   peteca: {
     title: 'Peteca',
@@ -136,10 +132,6 @@ const StagesCalendar = ({
       <ModalityIconCalendar
         sport={modalities.futevolei}
         isInEvent={listModalities.futevolei}
-      />
-      <ModalityIconCalendar
-        sport={modalities.pesca}
-        isInEvent={listModalities.pesca}
       />
       <ModalityIconCalendar
         sport={modalities.peteca}

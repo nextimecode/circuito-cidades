@@ -34,6 +34,22 @@ export const cities: CityProps[] = [
         dueDate: '12 de novembro',
         reportUrl: 'https://drive.google.com/file/d/1mijzCX9vhWwqgGcl__qIUwr09383EdAz/view?usp=sharing'
       }
+    ],
+    registrations: [
+      {
+        label: '1ª DATA:',
+        finished: true
+      },
+      {
+        label: '2ª DATA:',
+        finished: false,
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSf-cHkz3dYpCtiTKJ9lLBboC4TkhPonZHbQ6jXgg0U3U2aylA/viewform'
+      },
+      {
+        label: '3ª DATA:',
+        finished: false,
+        url: 'https://forms.gle/S2xKxtGYTwXYsrnG7'
+      }
     ]
   },
   {
@@ -48,6 +64,7 @@ export const cities: CityProps[] = [
       location: 'Av. Getúlio Vargas, nº 4798 – Carneirinhos',
       contact: '(31) 3851-4510'
     },
+    gallery: 'https://www.flickr.com/photos/194203616@N05/albums/72157720072360821',
     stages: [
       {
         stage: '1ª Fase',
@@ -70,6 +87,21 @@ export const cities: CityProps[] = [
         Premiação da Caminhada (App), Corrida (App) e Ciclismo (App).`,
         dueDate: '18 de novembro',
         reportUrl: 'https://drive.google.com/file/d/1m1maY93oWHvpnhHQ_Wx3TnoaLnNoU8GA/view?usp=sharing'
+      }
+    ],
+    registrations: [
+      {
+        label: '1ª DATA:',
+        finished: true
+      },
+      {
+        label: '2ª DATA:',
+        finished: true
+      },
+      {
+        label: '3ª DATA:',
+        finished: false,
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSfUsnkWNi75DTibNXY0Z41bQiefea1fSMq35JzErQ5U-gejpQ/viewform'
       }
     ]
   },
@@ -99,6 +131,17 @@ export const cities: CityProps[] = [
         dueDate: '25 de novembro',
         reportUrl: 'https://drive.google.com/file/d/1QmMGV-RVYdtsHErhYImGxUuV3KV68wc4/view?usp=sharing'
       }
+    ],
+    registrations: [
+      {
+        label: '1ª DATA:',
+        finished: true
+      },
+      {
+        label: '2ª DATA:',
+        finished: false,
+        url: 'https://forms.gle/UE2Cx27Dx5u4Be9p6'
+      }
     ]
   },
   {
@@ -124,7 +167,7 @@ export const cities: CityProps[] = [
       {
         stage: '2ª Fase',
         date: '06 e 07 de novembro',
-        modalities: `Damas, E-Sports (FIFA), Natação e Xadrez;
+        modalities: `Damas, E-Sports (FIFA) e Xadrez;
         Abertura Oficial da Caminhada (App), Corrida (App) e Ciclismo (App).`,
         dueDate: '04 de novembro',
         reportUrl: 'https://drive.google.com/file/d/1T3W8Dph-NjSVtK6LQezHUqvgCwGN6NBX/view?usp=sharing'
@@ -132,10 +175,26 @@ export const cities: CityProps[] = [
       {
         stage: '3ª Fase',
         date: '27 e 28 de novembro',
-        modalities: `Sinuca, Peteca e Vôlei Dupla.
+        modalities: `Natação, Peteca, Sinuca, Tênis de Campo e Vôlei Dupla.
         Premiação da Caminhada (App), Corrida (App) e Ciclismo (App).`,
         dueDate: '25 de novembro',
         reportUrl: 'https://drive.google.com/file/d/13n9HOoSsT1B6N0min4ECuiNQIfsaeeSn/view?usp=sharing'
+      }
+    ],
+    registrations: [
+      {
+        label: '1ª DATA:',
+        finished: true
+      },
+      {
+        label: '2ª DATA:',
+        finished: false,
+        url: 'https://forms.gle/KWSMafP8wR5LwwCC7'
+      },
+      {
+        label: '2ª DATA:',
+        finished: false,
+        url: 'https://forms.gle/8LJAu7MBt9ZJDj6BA'
       }
     ]
   },
@@ -154,19 +213,19 @@ export const cities: CityProps[] = [
     stages: [
       {
         stage: '1ª Fase',
-        date: '30 e 31 de outubro',
-        modalities: `Damas, E-Sports (FIFA) e Xadrez;
-        Abertura Oficial da Caminhada (App), Corrida (App) e Ciclismo (App).`,
+        date: '13 a 15 de novembro',
+        modalities: `E-Sports (FIFA), Tênis de Mesa e Xadrez;
+        Caminhada, Corrida Rústica, Futebol Freestyle (Embaixadinhas) e Vôlei Dupla;
+        Passeio Ciclístico e Peteca.`,
         dueDate: '28 de outubro',
         reportUrl: 'https://drive.google.com/file/d/1dnXuWNuvySjvYbU482u0ZWI2_WF6gE00/view?usp=sharing'
-      },
+      }
+    ],
+    registrations: [
       {
-        stage: '2ª Fase',
-        date: '13 a 15 de novembro',
-        modalities: `Futebol Freestyle (Embaixadinhas), Peteca e Vôlei Dupla.
-        Premiação da Caminhada (App), Corrida (App) e Ciclismo (App).`,
-        dueDate: '11 de novembro',
-        reportUrl: 'https://drive.google.com/file/d/1APqdagmTD-HW9yB7390ZavwmInNZtSEL/view?usp=sharing'
+        label: '1ª DATA:',
+        finished: false,
+        url: 'https://forms.gle/Gpwi5qTQUa53Ygre9'
       }
     ]
   },
@@ -182,6 +241,7 @@ export const cities: CityProps[] = [
       location: 'Rua Hugo Soderi, nº 21 – Bloco B – Saramenha',
       contact: '(31) 3559-3216'
     },
+    gallery: 'https://www.flickr.com/photos/194203616@N05/albums/72157720049286928',
     stages: [
       {
         stage: '1ª Fase',
@@ -198,6 +258,17 @@ export const cities: CityProps[] = [
         dueDate: '29 de outubro',
         reportUrl: 'https://drive.google.com/file/d/1QIplcv3-pubJYMobYuD3Au71JJ2GwOtU/view?usp=sharing'
       }
+    ],
+    registrations: [
+      {
+        label: '1ª DATA:',
+        finished: true
+      },
+      {
+        label: '2ª DATA:',
+        finished: false,
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSd_x3IWvUpn0j9zLGiHAD1yp-UMNHTrljsnJQvUBayZyRKqkA/viewform'
+      }
     ]
   },
   {
@@ -212,6 +283,7 @@ export const cities: CityProps[] = [
       location: 'Rua Joaquim Gomes Lima, nº 700 – Cutucum',
       contact: '(31) 99797-1369 ou (31) 99827-9439'
     },
+    gallery: 'https://www.flickr.com/photos/194203616@N05/albums/72157720054847406',
     stages: [
       {
         stage: '1ª Fase',
@@ -227,6 +299,17 @@ export const cities: CityProps[] = [
         Premiação da Caminhada (App), Corrida (App) e Ciclismo (App).`,
         dueDate: '29 de outubro',
         reportUrl: 'https://drive.google.com/file/d/1lMw8tKZDdxAfH8bVHjR3voBNQ-Lb0Cf7/view?usp=sharing'
+      }
+    ],
+    registrations: [
+      {
+        label: '1ª DATA:',
+        finished: true
+      },
+      {
+        label: '2ª DATA:',
+        finished: false,
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSe57LwT69fZgAHVtkGZ5T8g4H7F6vO39Vo4FXmqthWFoM408w/viewform'
       }
     ]
   },
@@ -255,6 +338,17 @@ export const cities: CityProps[] = [
         modalities: 'Damas, Futebol Freestyle, E-Sports (FIFA), Peteca, Sinuca, Vôlei Dupla e Xadrez.',
         dueDate: '29 de outubro',
         reportUrl: 'https://drive.google.com/file/d/1XkaOpxF0MqCXGbBgzRYfE9NmzCToOOXd/view?usp=sharing'
+      }
+    ],
+    registrations: [
+      {
+        label: '1ª DATA:',
+        finished: true
+      },
+      {
+        label: '2ª DATA:',
+        finished: false,
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLScO2fHz8WgJhqQVc60-k17zJuQXflzwfHI05m6DBMA59t6O5A/viewform'
       }
     ]
   }

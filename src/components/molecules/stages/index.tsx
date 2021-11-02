@@ -4,7 +4,7 @@ import { Flex, Box, Text, VStack } from '@chakra-ui/react'
 import { stage } from '../../../pages/api/stage'
 
 const half = stage.length / 2
-const columns = [stage.slice(0, half), stage.slice(half + 1, stage.length)]
+const columns = [stage.slice(0, half), stage.slice(half, stage.length)]
 
 const Stages = () => {
   return (

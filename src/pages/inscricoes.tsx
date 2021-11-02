@@ -1,5 +1,10 @@
 import React from 'react'
-import { Text, Box, VStack } from '@chakra-ui/react'
+import {
+  Text,
+  Box,
+  VStack,
+  Link
+} from '@chakra-ui/react'
 import { CityProps } from '../types/types'
 import Title from '../components/atoms/title'
 import Layout from '../components/templates/layout'
@@ -40,6 +45,19 @@ const Inscricoes = () => {
               {city.info?.location}<br/>
               {city.info?.contact}
             </Text>
+            {city.registrations?.map((item, index) => (
+              <Text
+                key={index}
+                fontSize='sm'
+              >
+                {item.label}{(item.finished) && 'ENCERRADO'}
+                {item.url && !item.finished && (
+                  <Link color="blue" href={item.url} target='_blank'>
+                    {' '}LINK PARA INSCRIÇÕES
+                  </Link>
+                )}
+              </Text>
+            ))}
           </Box>
         ))}
       </Section>
