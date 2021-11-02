@@ -1,5 +1,15 @@
 import { CityProps } from '../../types/types'
 
+export function verifyDate(daysLeft: number) {
+  const newData = new Date()
+  const data = new Date(newData.valueOf() - newData.getTimezoneOffset() * 60000)
+  const now = Math.trunc(data.getTime() / 1000)
+  const dateInMilliseconds = Math.trunc(Date.parse('2021-11-02T11:59:05.000Z') / 1000)
+  const days = Math.trunc((now - dateInMilliseconds) / 60 / 60 / 24)
+  if (days > daysLeft) return true
+  return false
+}
+
 export const cities: CityProps[] = [
   {
     title: 'Barão de Cocais',
@@ -42,12 +52,12 @@ export const cities: CityProps[] = [
       },
       {
         label: '2ª DATA:',
-        finished: false,
+        finished: true,
         url: 'https://docs.google.com/forms/d/e/1FAIpQLSf-cHkz3dYpCtiTKJ9lLBboC4TkhPonZHbQ6jXgg0U3U2aylA/viewform'
       },
       {
-        label: '3ª DATA:',
-        finished: false,
+        label: '3ª DATA (14 de novembro):',
+        finished: verifyDate(12),
         url: 'https://forms.gle/S2xKxtGYTwXYsrnG7'
       }
     ]
@@ -77,6 +87,7 @@ export const cities: CityProps[] = [
         date: '23 e 24 de outubro',
         modalities: `Peteca, Sinuca e Vôlei Dupla;
         Abertura Oficial da Caminhada (App), Corrida (App) e Ciclismo (App).`,
+        finished: true,
         dueDate: '21 de outubro',
         reportUrl: 'https://drive.google.com/file/d/1ALXE2NHfZzOPddk8p1Eem7GCIl5P-KAw/view?usp=sharing'
       },
@@ -99,8 +110,8 @@ export const cities: CityProps[] = [
         finished: true
       },
       {
-        label: '3ª DATA:',
-        finished: false,
+        label: '3ª DATA (20 e 21 de novembro):',
+        finished: verifyDate(19),
         url: 'https://docs.google.com/forms/d/e/1FAIpQLSfUsnkWNi75DTibNXY0Z41bQiefea1fSMq35JzErQ5U-gejpQ/viewform'
       }
     ]
@@ -138,8 +149,8 @@ export const cities: CityProps[] = [
         finished: true
       },
       {
-        label: '2ª DATA:',
-        finished: false,
+        label: '2ª DATA (27 e 28 de novembro):',
+        finished: verifyDate(26),
         url: 'https://forms.gle/UE2Cx27Dx5u4Be9p6'
       }
     ]
@@ -187,13 +198,13 @@ export const cities: CityProps[] = [
         finished: true
       },
       {
-        label: '2ª DATA:',
-        finished: false,
+        label: '2ª DATA (06 e 07 de novembro):',
+        finished: verifyDate(5),
         url: 'https://forms.gle/KWSMafP8wR5LwwCC7'
       },
       {
-        label: '2ª DATA:',
-        finished: false,
+        label: '3ª DATA (27 e 28 de novembro):',
+        finished: verifyDate(26),
         url: 'https://forms.gle/8LJAu7MBt9ZJDj6BA'
       }
     ]
@@ -207,8 +218,8 @@ export const cities: CityProps[] = [
     rulesUrl: 'https://drive.google.com/file/d/1SZD9X_GYIK-L6ona_m3F1kc-lOvFTJXX/view?usp=sharing',
     info: {
       place: 'Secretaria Municipal de Cultura, Turismo, Esporte e Lazer',
-      location: 'Rua Nossa Senhora do Carmo – nº 555 – Centro',
-      contact: '(31) 3685-1448'
+      location: 'Praça Padre João Habian – nº 06 – Centro',
+      contact: '(31) 3685-1221'
     },
     stages: [
       {
@@ -223,8 +234,8 @@ export const cities: CityProps[] = [
     ],
     registrations: [
       {
-        label: '1ª DATA:',
-        finished: false,
+        label: '1ª DATA (13 a 15 de novembro):',
+        finished: verifyDate(13),
         url: 'https://forms.gle/Gpwi5qTQUa53Ygre9'
       }
     ]
@@ -266,7 +277,7 @@ export const cities: CityProps[] = [
       },
       {
         label: '2ª DATA:',
-        finished: false,
+        finished: true,
         url: 'https://docs.google.com/forms/d/e/1FAIpQLSd_x3IWvUpn0j9zLGiHAD1yp-UMNHTrljsnJQvUBayZyRKqkA/viewform'
       }
     ]
@@ -307,8 +318,8 @@ export const cities: CityProps[] = [
         finished: true
       },
       {
-        label: '2ª DATA:',
-        finished: false,
+        label: '2ª DATA (06 e 07 de novembro):',
+        finished: verifyDate(5),
         url: 'https://docs.google.com/forms/d/e/1FAIpQLSe57LwT69fZgAHVtkGZ5T8g4H7F6vO39Vo4FXmqthWFoM408w/viewform'
       }
     ]
@@ -346,8 +357,8 @@ export const cities: CityProps[] = [
         finished: true
       },
       {
-        label: '2ª DATA:',
-        finished: false,
+        label: '2ª DATA (20 e 21 de novembro):',
+        finished: verifyDate(19),
         url: 'https://docs.google.com/forms/d/e/1FAIpQLScO2fHz8WgJhqQVc60-k17zJuQXflzwfHI05m6DBMA59t6O5A/viewform'
       }
     ]

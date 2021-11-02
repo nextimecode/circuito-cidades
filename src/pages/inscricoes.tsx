@@ -24,13 +24,10 @@ const Inscricoes = () => {
         />
         <VStack spacing={2} alignItems='flex-start' py={[2, 4]}>
           <Text>
-            1. Procure o Departamento ou Secretaria Municipal de Esportes de sua cidade;
+            1. Preencha o formulário de inscrição [link abaixo] ou diretamente no Departamento/Secretaria de Esportes de sua cidade;
           </Text>
           <Text>
-            2. Preencha o formulário de inscrição;
-          </Text>
-          <Text>
-            3. Participe da Etapa Local, para poder representar sua cidade na Etapa Final!
+            2. Participe da Etapa Local, para poder representar sua cidade na Etapa Final!
           </Text>
         </VStack>
         {listCities.map((city, index) => (

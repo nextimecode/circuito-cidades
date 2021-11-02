@@ -3,31 +3,31 @@ import { MonthForCalendarProps } from '../../types/types'
 export const stage = [
   {
     date: '16 e 17 de Outubro',
-    city: ['Ouro Preto', 'São Domingos do Prata']
+    city: ['Etapa Ouro Preto', 'Etapa São Domingos do Prata']
   },
   {
     date: '23 e 24 de Outubro',
-    city: ['João Monlevade']
+    city: ['Etapa João Monlevade']
   },
   {
     date: '30 e 31 de Outubro',
-    city: ['Barão de Cocais', 'Ouro Preto']
+    city: ['Etapa Barão de Cocais', 'Etapa Nova União', 'Etapa Ouro Preto']
   },
   {
     date: '06 e 07 de Novembro',
-    city: ['Nova Era', 'São Domingos do Prata']
+    city: ['Etapa Nova Era', 'Etapa São Domingos do Prata']
   },
   {
     date: '13 a 15 de Novembro',
-    city: ['Nova União', 'Barão de Cocais']
+    city: ['Etapa Nova União', 'Etapa Barão de Cocais']
   },
   {
     date: '20 e 21 de Novembro',
-    city: ['João Monlevade', 'São Gonçalo do Rio Abaixo']
+    city: ['Etapa João Monlevade', 'Etapa São Gonçalo do Rio Abaixo']
   },
   {
     date: '27 e 28 de Novembro',
-    city: ['Mariana', 'Nova Era']
+    city: ['Etapa Mariana', 'Etapa Nova Era']
   },
   {
     date: '12 de Dezembro',
