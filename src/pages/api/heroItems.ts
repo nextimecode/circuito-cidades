@@ -6,6 +6,7 @@ export const heroItems = {
     '/images/heroItems/heroJM.jpeg',
     '/images/heroItems/heroPrata.jpeg',
     '/images/heroItems/heroNovaEra.jpeg',
+    '/images/heroItems/heroNovaUniao.jpeg',
     '/images/heroItems/heroBaraoCocais.jpeg'
   ]
 }
