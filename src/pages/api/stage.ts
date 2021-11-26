@@ -30,7 +30,7 @@ export const stage = [
     city: ['Etapa Mariana', 'Etapa Nova Era']
   },
   {
-    date: '12 de Dezembro',
+    date: '13 de Dezembro',
     city: ['SORTEIO E TABELAMENTO (Etapa Final)']
   },
   {
@@ -166,7 +166,7 @@ export const exposedCalendar: MonthForCalendarProps[] = [
         }
       },
       {
-        date: '27 e 28 de Novembro',
+        date: '11 e 12 Dezembro',
         city: 'Mariana',
         modalityList: {
           damas: true,
