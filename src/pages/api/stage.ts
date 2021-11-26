@@ -26,7 +26,7 @@ export const stage = [
     city: ['Etapa João Monlevade', 'Etapa São Gonçalo do Rio Abaixo']
   },
   {
-    date: '27 e 28 de Novembro',
+    date: '11 e 12 de Dezembro',
     city: ['Etapa Mariana', 'Etapa Nova Era']
   },
   {
