@@ -376,7 +376,7 @@ export const finalStage: CityProps = {
     {
       stage: 'Etapa Final',
       date: '18 e 19 de dezembro',
-      modalities: 'Ciclismo MTB, Damas, Desafio NBA, E-Sports (FIFA), Futebol Freestyle (Embaixadinhas), Futebol de Mesa, Futevôlei, Peteca, Sinuca, Slack Line, Taekwondo (Apresentação), Tênis de Campo, Tênis de Mesa, Vôlei Dupla e Xadrez.',
+      modalities: 'Buraco, Ciclismo, Damas, Desafio NBA, E- Sports (FIFA), Futebol Freestyle (Embaixadinhas), Futevôlei, Peteca, Sinuca, SlackLine, Tenis de Campo, Tênis de Mesa, Truco, Vôlei Dupla e Xadrez.',
       dueDate: '10 de dezembro',
       reportUrl: ''
     }
