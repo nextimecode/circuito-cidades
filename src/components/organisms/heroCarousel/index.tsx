@@ -13,10 +13,10 @@ const HeroCarousel = ({ images }: Props) => {
   return (
     <Box as="div" w={'100%'}>
       <Rerousel itemRef={customerLogo}>
-        {images.map((img, index) => (
+        {images.map((img) => (
           <Image
             ref={customerLogo}
-            key={index}
+            key={img}
             width="100%"
             src={img}
             borderRadius={['none', 'md']}
