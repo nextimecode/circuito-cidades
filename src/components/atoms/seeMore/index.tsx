@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Link } from '@chakra-ui/react'
+import Link from 'next/link'
 import { Text } from '@chakra-ui/layout'
 
 type Props = {
@@ -22,8 +22,10 @@ const SeeMore = ({
       fontWeight={700}
       alignSelf='center'
     >
-      <Link to={url}>
-        {label}
+      <Link href={url}>
+        <a>
+          {label}
+        </a>
       </Link>
     </Text>
   )
