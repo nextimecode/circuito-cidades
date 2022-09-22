@@ -48,6 +48,7 @@ const DefaultPost = ({
           borderRadius={['none', 'md']}
           w={['100%', '50%']}
           mx={['0 !important', 'auto']}
+          alt={'Icon da cidade'}
         />
       )}
     </HStack>

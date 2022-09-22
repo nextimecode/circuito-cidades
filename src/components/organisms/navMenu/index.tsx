@@ -28,7 +28,7 @@ const NavMenu = ({ listNavLinks, smallDevice, menuHeight }: Props) => {
       <Flex w="100%" justify="center" alignItems="center">
         {!smallDevice && (
           <HStack spacing={15} justifyContent="space-between">
-            <Image src="/images/logos/logo.svg" />
+            <Image src="/images/logos/logo.svg" alt="Imagem da logo" />
             <HStack w="100%" spacing={22}>
               {listNavLinks.map((navLink, index) => (
                 <LinkMenu key={index} navLink={navLink} path={asPath} smallDevice={false} />
@@ -38,13 +38,13 @@ const NavMenu = ({ listNavLinks, smallDevice, menuHeight }: Props) => {
         )}
         {smallDevice && (
           <Flex color="white" alignItems="center" justify="space-between" w="90%">
-            <Image src="/images/logos/logo.svg" h="48px" />
+            <Image src="/images/logos/logo.svg" h="48px" alt="Imagem da logo" />
             <Flex align="center" verticalAlign="center">
               <Text fontSize="14px" mr="8px">
                 {isOpen ? 'Fechar' : 'Menu'}
               </Text>
               <Button onClick={isOpen ? onClose : onOpen} colorScheme="transparent" p="0px">
-                <Image src={isOpen ? menuIcons[1] : menuIcons[0]} />
+                <Image src={isOpen ? menuIcons[1] : menuIcons[0]} alt="Imagem da logo" />
               </Button>
             </Flex>
           </Flex>

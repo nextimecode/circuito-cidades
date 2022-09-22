@@ -20,6 +20,7 @@ const HeroCarousel = ({ images }: Props) => {
             width="100%"
             src={img}
             borderRadius={['none', 'md']}
+            alt={'Imagem do Carousel'}
           />
         ))}
       </Rerousel>

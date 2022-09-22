@@ -48,7 +48,15 @@ const LinkMenu = ({ navLink, path, smallDevice = true }: Props) => {
       _hover={isButton ? { color: secundaryColor, bgColor: primaryColor } : {}}
       _after={isActive ? rolesIsActive : { content: "''" }}
     >
-      {navLink.starIcon && <Image alt={'Icon de estrela'} src="/icons/starIcon.svg" h={4} alignSelf={'center'} pr={2} />}
+      {navLink.starIcon && (
+        <Image
+          alt={'Icon de estrela'}
+          src="/icons/starIcon.svg"
+          h={4}
+          alignSelf={'center'}
+          pr={2}
+        />
+      )}
       <Link href={navLink.href}>{navLink.label}</Link>
       {smallDevice && navLink.arrowIcon && (
         <Box as="div" w="inherit" display="flex" placeContent="flex-end">
