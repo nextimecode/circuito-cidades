@@ -10,14 +10,12 @@ type NextTemplateHomeProps = {
   heroItems: {
     heroTitle: string
     heroDescription: string
-    heroImages : string[]
+    heroImages: string[]
   }
   newsSet: Record<string, any>[]
 }
 
-const TemplateHome = ({
-  heroItems
-}: NextTemplateHomeProps) => {
+const TemplateHome = ({ heroItems }: NextTemplateHomeProps) => {
   return (
     <Layout>
       <Section>
@@ -32,10 +30,15 @@ const TemplateHome = ({
         <LastNews newsSet={newsSet}/>
       </Section> */}
 
-      <Box bgImage="url('/images/calendar/image1.svg')" bgRepeat="no-repeat" bgPosition="right" bgSize='400px'>
-        <Section bg='transparent' title="Calendário de Eventos">
+      <Box
+        bgImage="url('/images/calendar/image1.svg')"
+        bgRepeat="no-repeat"
+        bgPosition="right"
+        bgSize="400px"
+      >
+        <Section bg="transparent" title="Calendário de Eventos">
           <Flex zIndex={1}>
-            <EventCalendar/>
+            <EventCalendar />
           </Flex>
         </Section>
       </Box>

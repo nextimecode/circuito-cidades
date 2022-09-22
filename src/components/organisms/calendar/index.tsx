@@ -10,15 +10,14 @@ import { useBreakpointValue } from '@chakra-ui/media-query'
 const EventCalendar = () => {
   const smallDevice = useBreakpointValue({ base: true, md: false })
   return (
-    <Flex justify='space-evenly' w='100%'>
+    <Flex justify="space-evenly" w="100%">
       <Box display={smallDevice ? 'none' : 'block'}>
         <Calendar
           locale={portugueseLowercase}
           className="red"
           value={dates}
           readOnly
-          currentDate={
-            new DateObject()}
+          currentDate={new DateObject()}
         />
       </Box>
       <Stages />

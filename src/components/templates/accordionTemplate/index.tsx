@@ -10,27 +10,14 @@ type AccordionTemplateProps = {
   isCity?: boolean
 }
 
-const AccordionTemplate = ({
-  title = '',
-  items = [],
-  isCity = false
-}: AccordionTemplateProps) => {
+const AccordionTemplate = ({ title = '', items = [], isCity = false }: AccordionTemplateProps) => {
   return (
     <Layout>
       <Container maxW="container.lg" px={0}>
-        <Heading
-          color={'primary'}
-          fontSize={['xl', '2xl']}
-          fontFamily={'body'}
-          py={7}
-          px={[4]}
-        >
+        <Heading color={'primary'} fontSize={['xl', '2xl']} fontFamily={'body'} py={7} px={[4]}>
           {title}
         </Heading>
-        <AccordionOrganisms
-          items={items}
-          isCity={isCity}
-        />
+        <AccordionOrganisms items={items} isCity={isCity} />
       </Container>
     </Layout>
   )

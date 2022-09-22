@@ -8,19 +8,15 @@ type TemplatePostProps = {
   news: NewsProps | undefined
 }
 
-const TemplatePost = ({
-  news
-}: TemplatePostProps) => {
+const TemplatePost = ({ news }: TemplatePostProps) => {
   return (
     <Layout>
-      {(news === undefined) &&
-        <p>Notícia não encontrada.</p>
-      }
-      {(news !== undefined) &&
+      {news === undefined && <p>Notícia não encontrada.</p>}
+      {news !== undefined && (
         <Section>
-          <Post news={news}/>
+          <Post news={news} />
         </Section>
-      }
+      )}
     </Layout>
   )
 }

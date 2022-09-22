@@ -27,22 +27,13 @@ const Layout = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header
-          listNavLinks={listNavLinks}
-          smallDevice={smallDevice}
-          menuHeight={menuHeight}
-        />
-        <Box as='div'>
-          <Box
-            as={'div'}
-            pt={['50px', '92px']}
-            minH={['calc(100vh - 93px)', 'calc(100vh - 56px)']}
-          >
+        <Header listNavLinks={listNavLinks} smallDevice={smallDevice} menuHeight={menuHeight} />
+        <Box as="div">
+          <Box as={'div'} pt={['50px', '92px']} minH={['calc(100vh - 93px)', 'calc(100vh - 56px)']}>
             {children}
           </Box>
 
-          <Footer/>
-
+          <Footer />
         </Box>
       </main>
     </>

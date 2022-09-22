@@ -2,11 +2,11 @@ import { Heading } from '@chakra-ui/layout'
 import React from 'react'
 
 type Props = {
-    label: string
-    color?: string
-    py?: number[]
-    px?: number[]
-    alignSelf?: string[]
+  label: string
+  color?: string
+  py?: number[]
+  px?: number[]
+  alignSelf?: string[]
 }
 
 const Title = ({

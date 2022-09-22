@@ -88,83 +88,29 @@ const modalities = {
   }
 }
 
-const StagesCalendar = ({
-  listModalities
-}: Props) => {
+const StagesCalendar = ({ listModalities }: Props) => {
   return (
-    <Grid
-      templateColumns={['repeat(1, 1fr)', 'repeat(4, 4fr)']}
-      w='100%'
-      py={4}
-    >
-      <ModalityIconCalendar
-        sport={modalities.caminhada}
-        isInEvent={listModalities.caminhada}
-      />
-      <ModalityIconCalendar
-        sport={modalities.ciclismoMtb}
-        isInEvent={listModalities.ciclismoMtb}
-      />
-      <ModalityIconCalendar
-        sport={modalities.corrida}
-        isInEvent={listModalities.corrida}
-      />
-      <ModalityIconCalendar
-        sport={modalities.damas}
-        isInEvent={listModalities.damas}
-      />
-      <ModalityIconCalendar
-        sport={modalities.desafioNba}
-        isInEvent={listModalities.desafioNba}
-      />
-      <ModalityIconCalendar
-        sport={modalities.eSports}
-        isInEvent={listModalities.eSports}
-      />
+    <Grid templateColumns={['repeat(1, 1fr)', 'repeat(4, 4fr)']} w="100%" py={4}>
+      <ModalityIconCalendar sport={modalities.caminhada} isInEvent={listModalities.caminhada} />
+      <ModalityIconCalendar sport={modalities.ciclismoMtb} isInEvent={listModalities.ciclismoMtb} />
+      <ModalityIconCalendar sport={modalities.corrida} isInEvent={listModalities.corrida} />
+      <ModalityIconCalendar sport={modalities.damas} isInEvent={listModalities.damas} />
+      <ModalityIconCalendar sport={modalities.desafioNba} isInEvent={listModalities.desafioNba} />
+      <ModalityIconCalendar sport={modalities.eSports} isInEvent={listModalities.eSports} />
       <ModalityIconCalendar
         sport={modalities.futebolFreestyle}
         isInEvent={listModalities.futebolFreestyle}
       />
-      <ModalityIconCalendar
-        sport={modalities.futebolMesa}
-        isInEvent={listModalities.futebolMesa}
-      />
-      <ModalityIconCalendar
-        sport={modalities.futevolei}
-        isInEvent={listModalities.futevolei}
-      />
-      <ModalityIconCalendar
-        sport={modalities.peteca}
-        isInEvent={listModalities.peteca}
-      />
-      <ModalityIconCalendar
-        sport={modalities.sinuca}
-        isInEvent={listModalities.sinuca}
-      />
-      <ModalityIconCalendar
-        sport={modalities.slackLine}
-        isInEvent={listModalities.slackLine}
-      />
-      <ModalityIconCalendar
-        sport={modalities.taekwondo}
-        isInEvent={listModalities.taekwondo}
-      />
-      <ModalityIconCalendar
-        sport={modalities.tenisCampo}
-        isInEvent={listModalities.tenisCampo}
-      />
-      <ModalityIconCalendar
-        sport={modalities.tenisMesa}
-        isInEvent={listModalities.tenisMesa}
-      />
-      <ModalityIconCalendar
-        sport={modalities.voleiDupla}
-        isInEvent={listModalities.voleiDupla}
-      />
-      <ModalityIconCalendar
-        sport={modalities.xadrez}
-        isInEvent={listModalities.xadrez}
-      />
+      <ModalityIconCalendar sport={modalities.futebolMesa} isInEvent={listModalities.futebolMesa} />
+      <ModalityIconCalendar sport={modalities.futevolei} isInEvent={listModalities.futevolei} />
+      <ModalityIconCalendar sport={modalities.peteca} isInEvent={listModalities.peteca} />
+      <ModalityIconCalendar sport={modalities.sinuca} isInEvent={listModalities.sinuca} />
+      <ModalityIconCalendar sport={modalities.slackLine} isInEvent={listModalities.slackLine} />
+      <ModalityIconCalendar sport={modalities.taekwondo} isInEvent={listModalities.taekwondo} />
+      <ModalityIconCalendar sport={modalities.tenisCampo} isInEvent={listModalities.tenisCampo} />
+      <ModalityIconCalendar sport={modalities.tenisMesa} isInEvent={listModalities.tenisMesa} />
+      <ModalityIconCalendar sport={modalities.voleiDupla} isInEvent={listModalities.voleiDupla} />
+      <ModalityIconCalendar sport={modalities.xadrez} isInEvent={listModalities.xadrez} />
     </Grid>
   )
 }

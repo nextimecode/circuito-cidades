@@ -191,7 +191,6 @@ export const exposedCalendar: MonthForCalendarProps[] = [
           voleiDupla: true
         }
       }
-
     ]
   },
   {

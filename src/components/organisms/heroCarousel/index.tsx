@@ -4,22 +4,15 @@ import { Box, Image } from '@chakra-ui/react'
 import { Rerousel } from 'rerousel'
 
 type Props = {
-    images: string[]
+  images: string[]
 }
 
-const HeroCarousel = ({
-  images
-}: Props) => {
+const HeroCarousel = ({ images }: Props) => {
   const customerLogo = useRef(null)
 
   return (
-    <Box
-      as='div'
-      w={'100%'}
-    >
-      <Rerousel
-        itemRef={customerLogo}
-      >
+    <Box as="div" w={'100%'}>
+      <Rerousel itemRef={customerLogo}>
         {images.map((img, index) => (
           <Image
             ref={customerLogo}
@@ -30,7 +23,6 @@ const HeroCarousel = ({
           />
         ))}
       </Rerousel>
-
     </Box>
   )
 }

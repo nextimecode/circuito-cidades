@@ -42,7 +42,8 @@ const NavItem = ({ children, ...rest }: NavItemProps) => {
           bg: 'cyan.400',
           color: 'white'
         }}
-        {...rest}>
+        {...rest}
+      >
         {children}
       </Flex>
     </Link>
@@ -61,22 +62,16 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       w={{ base: 'full', md: 60 }}
       pos="fixed"
       h="full"
-      {...rest}>
+      {...rest}
+    >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
-        <Text
-          fontSize="2xl"
-          color="primary"
-          fontFamily="monospace"
-          fontWeight="bold"
-        >
+        <Text fontSize="2xl" color="primary" fontFamily="monospace" fontWeight="bold">
           Modalidades
         </Text>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
-      {LinkItems.map((link) => (
-        <NavItem key={link.name}>
-          {link.name}
-        </NavItem>
+      {LinkItems.map(link => (
+        <NavItem key={link.name}>{link.name}</NavItem>
       ))}
     </Box>
   )
@@ -97,12 +92,9 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
       borderBottomWidth="1px"
       borderBottomColor={useColorModeValue('gray.200', 'gray.700')}
       justifyContent="flex-start"
-      {...rest}>
-      <IconButton
-        variant="outline"
-        onClick={onOpen}
-        aria-label="open menu"
-      />
+      {...rest}
+    >
+      <IconButton variant="outline" onClick={onOpen} aria-label="open menu" />
       <Text fontSize="2xl" ml="8" fontFamily="monospace" fontWeight="bold">
         Logo
       </Text>
@@ -114,10 +106,7 @@ export default function NavigationBars({ children }: { children: ReactNode }) {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <Box minH="100vh" bg={useColorModeValue('gray.100', 'gray.900')}>
-      <SidebarContent
-        onClose={() => onClose}
-        display={{ base: 'none', md: 'block' }}
-      />
+      <SidebarContent onClose={() => onClose} display={{ base: 'none', md: 'block' }} />
       <Drawer
         autoFocus={false}
         isOpen={isOpen}
@@ -125,7 +114,8 @@ export default function NavigationBars({ children }: { children: ReactNode }) {
         onClose={onClose}
         returnFocusOnClose={false}
         onOverlayClick={onClose}
-        size="full">
+        size="full"
+      >
         <DrawerContent>
           <SidebarContent onClose={onClose} />
         </DrawerContent>
