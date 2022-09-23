@@ -18,7 +18,6 @@ const Final = () => {
 
         <DefaultPost item={lastStage} py={[1, 2]} px={[0, 4]} reverseImage>
           <CityInfo city={lastStage} />
-
           <Box as="div">
             <Box as="div" py={[2]}>
               <Text fontSize="sm">

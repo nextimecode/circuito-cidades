@@ -51,16 +51,16 @@ export const cities: CityProps[] = [
     ],
     registrations: [
       {
-        label: '1ª DATA:',
+        title: '1ª DATA:',
         finished: true
       },
       {
-        label: '2ª DATA:',
+        title: '2ª DATA:',
         finished: true,
         url: 'https://docs.google.com/forms/d/e/1FAIpQLSf-cHkz3dYpCtiTKJ9lLBboC4TkhPonZHbQ6jXgg0U3U2aylA/viewform'
       },
       {
-        label: '3ª DATA (14 de novembro):',
+        title: '3ª DATA (14 de novembro):',
         finished: verifyDate(12),
         url: 'https://forms.gle/S2xKxtGYTwXYsrnG7'
       }
@@ -106,15 +106,15 @@ export const cities: CityProps[] = [
     ],
     registrations: [
       {
-        label: '1ª DATA:',
+        title: '1ª DATA:',
         finished: true
       },
       {
-        label: '2ª DATA:',
+        title: '2ª DATA:',
         finished: true
       },
       {
-        label: '3ª DATA (20 e 21 de novembro):',
+        title: '3ª DATA (20 e 21 de novembro):',
         finished: verifyDate(19),
         url: 'https://docs.google.com/forms/d/e/1FAIpQLSfUsnkWNi75DTibNXY0Z41bQiefea1fSMq35JzErQ5U-gejpQ/viewform'
       }
@@ -149,11 +149,11 @@ export const cities: CityProps[] = [
     ],
     registrations: [
       {
-        label: '1ª DATA:',
+        title: '1ª DATA:',
         finished: true
       },
       {
-        label: '2ª DATA (27 e 28 de novembro):',
+        title: '2ª DATA (27 e 28 de novembro):',
         finished: verifyDate(26),
         url: 'https://forms.gle/UE2Cx27Dx5u4Be9p6'
       }
@@ -198,16 +198,16 @@ export const cities: CityProps[] = [
     ],
     registrations: [
       {
-        label: '1ª DATA:',
+        title: '1ª DATA:',
         finished: true
       },
       {
-        label: '2ª DATA (06 e 07 de novembro):',
+        title: '2ª DATA (06 e 07 de novembro):',
         finished: verifyDate(5),
         url: 'https://forms.gle/KWSMafP8wR5LwwCC7'
       },
       {
-        label: '3ª DATA (27 e 28 de novembro):',
+        title: '3ª DATA (27 e 28 de novembro):',
         finished: verifyDate(26),
         url: 'https://forms.gle/8LJAu7MBt9ZJDj6BA'
       }
@@ -236,7 +236,7 @@ export const cities: CityProps[] = [
     ],
     registrations: [
       {
-        label: '1ª DATA (13 a 15 de novembro):',
+        title: '1ª DATA (13 a 15 de novembro):',
         finished: verifyDate(13),
         url: 'https://forms.gle/Gpwi5qTQUa53Ygre9'
       }
@@ -273,11 +273,11 @@ export const cities: CityProps[] = [
     ],
     registrations: [
       {
-        label: '1ª DATA:',
+        title: '1ª DATA:',
         finished: true
       },
       {
-        label: '2ª DATA:',
+        title: '2ª DATA:',
         finished: true,
         url: 'https://docs.google.com/forms/d/e/1FAIpQLSd_x3IWvUpn0j9zLGiHAD1yp-UMNHTrljsnJQvUBayZyRKqkA/viewform'
       }
@@ -314,11 +314,11 @@ export const cities: CityProps[] = [
     ],
     registrations: [
       {
-        label: '1ª DATA:',
+        title: '1ª DATA:',
         finished: true
       },
       {
-        label: '2ª DATA (06 e 07 de novembro):',
+        title: '2ª DATA (06 e 07 de novembro):',
         finished: verifyDate(5),
         url: 'https://docs.google.com/forms/d/e/1FAIpQLSe57LwT69fZgAHVtkGZ5T8g4H7F6vO39Vo4FXmqthWFoM408w/viewform'
       }
@@ -353,11 +353,11 @@ export const cities: CityProps[] = [
     ],
     registrations: [
       {
-        label: '1ª DATA:',
+        title: '1ª DATA:',
         finished: true
       },
       {
-        label: '2ª DATA (20 e 21 de novembro):',
+        title: '2ª DATA (20 e 21 de novembro):',
         finished: verifyDate(19),
         url: 'https://docs.google.com/forms/d/e/1FAIpQLScO2fHz8WgJhqQVc60-k17zJuQXflzwfHI05m6DBMA59t6O5A/viewform'
       }

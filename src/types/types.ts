@@ -57,7 +57,7 @@ export interface CityProps {
   registrations?: RegistrationProps[]
 }
 export interface RegistrationProps {
-  label: string
+  title: string
   finished?: boolean
   url?: string
 }
