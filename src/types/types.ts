@@ -36,16 +36,24 @@ export interface NavItemsProps {
   target?: string
 }
 
+export interface Image {
+  id: string
+  url: string
+}
+
 export interface CityProps {
-  title: string
-  content: string
-  imgUrl?: string
-  symbol: string
-  categories: string
+  id?: string
+  title?: string
+  content?: string
+  image?: Image
+  symbol?: Image
+  categories?: string
   rulesUrl?: string
-  info?: EnrollmentInfoProps
+  place?: string
+  location?: string
+  contact?: string
   gallery?: string
-  stages?: StagesProps[]
+  levels?: LevelsProps[]
   registrations?: RegistrationProps[]
 }
 export interface RegistrationProps {
@@ -54,8 +62,9 @@ export interface RegistrationProps {
   url?: string
 }
 
-export interface StagesProps {
-  stage: string
+export interface LevelsProps {
+  id?: string
+  title: string
   date?: string
   modalities: string
   finished?: boolean

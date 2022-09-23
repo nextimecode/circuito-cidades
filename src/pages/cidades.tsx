@@ -1,14 +1,12 @@
 import React from 'react'
 import AccordionTemplate from '../components/templates/accordionTemplate'
 
-import { cities } from './api/cities'
+import { useCitiesQuery } from '../graphql/generated'
+import { CityProps } from '../types/types'
 
 const Cidades = () => {
-  return (
-    <>
-      <AccordionTemplate title="Cidades" items={cities} isCity />
-    </>
-  )
+  const { data } = useCitiesQuery()
+  return <AccordionTemplate title="Cidades" items={data?.cities as CityProps[]} isCity />
 }
 
 export default Cidades

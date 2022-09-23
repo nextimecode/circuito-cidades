@@ -23,8 +23,8 @@ type AccordionOrganismsProps = {
 const AccordionOrganisms = ({ items = [], isCity = false }: AccordionOrganismsProps) => {
   return (
     <Accordion pb={6} allowMultiple>
-      {items.map((item, index) => (
-        <AccordionItem key={index} border="none" borderColor="none">
+      {items.map(item => (
+        <AccordionItem key={item.id} border="none" borderColor="none">
           <Box as="div" borderBottom="solid 1px" borderColor="#E2E8F0" mx={4} bg="none">
             <Text fontWeight="bold">
               <AccordionButton>
@@ -47,11 +47,11 @@ const AccordionOrganisms = ({ items = [], isCity = false }: AccordionOrganismsPr
                     <Box as="span" fontWeight={700} py={2}>
                       INFORMAÇÕES: <br />
                     </Box>
-                    {item.info?.place}
+                    {item?.place}
                     <br />
-                    {item.info?.location}
+                    {item?.location}
                     <br />
-                    {item.info?.contact}
+                    {item?.contact}
                   </Text>
                 </Box>
                 <VStack
@@ -67,9 +67,9 @@ const AccordionOrganisms = ({ items = [], isCity = false }: AccordionOrganismsPr
                   <Link href={item.rulesUrl} target="_blank">
                     Regulamento Geral ({item.title})
                   </Link>
-                  {item.stages?.map((stage, stageIndex) => (
-                    <Link href={stage.reportUrl} key={stageIndex} target="_blank">
-                      Boletim Oficial [{stage.stage}]
+                  {item.levels?.map(level => (
+                    <Link href={level.reportUrl} key={level.id} target="_blank">
+                      Boletim Oficial [{level.title}]
                     </Link>
                   ))}
                 </VStack>

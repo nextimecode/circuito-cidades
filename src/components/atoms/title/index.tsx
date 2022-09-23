@@ -2,7 +2,7 @@ import { Heading } from '@chakra-ui/layout'
 import React from 'react'
 
 type Props = {
-  label: string
+  label?: string
   color?: string
   py?: number[]
   px?: number[]

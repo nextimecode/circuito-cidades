@@ -27,7 +27,7 @@ const DefaultPost = ({
     <HStack as="div" display={display} px={px} py={py} w={'100%'}>
       {reverseImage && (
         <Image
-          src={item.imgUrl}
+          src={item?.image?.url}
           borderRadius={['none', 'md']}
           w={['100%', '50%']}
           mx={['0 !important', 'auto']}
@@ -44,7 +44,7 @@ const DefaultPost = ({
 
       {!reverseImage && (
         <Image
-          src={item.imgUrl}
+          src={item?.image?.url}
           borderRadius={['none', 'md']}
           w={['100%', '50%']}
           mx={['0 !important', 'auto']}

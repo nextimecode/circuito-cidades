@@ -15,18 +15,15 @@ export const cities: CityProps[] = [
     title: 'Barão de Cocais',
     content:
       'Modalidades: Caminhada (app), Ciclismo MTB (app), Corrida (app), Dama, Desafio NBA, E-Sports (FIFA), Futebol Freestyle (embaixadinhas), Tênis de Mesa, Peteca e Xadrez.',
-    imgUrl: '/images/cities/baraodecocais.jpg',
-    symbol: '/images/cities/symbols/baraodecocais.svg',
     categories: 'Período de Inscrição: Até dia 08/10/2021',
     rulesUrl: 'https://drive.google.com/file/d/1z6njlpnuqfXZVN4eEreUpMgBlzBjdZQi/view?usp=sharing',
-    info: {
-      place: 'Secretaria Municipal de Esporte e Lazer',
-      location: 'Rua Padre Mauro Faria, nº 299-301 – Centro',
-      contact: '(31) 3837-7601 | (31) 97106-7569'
-    },
-    stages: [
+    place: 'Secretaria Municipal de Esporte e Lazer',
+    location: 'Rua Padre Mauro Faria, nº 299-301 – Centro',
+    contact: '(31) 3837-7601 | (31) 97106-7569',
+    levels: [
       {
-        stage: '1ª Fase',
+        id: '',
+        title: '1ª Fase',
         modalities:
           'Caminhada (App), Corrida (App), Ciclismo (App), Futebol Freestyle (Embaixadinhas), E-Sports (FIFA) e Tênis de Mesa.',
         finished: true,
@@ -34,7 +31,8 @@ export const cities: CityProps[] = [
           'https://drive.google.com/file/d/1QzlsXPCazLyJjmCzU3LHmtwqOj38RoOk/view?usp=sharing'
       },
       {
-        stage: '2ª Fase',
+        id: '',
+        title: '2ª Fase',
         date: '30 e 31 de outubro',
         modalities: 'Desafio NBA e Peteca.',
         dueDate: '28 de outubro',
@@ -42,7 +40,8 @@ export const cities: CityProps[] = [
           'https://drive.google.com/file/d/12qst5PQgd-gNuVvpZup-Fxz5OJ78jxQt/view?usp=sharing'
       },
       {
-        stage: '3ª Fase',
+        id: '',
+        title: '3ª Fase',
         date: '14 de novembro',
         modalities: 'Damas e Xadrez.',
         dueDate: '12 de novembro',
@@ -71,26 +70,22 @@ export const cities: CityProps[] = [
     title: 'João Monlevade',
     content:
       'Modalidades: Caminhada (app), Ciclismo MTB (app), Corrida (app), Dama, Desafio NBA, E-Sports (FIFA), Sinuca, Tênis de Mesa, Peteca, Vôlei Dupla e Xadrez.',
-    imgUrl: '/images/cities/joaomonlevade.jpg',
-    symbol: '/images/cities/symbols/joaomonlevade.svg',
     categories: 'Período de Inscrição: Até 22/10/2021',
     rulesUrl: 'https://drive.google.com/file/d/1I2Nz_c2d4SOflqEnf6rXr06YfHxRDWIf/view?usp=sharing',
-    info: {
-      place: 'Secretaria Municipal de Esporte e Lazer',
-      location: 'Av. Getúlio Vargas, nº 4798 – Carneirinhos',
-      contact: '(31) 3851-4510'
-    },
+    place: 'Secretaria Municipal de Esporte e Lazer',
+    location: 'Av. Getúlio Vargas, nº 4798 – Carneirinhos',
+    contact: '(31) 3851-4510',
     gallery: 'https://www.flickr.com/photos/194203616@N05/albums/72157720072360821',
-    stages: [
+    levels: [
       {
-        stage: '1ª Fase',
+        title: '1ª Fase',
         modalities: 'Futebol Freestyle (Embaixadinhas)',
         finished: true,
         reportUrl:
           'https://drive.google.com/file/d/18_kO4qwK2Hk9UZLLmj_Pwq1eqSYty1RK/view?usp=sharing'
       },
       {
-        stage: '2ª Fase',
+        title: '2ª Fase',
         date: '23 e 24 de outubro',
         modalities: `Peteca, Sinuca e Vôlei Dupla;
         Abertura Oficial da Caminhada (App), Corrida (App) e Ciclismo (App).`,
@@ -100,7 +95,7 @@ export const cities: CityProps[] = [
           'https://drive.google.com/file/d/1ALXE2NHfZzOPddk8p1Eem7GCIl5P-KAw/view?usp=sharing'
       },
       {
-        stage: '3ª Fase',
+        title: '3ª Fase',
         date: '20 e 21 de novembro',
         modalities: `Damas, Desafio NBA, E-Sports (FIFA), Tênis de Mesa e Xadrez;
         Premiação da Caminhada (App), Corrida (App) e Ciclismo (App).`,
@@ -129,25 +124,21 @@ export const cities: CityProps[] = [
     title: 'Mariana',
     content:
       'Modalidades: Caminhada (app), Ciclismo MTB (app), Corrida (app), Dama, Desafio NBA, E-Sports (FIFA), Futebol Freestyle (embaixadinhas), Tênis de Mesa, Peteca e Xadrez.',
-    imgUrl: '/images/cities/mariana.jpg',
-    symbol: '/images/cities/symbols/mariana.svg',
     categories: 'Período de Inscrição: Até dia 03/12/2021',
     rulesUrl: 'https://drive.google.com/file/d/1vGisXfXaYLwynCz8Cwc9M2iV-0D4_4jB/view?usp=sharing',
-    info: {
-      place: 'Secretaria Municipal de Esportes e Eventos',
-      location: 'Rua São Vicente de Paulo, nº 130 (Arena Mariana)',
-      contact: '(31) 3557-2128'
-    },
-    stages: [
+    place: 'Secretaria Municipal de Esportes e Eventos',
+    location: 'Rua São Vicente de Paulo, nº 130 (Arena Mariana)',
+    contact: '(31) 3557-2128',
+    levels: [
       {
-        stage: '1ª Fase',
+        title: '1ª Fase',
         finished: true,
         modalities: 'Caminhada, Corrida e Ciclismo.',
         reportUrl:
           'https://drive.google.com/file/d/1u2tZqFPSESJxzH5L8f1cbNzoWawOs9zf/view?usp=sharing'
       },
       {
-        stage: '2ª Fase',
+        title: '2ª Fase',
         date: '27 e 28 de novembro',
         modalities:
           'Damas, E-Sports (FIFA), Futebol Freestyle (Embaixadinhas), Peteca, Tênis de Mesa, Vôlei Dupla e Xadrez.',
@@ -172,18 +163,14 @@ export const cities: CityProps[] = [
     title: 'Nova Era',
     content:
       'Modalidades: Caminhada (app), Ciclismo MTB (app), Corrida (app), Dama, E-Sports (FIFA), Natação, Pesca Esportiva, Sinuca, Peteca e Xadrez.',
-    imgUrl: '/images/cities/novaera.png',
-    symbol: '/images/cities/symbols/novaera.svg',
     categories: 'Período de Inscrição: Até dia 26/11/2021',
     rulesUrl: 'https://drive.google.com/file/d/1VoWdFPsKvu5VYGtJPV1Z9acr2x87zaYW/view?usp=sharing',
-    info: {
-      place: 'Departamento Municipal de Esportes e Lazer',
-      location: 'Rua João Pinheiro, nº 91- 3º Andar – Centro',
-      contact: '(31) 3861-4228'
-    },
-    stages: [
+    place: 'Departamento Municipal de Esportes e Lazer',
+    location: 'Rua João Pinheiro, nº 91- 3º Andar – Centro',
+    contact: '(31) 3861-4228',
+    levels: [
       {
-        stage: '1ª Fase',
+        title: '1ª Fase',
         date: '10 a 31 de outubro',
         modalities: 'Pesca Esportiva.',
         dueDate: '29 de outubro',
@@ -191,7 +178,7 @@ export const cities: CityProps[] = [
           'https://drive.google.com/file/d/10IMzWymd3FrntrN6LPrr0pt58AYfYLva/view?usp=sharing'
       },
       {
-        stage: '2ª Fase',
+        title: '2ª Fase',
         date: '06 e 07 de novembro',
         modalities: `Damas, E-Sports (FIFA) e Xadrez;
         Abertura Oficial da Caminhada (App), Corrida (App) e Ciclismo (App).`,
@@ -200,7 +187,7 @@ export const cities: CityProps[] = [
           'https://drive.google.com/file/d/1T3W8Dph-NjSVtK6LQezHUqvgCwGN6NBX/view?usp=sharing'
       },
       {
-        stage: '3ª Fase',
+        title: '3ª Fase',
         date: '27 e 28 de novembro',
         modalities: `Natação, Peteca, Sinuca, Tênis de Campo e Vôlei Dupla.
         Premiação da Caminhada (App), Corrida (App) e Ciclismo (App).`,
@@ -230,18 +217,14 @@ export const cities: CityProps[] = [
     title: 'Nova União',
     content:
       'Modalidades: Caminhada (app), Ciclismo MTB (app), Corrida (app), Dama, E-Sports (FIFA), Futebol Freestyle (embaixadinhas), Peteca, Vôlei Dupla e Xadrez.',
-    imgUrl: '/images/cities/novauniao.jpg',
-    symbol: '/images/cities/symbols/novauniao.svg',
     categories: 'Período de Inscrição: Até dia 12/11/2021',
     rulesUrl: 'https://drive.google.com/file/d/1SZD9X_GYIK-L6ona_m3F1kc-lOvFTJXX/view?usp=sharing',
-    info: {
-      place: 'Secretaria Municipal de Cultura, Turismo, Esporte e Lazer',
-      location: 'Praça Padre João Habian – nº 06 – Centro',
-      contact: '(31) 3685-1221'
-    },
-    stages: [
+    place: 'Secretaria Municipal de Cultura, Turismo, Esporte e Lazer',
+    location: 'Praça Padre João Habian – nº 06 – Centro',
+    contact: '(31) 3685-1221',
+    levels: [
       {
-        stage: '1ª Fase',
+        title: '1ª Fase',
         date: '13 a 15 de novembro',
         modalities: `E-Sports (FIFA), Tênis de Mesa e Xadrez;
         Caminhada, Corrida Rústica, Futebol Freestyle (Embaixadinhas) e Vôlei Dupla;
@@ -263,7 +246,6 @@ export const cities: CityProps[] = [
     title: 'Ouro Preto',
     content:
       'Modalidades: Caminhada (app), Ciclismo MTB (app), Corrida (app), Dama, Desafio NBA, E-Sports (FIFA), Futebol Freestyle (embaixadinhas), Tênis de Mesa, Peteca e Xadrez.',
-    imgUrl: '/images/cities/ouropreto.jpg',
     symbol: '/images/cities/symbols/ouropreto.svg',
     categories: 'Período de Inscrição: Até 29/10/2021',
     rulesUrl: 'https://drive.google.com/file/d/1cAiaKsrJjnuIORZYKQdtOMPxw2u4-z3l/view?usp=sharing',
@@ -273,9 +255,9 @@ export const cities: CityProps[] = [
       contact: '(31) 3559-3216'
     },
     gallery: 'https://www.flickr.com/photos/194203616@N05/albums/72157720049286928',
-    stages: [
+    levels: [
       {
-        stage: '1ª Fase',
+        title: '1ª Fase',
         date: '16 e 17 de outubro',
         modalities: `Desafio NBA, Futebol Freestyle (Embaixadinhas), Tênis de Mesa e Peteca;
         Abertura Oficial da Caminhada (App), Corrida (App) e Ciclismo (App).`,
@@ -283,7 +265,7 @@ export const cities: CityProps[] = [
           'https://drive.google.com/file/d/1IPP6WQ8O5oiOT7cfGaqHtiqLPN9krRdy/view?usp=sharing'
       },
       {
-        stage: '2ª Fase',
+        title: '2ª Fase',
         date: '30 e 31 de outubro',
         modalities: `Damas, E-Sports (FIFA) e Xadrez;
         Premiação da Caminhada (App), Corrida (App) e Ciclismo (App).`,
@@ -308,19 +290,15 @@ export const cities: CityProps[] = [
     title: 'São Domingos do Prata',
     content:
       'Modalidades: Caminhada (app), Ciclismo MTB (app), Corrida (app), Dama, E-Sports (FIFA), Futebol Freestyle (embaixadinhas), Futevôlei, Peteca e Xadrez.',
-    imgUrl: '/images/cities/saodomingosdoprata.jpg',
-    symbol: '/images/cities/symbols/saodomingosdoprata.svg',
     categories: 'Período de Inscrição: Até 05/12/2021',
     rulesUrl: 'https://drive.google.com/file/d/1mkjR-KJTICMzxbYktSBQMSkkbS5LG1ZU/view?usp=sharing',
-    info: {
-      place: 'CENESP – Centro Esportivo Pratiano',
-      location: 'Rua Joaquim Gomes Lima, nº 700 – Cutucum',
-      contact: '(31) 99797-1369 ou (31) 99827-9439'
-    },
+    place: 'CENESP – Centro Esportivo Pratiano',
+    location: 'Rua Joaquim Gomes Lima, nº 700 – Cutucum',
+    contact: '(31) 99797-1369 ou (31) 99827-9439',
     gallery: 'https://www.flickr.com/photos/194203616@N05/albums/72157720054847406',
-    stages: [
+    levels: [
       {
-        stage: '1ª Fase',
+        title: '1ª Fase',
         date: '16 e 17 de outubro',
         modalities: `Damas, E-Sports (FIFA) e Xadrez;
         Abertura Oficial da Caminhada (App), Corrida (App) e Ciclismo (App).`,
@@ -328,7 +306,7 @@ export const cities: CityProps[] = [
           'https://drive.google.com/file/d/1vfWxyvTG-u-C_CWHbQTJUVzJdeoQXb5P/view?usp=sharing'
       },
       {
-        stage: '2ª Fase',
+        title: '2ª Fase',
         date: '06 e 07 de novembro',
         modalities: `Futebol Freestyle (Embaixadinhas), Futevôlei e Peteca;
         Premiação da Caminhada (App), Corrida (App) e Ciclismo (App).`,
@@ -353,7 +331,6 @@ export const cities: CityProps[] = [
     title: 'São Gonçalo do Rio Abaixo',
     content:
       'Modalidades: Caminhada (app), Ciclismo MTB (app), Corrida (app), Dama, E-Sports (FIFA), Futebol Freestyle (embaixadinhas), Peteca, Sinuca, Vôlei Dupla e Xadrez.',
-    imgUrl: '/images/cities/saogoncalodorioabaixo.jpg',
     symbol: '/images/cities/symbols/saogoncalodorioabaixo.svg',
     categories: 'Período de Inscrição: Até 19/11/2021',
     rulesUrl: 'https://drive.google.com/file/d/1_-IdOX5n-inT3pTAHfEdXWpEZy1bfe6X/view?usp=sharing',
@@ -362,16 +339,16 @@ export const cities: CityProps[] = [
       location: 'Rua do Rosário, nº 61 – Centro',
       contact: '(31) 3820-1925'
     },
-    stages: [
+    levels: [
       {
-        stage: '1ª Fase',
+        title: '1ª Fase',
         modalities: 'Caminhada, Corrida e Ciclismo.',
         finished: true,
         reportUrl:
           'https://drive.google.com/file/d/12pmLGk5WHc0iNC7VIYJFiDp-ltiF8bqa/view?usp=sharing'
       },
       {
-        stage: '2ª Fase',
+        title: '2ª Fase',
         date: '20 e 21 de novembro',
         modalities:
           'Damas, Futebol Freestyle, E-Sports (FIFA), Peteca, Sinuca, Vôlei Dupla e Xadrez.',
@@ -394,16 +371,14 @@ export const cities: CityProps[] = [
   }
 ]
 
-export const finalStage: CityProps = {
+export const finaltitle: CityProps = {
   title: 'Local A DEFINIR',
   content: 'string',
-  imgUrl: 'images/medalha.jpeg',
-  symbol: '',
   categories: 'string',
   rulesUrl: 'https://drive.google.com/file/d/1qUjrJ1PNSlVwFmyHLJoDfblw5Gofbotw/view?usp=sharing',
-  stages: [
+  levels: [
     {
-      stage: 'Etapa Final',
+      title: 'Etapa Final',
       date: '18 e 19 de dezembro',
       modalities:
         'Buraco, Ciclismo, Damas, Desafio NBA, E- Sports (FIFA), Futebol Freestyle (Embaixadinhas), Futevôlei, Peteca, Sinuca, SlackLine, Tenis de Campo, Tênis de Mesa, Truco, Vôlei Dupla e Xadrez.',
@@ -411,7 +386,5 @@ export const finalStage: CityProps = {
       reportUrl: ''
     }
   ],
-  info: {
-    contact: 'circuitocidades@gmail.com'
-  }
+  contact: 'circuitocidades@gmail.com'
 }
