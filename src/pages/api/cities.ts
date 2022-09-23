@@ -246,14 +246,11 @@ export const cities: CityProps[] = [
     title: 'Ouro Preto',
     content:
       'Modalidades: Caminhada (app), Ciclismo MTB (app), Corrida (app), Dama, Desafio NBA, E-Sports (FIFA), Futebol Freestyle (embaixadinhas), Tênis de Mesa, Peteca e Xadrez.',
-    symbol: '/images/cities/symbols/ouropreto.svg',
     categories: 'Período de Inscrição: Até 29/10/2021',
     rulesUrl: 'https://drive.google.com/file/d/1cAiaKsrJjnuIORZYKQdtOMPxw2u4-z3l/view?usp=sharing',
-    info: {
-      place: 'Secretaria Municipal de Esportes e Lazer',
-      location: 'Rua Hugo Soderi, nº 21 – Bloco B – Saramenha',
-      contact: '(31) 3559-3216'
-    },
+    place: 'Secretaria Municipal de Esportes e Lazer',
+    location: 'Rua Hugo Soderi, nº 21 – Bloco B – Saramenha',
+    contact: '(31) 3559-3216',
     gallery: 'https://www.flickr.com/photos/194203616@N05/albums/72157720049286928',
     levels: [
       {
@@ -331,14 +328,11 @@ export const cities: CityProps[] = [
     title: 'São Gonçalo do Rio Abaixo',
     content:
       'Modalidades: Caminhada (app), Ciclismo MTB (app), Corrida (app), Dama, E-Sports (FIFA), Futebol Freestyle (embaixadinhas), Peteca, Sinuca, Vôlei Dupla e Xadrez.',
-    symbol: '/images/cities/symbols/saogoncalodorioabaixo.svg',
     categories: 'Período de Inscrição: Até 19/11/2021',
     rulesUrl: 'https://drive.google.com/file/d/1_-IdOX5n-inT3pTAHfEdXWpEZy1bfe6X/view?usp=sharing',
-    info: {
-      place: 'Secretaria de Esportes',
-      location: 'Rua do Rosário, nº 61 – Centro',
-      contact: '(31) 3820-1925'
-    },
+    place: 'Secretaria de Esportes',
+    location: 'Rua do Rosário, nº 61 – Centro',
+    contact: '(31) 3820-1925',
     levels: [
       {
         title: '1ª Fase',
@@ -371,7 +365,7 @@ export const cities: CityProps[] = [
   }
 ]
 
-export const finaltitle: CityProps = {
+export const finalStage: CityProps = {
   title: 'Local A DEFINIR',
   content: 'string',
   categories: 'string',

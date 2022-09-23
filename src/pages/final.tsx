@@ -25,7 +25,7 @@ const Final = () => {
                 <Box as="span" fontWeight={700} py={2}>
                   INFORMAÇÕES: <br />
                 </Box>
-                {lastStage.info?.contact}
+                {lastStage.contact}
               </Text>
             </Box>
 
