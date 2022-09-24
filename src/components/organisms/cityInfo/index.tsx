@@ -4,39 +4,25 @@ import { CityProps } from '../../../types/types'
 import PostText from '../../atoms/postText'
 
 type AccordionOrganismsProps = {
-    city: CityProps
+  city: CityProps
 }
 
-const CityInfo = ({
-  city
-}: AccordionOrganismsProps) => {
+const CityInfo = ({ city }: AccordionOrganismsProps) => {
   return (
-    <Box as='div'>
-      {city.stages?.map((stage, index) => (
-        <Box as='div' py={2} key={index}>
-          <Text
-            color={stage.finished ? 'primary' : 'black'}
-            py={1}
-          >
-            {stage.stage} ({stage.finished ? 'Encerrada' : stage.date}):
+    <Box as="div">
+      {city.levels?.map(level => (
+        <Box as="div" py={2} key={level.id}>
+          <Text color={level.finished ? 'primary' : 'black'} py={1}>
+            {level.title} ({level.finished ? 'Encerrada' : level.date}):
           </Text>
-          <PostText
-            fullText={stage.modalities}
-            spacing={[1]}
-            fontSize={['xs', 'sm']}
-          />
-          {(!stage.finished && stage.dueDate) &&
-            <Text
-              fontStyle='italic'
-              fontSize={['xs', 'xs']}
-              py={1}
-            >
-                Inscrições até {stage.dueDate}.
+          <PostText description={level.modalities} spacing={[1]} fontSize={['xs', 'sm']} />
+          {!level.finished && level.dueDate && (
+            <Text fontStyle="italic" fontSize={['xs', 'xs']} py={1}>
+              Inscrições até {level.dueDate}.
             </Text>
-          }
+          )}
         </Box>
       ))}
-
     </Box>
   )
 }

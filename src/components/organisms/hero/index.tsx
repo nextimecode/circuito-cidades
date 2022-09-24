@@ -5,19 +5,15 @@ import PostText from '../../atoms/postText'
 import HeroCarousel from '../heroCarousel'
 
 type Props = {
-  heroTitle: string
-  heroDescription: string
-  heroImages : string[]
+  title?: string | null | undefined
+  description: string | null | undefined
+  heroImages?: string[]
 }
 
-const Hero = ({
-  heroTitle,
-  heroDescription,
-  heroImages
-}: Props) => {
+const Hero = ({ title, description, heroImages }: Props) => {
   return (
     <HStack
-      as='div'
+      as="div"
       flexDir={['inherit', 'row-reverse']}
       display={['block', 'flex']}
       px={[0, 10]}
@@ -25,38 +21,26 @@ const Hero = ({
       w={'100%'}
     >
       <Box
-        as='div'
+        as="div"
         w={['100%', '50%']}
-        boxShadow={'0px 4px 6px -2px rgba(45, 55, 72, 0.05), 0px 10px 15px -3px rgba(45, 55, 72, 0.1)'}
+        boxShadow={
+          '0px 4px 6px -2px rgba(45, 55, 72, 0.05), 0px 10px 15px -3px rgba(45, 55, 72, 0.1)'
+        }
       >
         <HeroCarousel images={heroImages} />
       </Box>
-
-      <VStack
-        as='div'
-        w={['100%', '50%']}
-        pl={[4, 0]}
-        pr={[4, 12]}
-        py={4}
-        mx={'0 !important'}
-      >
-
+      <VStack as="div" w={['100%', '50%']} pl={[4, 0]} pr={[4, 12]} py={4} mx={'0 !important'}>
         <Text
           fontSize={['3xl', '5xl']}
-          textAlign='justify'
-          alignSelf='start'
-          color='primary'
+          textAlign="justify"
+          alignSelf="start"
+          color="primary"
           fontWeight={700}
         >
-          {heroTitle}
+          {title}
         </Text>
-
-        <PostText
-          fullText={heroDescription}
-        />
-
+        <PostText description={description} />
       </VStack>
-
     </HStack>
   )
 }

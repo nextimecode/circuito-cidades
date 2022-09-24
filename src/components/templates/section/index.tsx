@@ -9,23 +9,10 @@ type Props = {
   px?: number[]
 }
 
-const Section = ({
-  children,
-  title,
-  bg = 'white',
-  px = [0]
-}: Props) => {
+const Section = ({ children, title, bg = 'white', px = [0] }: Props) => {
   return (
-    <VStack
-      w="100%"
-      bg={bg}
-      align="stretch"
-      py={5}
-      px={px}
-    >
-      {title &&
-        <Title label={title}/>
-      }
+    <VStack w="100%" bg={bg} align="stretch" py={5} px={px}>
+      {title && <Title label={title} />}
       {children}
     </VStack>
   )

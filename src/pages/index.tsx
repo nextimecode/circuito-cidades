@@ -1,15 +1,19 @@
 import React from 'react'
 import TemplateHome from '../components/templates/templateHome'
-
-import { newsItems } from './api/newsItems'
-import { heroItems } from './api/heroItems'
+import { useGetHeroItemsQuery } from '../graphql/generated'
 
 const Home = () => {
-  return (
-    <>
-      <TemplateHome heroItems={heroItems} newsSet={newsItems} />
-    </>
-  )
+  const { data } = useGetHeroItemsQuery()
+  if (!data || !data.heroItems) {
+    return (
+      <div className="flex-1">
+        <p>Carregando...</p>
+      </div>
+    )
+  } else {
+    const hero = data?.heroItems[0]
+    return <TemplateHome title={hero.title} description={hero.description} slider={hero.slider} />
+  }
 }
 
 export default Home

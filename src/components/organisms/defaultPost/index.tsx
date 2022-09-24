@@ -5,13 +5,13 @@ import { CityProps } from '../../../types/types'
 import Title from '../../atoms/title'
 
 type Props = {
-    children: unknown
-    item: CityProps
-    showTitle?: boolean
-    px?: number[]
-    py?: number[]
-    display?: string[]
-    reverseImage?: boolean
+  children: unknown
+  item: CityProps
+  showTitle?: boolean
+  px?: number[]
+  py?: number[]
+  display?: string[]
+  reverseImage?: boolean
 }
 
 const DefaultPost = ({
@@ -24,52 +24,34 @@ const DefaultPost = ({
   reverseImage = false
 }: Props) => {
   return (
-    <HStack
-      as='div'
-      display={display}
-      px={px}
-      py={py}
-      w={'100%'}
-    >
-      {reverseImage &&
+    <HStack as="div" display={display} px={px} py={py} w={'100%'}>
+      {reverseImage && (
         <Image
-          src={item.imgUrl}
+          src={item?.image?.url}
           borderRadius={['none', 'md']}
           w={['100%', '50%']}
           mx={['0 !important', 'auto']}
+          alt={'Icon da cidade'}
         />
-      }
+      )}
 
-      <Box
-        as='div'
-        pl={[4, 4]}
-        pr={[4, 8]}
-        py={4}
-        w={['100%', '50%']}
-        mx='0 !important'
-      >
-        {showTitle &&
-          <Title
-            label={item.title}
-            alignSelf={['flex-start']}
-          />
-        }
-
-        {children}
-
+      <Box as="div" pl={[4, 4]} pr={[4, 8]} py={4} w={['100%', '50%']} mx="0 !important">
+        <>
+          {showTitle && <Title label={item.title} alignSelf={['flex-start']} />}
+          {children}
+        </>
       </Box>
 
-      {!reverseImage &&
+      {!reverseImage && (
         <Image
-          src={item.imgUrl}
+          src={item?.image?.url}
           borderRadius={['none', 'md']}
           w={['100%', '50%']}
           mx={['0 !important', 'auto']}
+          alt={'Icon da cidade'}
         />
-      }
-
+      )}
     </HStack>
-
   )
 }
 

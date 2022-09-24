@@ -11,24 +11,16 @@ type Props = {
   news: NewsProps
 }
 
-const Post = ({
-  news
-}: Props) => {
+const Post = ({ news }: Props) => {
   return (
-    <Box as='div' px={[4, 0]} maxW={['100%', '800px']} margin={'auto'}>
-      <Title
-        label={news.content.title}
-        alignSelf={['start']}
-      />
+    <Box as="div" px={[4, 0]} maxW={['100%', '800px']} margin={'auto'}>
+      <Title label={news.content.title} alignSelf={['start']} />
 
       <PostSubtitle text={news.content.subtitle} />
 
-      <Image src={news.content.imgUrl} w={'100%'} rounded='none' />
+      <Image src={news.content.imgUrl} w={'100%'} rounded="none" alt="Imagem do post" />
 
-      <PostText
-        fullText={news.content.content}
-        color={'#718096'}
-      />
+      <PostText fullText={news.content.content} color={'#718096'} />
     </Box>
   )
 }

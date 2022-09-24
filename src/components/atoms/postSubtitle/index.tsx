@@ -3,19 +3,17 @@ import React from 'react'
 import { Text } from '@chakra-ui/react'
 
 type Props = {
-    text: string
+  text: string
 }
 
-const PostSubtitle = ({
-  text
-}: Props) => {
+const PostSubtitle = ({ text }: Props) => {
   return (
     <Text
       color={'black'}
-      fontFamily='Inter'
+      fontFamily="Inter"
       fontWeight={500}
       fontSize={['16px', '20px']}
-      align='justify'
+      align="justify"
       py={4}
     >
       {text}

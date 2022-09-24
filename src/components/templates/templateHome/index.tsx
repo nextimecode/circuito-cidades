@@ -6,36 +6,22 @@ import EventCalendar from '../../organisms/calendar'
 import { Flex, Box } from '@chakra-ui/layout'
 import Realizacao from '../../molecules/realizacao'
 
-type NextTemplateHomeProps = {
-  heroItems: {
-    heroTitle: string
-    heroDescription: string
-    heroImages : string[]
-  }
-  newsSet: Record<string, any>[]
-}
-
-const TemplateHome = ({
-  heroItems
-}: NextTemplateHomeProps) => {
+const TemplateHome = ({ title, description, slider }: any) => {
+  const heroImages = slider?.map((item: { url: string }) => item.url)
   return (
     <Layout>
       <Section>
-        <Hero
-          heroTitle={heroItems.heroTitle}
-          heroDescription={heroItems.heroDescription}
-          heroImages={heroItems.heroImages}
-        />
+        <Hero title={title} description={description} heroImages={heroImages} />
       </Section>
-
-      {/* <Section bg={'gray-50'} title="Últimas Notícias">
-        <LastNews newsSet={newsSet}/>
-      </Section> */}
-
-      <Box bgImage="url('/images/calendar/image1.svg')" bgRepeat="no-repeat" bgPosition="right" bgSize='400px'>
-        <Section bg='transparent' title="Calendário de Eventos">
+      <Box
+        bgImage="url('/images/calendar/image1.svg')"
+        bgRepeat="no-repeat"
+        bgPosition="right"
+        bgSize="400px"
+      >
+        <Section bg="transparent" title="Calendário de Eventos">
           <Flex zIndex={1}>
-            <EventCalendar/>
+            <EventCalendar />
           </Flex>
         </Section>
       </Box>

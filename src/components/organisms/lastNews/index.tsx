@@ -9,9 +9,7 @@ type Props = {
   newsSet: Record<string, NewsProps>[]
 }
 
-const LastNews = ({
-  newsSet
-}: Props) => {
+const LastNews = ({ newsSet }: Props) => {
   return (
     <React.Fragment>
       <Grid
@@ -20,15 +18,11 @@ const LastNews = ({
         px={[4]}
       >
         {newsSet.map((news, index) => (
-          <Noticia
-            key={index}
-            news={news.news}
-          />
+          <Noticia key={index} news={news.news} />
         ))}
       </Grid>
 
       {/* <SeeMore label='Ver todas as notícias'/> */}
-
     </React.Fragment>
   )
 }

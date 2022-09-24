@@ -1,0 +1,32 @@
+query Cities {
+  cities {
+    id
+    title
+    content
+    image {
+      url
+    }
+    location
+    place
+    contact
+    rulesUrl
+    gallery
+    symbol {
+      url
+    }
+    levels {
+      id
+      title
+      date
+      modalities
+      finished
+      reportUrl
+      dueDate
+    }
+    registrations {
+      title
+      finished
+      url
+    }
+  }
+}

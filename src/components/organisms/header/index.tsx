@@ -8,18 +8,8 @@ type Props = {
   menuHeight?: string
 }
 
-const Header = ({
-  listNavLinks,
-  smallDevice = true,
-  menuHeight = '50px'
-}: Props) => {
-  return (
-    <NavMenu
-      listNavLinks={listNavLinks}
-      smallDevice={smallDevice}
-      menuHeight={menuHeight}
-    />
-  )
+const Header = ({ listNavLinks, smallDevice = true, menuHeight = '50px' }: Props) => {
+  return <NavMenu listNavLinks={listNavLinks} smallDevice={smallDevice} menuHeight={menuHeight} />
 }
 
 export default Header

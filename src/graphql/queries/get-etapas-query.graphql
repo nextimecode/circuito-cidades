@@ -1,0 +1,6 @@
+query GetEtapas {
+  etapas {
+    date
+    city
+  }
+}

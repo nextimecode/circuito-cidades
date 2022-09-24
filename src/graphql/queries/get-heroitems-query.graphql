@@ -1,0 +1,10 @@
+query GetHeroItems {
+  heroItems {
+    title
+    description
+    slider {
+      id
+      url
+    }
+  }
+}
