@@ -22,7 +22,7 @@ type AccordionOrganismsProps = {
 
 const AccordionOrganisms = ({ items = [], isCity = false }: AccordionOrganismsProps) => {
   return (
-    <Accordion pb={6} allowMultiple>
+    <Accordion pb={6}>
       {items.map(item => (
         <AccordionItem key={item.id} border="none" borderColor="none">
           <Box as="div" borderBottom="solid 1px" borderColor="#E2E8F0" mx={4} bg="none">

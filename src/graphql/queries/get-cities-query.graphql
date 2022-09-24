@@ -24,7 +24,7 @@ query Cities {
       dueDate
     }
     registrations {
-			title
+      title
       finished
       url
     }

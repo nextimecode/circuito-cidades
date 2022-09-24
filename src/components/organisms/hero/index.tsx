@@ -5,12 +5,12 @@ import PostText from '../../atoms/postText'
 import HeroCarousel from '../heroCarousel'
 
 type Props = {
-  heroTitle: string
-  heroDescription: string
-  heroImages: string[]
+  title?: string | null | undefined
+  description: string | null | undefined
+  heroImages?: string[]
 }
 
-const Hero = ({ heroTitle, heroDescription, heroImages }: Props) => {
+const Hero = ({ title, description, heroImages }: Props) => {
   return (
     <HStack
       as="div"
@@ -29,7 +29,6 @@ const Hero = ({ heroTitle, heroDescription, heroImages }: Props) => {
       >
         <HeroCarousel images={heroImages} />
       </Box>
-
       <VStack as="div" w={['100%', '50%']} pl={[4, 0]} pr={[4, 12]} py={4} mx={'0 !important'}>
         <Text
           fontSize={['3xl', '5xl']}
@@ -38,10 +37,9 @@ const Hero = ({ heroTitle, heroDescription, heroImages }: Props) => {
           color="primary"
           fontWeight={700}
         >
-          {heroTitle}
+          {title}
         </Text>
-
-        <PostText fullText={heroDescription} />
+        <PostText description={description} />
       </VStack>
     </HStack>
   )

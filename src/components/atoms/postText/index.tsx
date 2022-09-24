@@ -3,14 +3,19 @@ import React from 'react'
 import { Text } from '@chakra-ui/react'
 
 type Props = {
-  fullText?: string
+  description: string | null | undefined
   color?: string
   fontSize?: string[]
   spacing?: number[]
 }
 
-const PostText = ({ fullText, color = 'black', fontSize = ['md', 'lg'], spacing = [4] }: Props) => {
-  const paragraphs = fullText?.split('\n')
+const PostText = ({
+  description,
+  color = 'black',
+  fontSize = ['md', 'lg'],
+  spacing = [4]
+}: Props) => {
+  const paragraphs = description?.split('\n')
 
   return (
     <React.Fragment>
