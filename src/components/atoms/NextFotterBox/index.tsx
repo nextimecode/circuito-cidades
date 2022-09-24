@@ -3,8 +3,8 @@ import React from 'react'
 import { Box, Text, Image } from '@chakra-ui/react'
 
 type Props = {
-  imgUrl: string
-  cityName: string
+  imgUrl: any
+  cityName: any
 }
 
 const NextFooterBox = ({ imgUrl, cityName }: Props) => (
