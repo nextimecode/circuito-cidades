@@ -9,8 +9,6 @@ type Props = {
 
 const HeroCarousel = ({ images }: Props) => {
   const customerLogo = useRef(null)
-  console.log('Images', images)
-
   return (
     <Box as="div" w={'100%'}>
       <Rerousel itemRef={customerLogo}>

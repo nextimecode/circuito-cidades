@@ -7,7 +7,6 @@ import { Flex, Box } from '@chakra-ui/layout'
 import Realizacao from '../../molecules/realizacao'
 
 const TemplateHome = ({ title, description, slider }: any) => {
-  console.log('SLIDER', slider)
   const heroImages = slider?.map((item: { url: string }) => item.url)
   return (
     <Layout>

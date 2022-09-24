@@ -11,8 +11,6 @@ const Home = () => {
       </div>
     )
   } else {
-    const hero = data?.heroItems[0]
-    console.log('HERO', hero)
     return <TemplateHome title={hero.title} description={hero.description} slider={hero.slider} />
   }
 }
