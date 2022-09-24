@@ -1,0 +1,6 @@
+query GetDateEvent {
+  dateEvents {
+    id
+    dates
+  }
+}
