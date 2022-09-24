@@ -11,6 +11,7 @@ const Home = () => {
       </div>
     )
   } else {
+    const hero = data?.heroItems[0]
     return <TemplateHome title={hero.title} description={hero.description} slider={hero.slider} />
   }
 }
