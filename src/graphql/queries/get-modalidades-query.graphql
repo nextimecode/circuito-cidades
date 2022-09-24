@@ -1,0 +1,16 @@
+query GetModalidades {
+  modalidades {
+    title
+    content
+    categories
+    rulesUrl
+    place
+    location
+    contact
+    gallery
+    image {
+      id
+      url
+    }
+  }
+}

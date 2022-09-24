@@ -1,12 +1,11 @@
 import { Container, Heading } from '@chakra-ui/react'
 import React from 'react'
-import { CityProps } from '../../../types/types'
 import AccordionOrganisms from '../../organisms/accordion'
 import Layout from '../layout'
 
 type AccordionTemplateProps = {
   title: string
-  items: CityProps[]
+  items: any
   isCity?: boolean
 }
 

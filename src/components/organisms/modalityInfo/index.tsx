@@ -10,7 +10,7 @@ type AccordionOrganismsProps = {
 const ModalityInfo = ({ modality }: AccordionOrganismsProps) => {
   return (
     <VStack as="div" spacing={3}>
-      <PostText fullText={modality.content} spacing={[1]} fontSize={['xs', 'sm']} />
+      <PostText description={modality.content} spacing={[1]} fontSize={['xs', 'sm']} />
       <Text fontStyle="italic" fontSize={['xs', 'xs']} alignSelf="flex-start" py={1}>
         Categorias: {modality.categories}.
       </Text>
